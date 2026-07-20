@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miles to Feet - Modern Minimal Unit Converter Mockup</title>
+  <style>
+    /* CSS Variables matching the brand guidelines */
+    :root {
+      --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --primary: #185FA5;
+      --primary-hover: #124C85;
+      --primary-light: #E6F0FA;
+      --accent: #BA7517;
+      --accent-light: #FDF5EA;
+      --bg-page: #FFFFFF;
+      --bg-hero: #F1EFE8;
+      --bg-card: #FFFFFF;
+      --text-primary: #1A1A1A;
+      --text-secondary: #666666;
+      --border: #E0E0E0;
+      --radius: 8px;
+    }
+
+    /* Dark Mode variables for compatibility */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-page: #121212;
+        --bg-hero: #1C1A16;
+        --bg-card: #1E1E1E;
+        --text-primary: #F5F5F5;
+        --text-secondary: #AAAAAA;
+        --border: #333333;
+        --primary: #4FA3F7;
+        --primary-hover: #6EB2F7;
+        --primary-light: #182C44;
+        --accent: #E2932E;
+        --accent-light: #38240A;
+      }
+    }
+
+    /* Universal Reset & Typography */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-page);
+      color: var(--text-primary);
+      font-family: var(--font-stack);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 {
+      font-weight: 500;
+      line-height: 1.3;
+      color: var(--text-primary);
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Header component */
+    header {
+      border-bottom: 1px solid var(--border);
+      background-color: var(--bg-page);
+    }
+
+    .header-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+    }
+
+    .logo {
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo-mark {
+      width: 24px;
+      height: 24px;
+      background-color: var(--primary);
+      mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m8 3 4 4 4-4'/%3E%3Cpath d='M12 7v14'/%3E%3Cpath d='m16 21-4-4-4 4'/%3E%3C/svg%3E") no-repeat center;
+      -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m8 3 4 4 4-4'/%3E%3Cpath d='M12 7v14'/%3E%3Cpath d='m16 21-4-4-4 4'/%3E%3C/svg%3E") no-repeat center;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: var(--text-secondary);
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover, .nav-links a.active {
+      color: var(--primary);
+    }
+
+    /* Hero & Calculator Section */
+    .hero-section {
+      background-color: var(--bg-hero);
+      padding: 3.5rem 0;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero-title {
+      font-size: 2.25rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+    }
+
+    .hero-desc {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      margin-bottom: 2.5rem;
+    }
+
+    .calculator-widget {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .calc-input-group {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+      flex: 1;
+    }
+
+    .calc-input-group label {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .calc-field {
+      width: 100%;
+      height: 48px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-size: 1.1rem;
+      padding: 0 1rem;
+      color: var(--text-primary);
+      background-color: var(--bg-page);
+      outline: none;
+    }
+
+    .calc-field:focus {
+      border-color: var(--primary);
+    }
+
+    .calc-result {
+      background-color: var(--accent-light);
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      padding: 0 1rem;
+    }
+
+    .calc-arrow {
+      color: var(--text-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 1.5rem;
+    }
+
+    .calc-arrow svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    /* Content Section */
+    .content-section {
+      padding: 3rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem;
+      color: var(--text-primary);
+    }
+
+    /* How it works */
+    .formula-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .formula-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+    }
+
+    .formula-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+
+    .formula-card-accent h3 {
+      color: var(--accent);
+    }
+
+    .formula-box {
+      background-color: var(--bg-hero);
+      padding: 0.75rem 1rem;
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 1.05rem;
+      margin-top: 0.5rem;
+    }
+
+    /* Table styles */
+    .conv-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .conv-table th, .conv-table td {
+      border-bottom: 1px solid var(--border);
+      padding: 0.75rem 1rem;
+      text-align: left;
+    }
+
+    .conv-table th {
+      font-weight: 500;
+      color: var(--text-secondary);
+      background-color: var(--bg-hero);
+      font-size: 0.9rem;
+    }
+
+    .conv-table td {
+      font-size: 0.95rem;
+    }
+
+    .conv-table tr:hover td {
+      background-color: var(--bg-hero);
+    }
+
+    /* FAQs details/summary */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    details {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background-color: var(--bg-page);
+    }
+
+    summary {
+      padding: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      outline: none;
+      user-select: none;
+      color: var(--text-primary);
+    }
+
+    summary:hover {
+      background-color: var(--bg-hero);
+    }
+
+    details[open] summary {
+      border-bottom: 1px solid var(--border);
+      background-color: var(--bg-hero);
+    }
+
+    .faq-answer {
+      padding: 1rem;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /* Related Converters Chips */
+    .chips-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    .converter-chip {
+      background-color: var(--primary-light);
+      color: var(--primary);
+      border: 1px solid transparent;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    .converter-chip:hover {
+      border-color: var(--primary);
+      text-decoration: none;
+    }
+
+    /* Footer Component */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2.5rem 0;
+      background-color: var(--bg-hero);
+      margin-top: auto;
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .footer-brand {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .footer-links-col {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .footer-links-col h4 {
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-secondary);
+      margin-bottom: 0.25rem;
+    }
+
+    .footer-links-col a {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    .footer-links-col a:hover {
+      color: var(--primary);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .social-icon {
+      color: var(--text-secondary);
+    }
+
+    .social-icon:hover {
+      color: var(--primary);
+    }
+
+    /* Responsive Mobile Layout */
+    @media (max-width: 768px) {
+      .header-nav {
+        height: 60px;
+      }
+      
+      .nav-links {
+        display: none; /* Collapses on actual implementation into burger menu */
+      }
+
+      .calculator-widget {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.5rem;
+      }
+
+      .calc-arrow {
+        padding-top: 0;
+        transform: rotate(90deg);
+      }
+
+      .formula-container {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .footer-links {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. Header Component -->
+  <header>
+    <div class="container header-nav">
+      <a href="#" class="logo">
+        <div class="logo-mark"></div>
+        <span>Miles to Feet</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#" class="active">Miles to Feet</a>
+        <a href="#">Feet to Miles</a>
+        <a href="#">Converters</a>
+        <a href="#">Blog</a>
+        <a href="#">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 2. Hero & Calculator Section -->
+  <section class="hero-section">
+    <div class="container">
+      <h1 class="hero-title">Miles to Feet Converter</h1>
+      <p class="hero-desc">Convert miles to feet instantly. Enter a value in miles below to see the calculation.</p>
+      
+      <div class="calculator-widget">
+        <div class="calc-input-group">
+          <label for="miles-input">Miles (mi)</label>
+          <input type="number" id="miles-input" class="calc-field" value="1" placeholder="Enter miles">
+        </div>
+        
+        <div class="calc-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </div>
+
+        <div class="calc-input-group">
+          <label>Feet (ft)</label>
+          <div class="calc-field calc-result" id="feet-output">5,280</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <!-- 3. How It Works Section -->
+    <section class="content-section">
+      <h2 class="section-title">How to Convert Miles to Feet</h2>
+      <p style="color: var(--text-secondary); max-width: 800px; margin-bottom: 1.5rem;">
+        Converting miles to feet is very simple. Since one mile contains exactly 5,280 feet, you multiply the number of miles by the conversion factor to complete the conversion.
+      </p>
+      
+      <div class="formula-container">
+        <div class="formula-card">
+          <h3>The Conversion Formula</h3>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">Multiply miles by the standard ratio:</p>
+          <div class="formula-box">Feet = Miles &times; 5,280</div>
+        </div>
+        
+        <div class="formula-card formula-card-accent">
+          <h3>Example Calculation</h3>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">Converting 5 miles into feet:</p>
+          <div class="formula-box">5 &times; 5,280 = 26,400 ft</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Conversion Table Section -->
+    <section class="content-section">
+      <h2 class="section-title">Miles to Feet Conversion Chart</h2>
+      <p style="color: var(--text-secondary); margin-bottom: 1rem; font-size: 0.95rem;">
+        Quick reference lookup chart for common distance conversions:
+      </p>
+      
+      <table class="conv-table">
+        <thead>
+          <tr>
+            <th>Miles (mi)</th>
+            <th>Feet (ft)</th>
+            <th>Formula</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>0.1 mi</td><td>528 ft</td><td>0.1 &times; 5,280</td></tr>
+          <tr><td>0.25 mi</td><td>1,320 ft</td><td>0.25 &times; 5,280</td></tr>
+          <tr><td>0.5 mi</td><td>2,640 ft</td><td>0.5 &times; 5,280</td></tr>
+          <tr><td>1 mi</td><td>5,280 ft</td><td>1 &times; 5,280</td></tr>
+          <tr><td>2 mi</td><td>10,560 ft</td><td>2 &times; 5,280</td></tr>
+          <tr><td>3 mi</td><td>15,840 ft</td><td>3 &times; 5,280</td></tr>
+          <tr><td>5 mi</td><td>26,400 ft</td><td>5 &times; 5,280</td></tr>
+          <tr><td>10 mi</td><td>52,800 ft</td><td>10 &times; 5,280</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 5. FAQ Section -->
+    <section class="content-section">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <details>
+          <summary>How many feet are in a mile?</summary>
+          <div class="faq-answer">
+            <p>There are exactly 5,280 feet in one standard statute mile.</p>
+          </div>
+        </details>
+        
+        <details>
+          <summary>How do you convert miles to feet manually?</summary>
+          <div class="faq-answer">
+            <p>Take the total number of miles and multiply it by 5,280. For example, 3 miles &times; 5,280 = 15,840 feet.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Why are there 5,280 feet in a mile?</summary>
+          <div class="faq-answer">
+            <p>This length was standardized in 1593 under Queen Elizabeth I, combining the traditional agricultural furlong (660 feet) with the Roman mile measurement (8 furlongs = 5,280 feet).</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 6. Related Converters Section -->
+    <section class="content-section" style="border-bottom: none;">
+      <h2 class="section-title">Related Converters</h2>
+      <div class="chips-grid">
+        <a href="#" class="converter-chip">Feet to Miles</a>
+        <a href="#" class="converter-chip">Miles to Yards</a>
+        <a href="#" class="converter-chip">Miles to Kilometers</a>
+        <a href="#" class="converter-chip">Miles to Meters</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- 7. Footer Component -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo" style="color: var(--text-primary);">
+            <div class="logo-mark" style="background-color: var(--text-primary);"></div>
+            <span>Miles to Feet</span>
+          </a>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); max-width: 250px; margin-top: 0.5rem;">
+            Simple, trustworthy, and fast distance conversion calculators.
+          </p>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-links-col">
+            <h4>Converters</h4>
+            <a href="#">Miles to Feet</a>
+            <a href="#">Feet to Miles</a>
+            <a href="#">Miles to Yards</a>
+          </div>
+          <div class="footer-links-col">
+            <h4>Quick Links</h4>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <span>&copy; 2026 milestofeet.com. All rights reserved.</span>
+        <div class="social-links">
+          <a href="#" class="social-icon" aria-label="Twitter">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Minimal interaction script for calculator widget
+    const milesInput = document.getElementById('miles-input');
+    const feetOutput = document.getElementById('feet-output');
+
+    if (milesInput && feetOutput) {
+      milesInput.addEventListener('input', () => {
+        const val = parseFloat(milesInput.value);
+        if (isNaN(val) || val < 0) {
+          feetOutput.textContent = '0';
+        } else {
+          feetOutput.textContent = (val * 5280).toLocaleString();
+        }
+      });
+    }
+  </script>
+</body>
+</html>
