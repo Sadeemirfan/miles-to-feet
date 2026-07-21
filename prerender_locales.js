@@ -1,0 +1,75 @@
+import fs from 'fs';
+import path from 'path';
+
+const locales = ['hi', 'es', 'ru', 'fr', 'de', 'it', 'pt', 'bn', 'ja', 'ko', 'ms', 'pl', 'id', 'ar', 'bg', 'tr', 'sv'];
+const enJsonPath = path.resolve('src/locales/en/translations.json');
+const enJson = JSON.parse(fs.readFileSync(enJsonPath, 'utf8'));
+
+function getAllHtmlFiles(dir) {
+  let results = [];
+  if (!fs.existsSync(dir)) return results;
+  const list = fs.readdirSync(dir);
+  list.forEach(file => {
+    const filePath = path.join(dir, file);
+    const stat = fs.statSync(filePath);
+    if (stat && stat.isDirectory()) {
+      results = results.concat(getAllHtmlFiles(filePath));
+    } else if (file === 'index.html') {
+      results.push(filePath);
+    }
+  });
+  return results;
+}
+
+let totalProcessed = 0;
+
+locales.forEach(loc => {
+  const jsonPath = path.resolve(`src/locales/${loc}/translations.json`);
+  if (!fs.existsSync(jsonPath)) {
+    console.warn(`Missing translations file: ${jsonPath}`);
+    return;
+  }
+  const locJson = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
+  const dict = { ...enJson, ...locJson };
+
+  const htmlFiles = getAllHtmlFiles(path.resolve(loc));
+  htmlFiles.forEach(file => {
+    let content = fs.readFileSync(file, 'utf8');
+
+    // 1. Update <title>
+    if (dict.title) {
+      content = content.replace(/<title>[\s\S]*?<\/title>/, `<title>${dict.title} | Miles to Feet</title>`);
+    }
+
+    // 2. Update <meta name="description">
+    if (dict.meta_desc) {
+      content = content.replace(/<meta name="description" content="[^"]*">/g, `<meta name="description" content="${dict.meta_desc}">`);
+    }
+
+    // 3. Replace data-i18n-placeholder
+    content = content.replace(/data-i18n-placeholder="([^"]+)"(\s+placeholder="[^"]*")?/g, (match, key) => {
+      const val = dict[key] || enJson[key] || '';
+      return `data-i18n-placeholder="${key}" placeholder="${val}"`;
+    });
+
+    // 4. Replace data-i18n elements (multi-pass to handle potential nesting)
+    let prev;
+    let passes = 0;
+    do {
+      prev = content;
+      content = content.replace(/<([a-zA-Z0-9-]+)([^>]*\bdata-i18n="([^"]+)"[^>]*)>([\s\S]*?)<\/\1>/g, (match, tag, attrs, key, oldContent) => {
+        const val = dict[key];
+        if (val !== undefined) {
+          return `<${tag}${attrs}>${val}</${tag}>`;
+        }
+        return match;
+      });
+      passes++;
+    } while (content !== prev && passes < 10);
+
+    fs.writeFileSync(file, content, 'utf8');
+    totalProcessed++;
+  });
+});
+
+console.log(`Pre-rendered translations into ${totalProcessed} locale HTML files.`);
