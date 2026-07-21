@@ -1800,3 +1800,21 @@ pre {
 
 
 
+
+/* RTL Overrides */
+[dir="rtl"] .formula-box {
+  border-left: none;
+  border-right: 4px solid var(--primary);
+}
+[dir="rtl"] .nav-links a::after {
+  left: auto;
+  right: 0;
+  transform-origin: left;
+}
+[dir="rtl"] .nav-links a:hover::after,
+[dir="rtl"] .nav-links a.active::after {
+  transform-origin: right;
+}
+[dir="rtl"] * {
+  text-align: right;
+}

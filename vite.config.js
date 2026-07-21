@@ -31,6 +31,7 @@ export default defineConfig({
         contact: resolve(__dirname, 'contact/index.html'),
         privacyPolicy: resolve(__dirname, 'privacy-policy/index.html'),
         termsConditions: resolve(__dirname, 'terms-conditions/index.html'),
+        sitemap: resolve(__dirname, 'sitemap/index.html'),
         blog: resolve(__dirname, 'blog/index.html'),
         blogHowManyFeetInAMile: resolve(__dirname, 'blog/how-many-feet-in-a-mile/index.html'),
         blogMilesVsFeetWhenToUse: resolve(__dirname, 'blog/miles-vs-feet-when-to-use/index.html'),
