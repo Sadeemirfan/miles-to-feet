@@ -31,6 +31,10 @@ locales.forEach(loc => {
   }
   const locJson = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
   const dict = { ...enJson, ...locJson };
+  
+  // Construct dynamic keys for diagrams initial states
+  dict['ruler_tab1_info_initial'] = `<strong>${dict['ruler_tab1_name'] || 'Statute Mile'}:</strong> ${dict['ruler_tab1_info'] || 'Established in 1593 to equal 8 furlongs. Equal to exactly 5,280 feet.'}`;
+  dict['scale_mark1_desc_initial'] = `<strong>${dict['scale_mark1_title'] || 'Standard 400m Lap'}:</strong> ${dict['scale_mark1_desc'] || 'About 1,320 feet. In miles, this is exactly 0.25 mi. 4 laps make a full mile!'}`;
 
   const htmlFiles = getAllHtmlFiles(path.resolve(loc));
   htmlFiles.forEach(file => {
@@ -105,6 +109,10 @@ locales.forEach(loc => {
       });
       passes++;
     } while (content !== prev && passes < 10);
+
+    // 5. Inject translation dictionary for client-side JS (like calculator.js)
+    const inlineScript = `<script>window.PAGE_TRANSLATIONS = ${JSON.stringify(dict).replace(/</g, '\\u003c')};</script>`;
+    content = content.replace('</head>', `${inlineScript}</head>`);
 
     fs.writeFileSync(file, content, 'utf8');
     totalProcessed++;

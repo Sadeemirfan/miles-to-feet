@@ -3,6 +3,13 @@
 document.addEventListener('DOMContentLoaded', () => {
   const FACTOR = 5280;
 
+  const t = (key, defaultText) => {
+    if (window.PAGE_TRANSLATIONS && window.PAGE_TRANSLATIONS[key] !== undefined) {
+      return window.PAGE_TRANSLATIONS[key];
+    }
+    return defaultText;
+  };
+
   // --- Accordion FAQ engine ---
   const faqItems = document.querySelectorAll('.faq-item');
   faqItems.forEach(item => {
@@ -66,14 +73,14 @@ document.addEventListener('DOMContentLoaded', () => {
       const milesVal = milesInput.value.trim();
       if (milesVal === '' || isNaN(milesVal)) {
         feetOutput.value = '';
-        if (formulaStep) formulaStep.innerHTML = 'Enter a valid number above to see the calculation.';
+        if (formulaStep) formulaStep.innerHTML = t('formula_step_default', 'Enter a valid number above to see the calculation.');
         return;
       }
       
       const miles = parseFloat(milesVal);
       if (miles < 0) {
-        feetOutput.value = 'Invalid input';
-        if (formulaStep) formulaStep.innerHTML = '<span style="color: var(--accent);">Distance cannot be negative.</span>';
+        feetOutput.value = t('formula_step_invalid', 'Invalid input');
+        if (formulaStep) formulaStep.innerHTML = `<span style="color: var(--accent);">${t('formula_step_negative', 'Distance cannot be negative.')}</span>`;
         return;
       }
       
@@ -82,9 +89,9 @@ document.addEventListener('DOMContentLoaded', () => {
       
       if (formulaStep) {
         formulaStep.innerHTML = `
-          <strong>Step 1:</strong> Identify the formula: <code>feet = miles &times; 5,280</code><br>
-          <strong>Step 2:</strong> Substitute value: <code>${miles.toLocaleString()} &times; 5,280</code><br>
-          <strong>Step 3:</strong> Solve: <strong>${formatNumber(feet)} feet</strong>
+          <strong>${t('step_num', 'Step')} 1:</strong> ${t('formula_step_identify', 'Identify the formula:')} <code>feet = miles &times; 5,280</code><br>
+          <strong>${t('step_num', 'Step')} 2:</strong> ${t('formula_step_substitute', 'Substitute value:')} <code>${miles.toLocaleString()} &times; 5,280</code><br>
+          <strong>${t('step_num', 'Step')} 3:</strong> ${t('formula_step_solve', 'Solve:')} <strong>${formatNumber(feet)} ${t('unit_feet', 'feet')}</strong>
         `;
       }
     };
@@ -171,14 +178,14 @@ document.addEventListener('DOMContentLoaded', () => {
       const feetVal = feetInput.value.trim();
       if (feetVal === '' || isNaN(feetVal)) {
         milesOutput.value = '';
-        if (formulaStep) formulaStep.innerHTML = 'Enter a valid number above to see the calculation.';
+        if (formulaStep) formulaStep.innerHTML = t('formula_step_default', 'Enter a valid number above to see the calculation.');
         return;
       }
 
       const feet = parseFloat(feetVal);
       if (feet < 0) {
-        milesOutput.value = 'Invalid input';
-        if (formulaStep) formulaStep.innerHTML = '<span style="color: var(--accent);">Distance cannot be negative.</span>';
+        milesOutput.value = t('formula_step_invalid', 'Invalid input');
+        if (formulaStep) formulaStep.innerHTML = `<span style="color: var(--accent);">${t('formula_step_negative', 'Distance cannot be negative.')}</span>`;
         return;
       }
 
@@ -187,9 +194,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (formulaStep) {
         formulaStep.innerHTML = `
-          <strong>Step 1:</strong> Identify the formula: <code>miles = feet &divide; 5,280</code><br>
-          <strong>Step 2:</strong> Substitute value: <code>${feet.toLocaleString()} &divide; 5,280</code><br>
-          <strong>Step 3:</strong> Solve: <strong>${formatNumber(miles, 5)} miles</strong>
+          <strong>${t('step_num', 'Step')} 1:</strong> ${t('formula_step_identify', 'Identify the formula:')} <code>miles = feet &divide; 5,280</code><br>
+          <strong>${t('step_num', 'Step')} 2:</strong> ${t('formula_step_substitute', 'Substitute value:')} <code>${feet.toLocaleString()} &divide; 5,280</code><br>
+          <strong>${t('step_num', 'Step')} 3:</strong> ${t('formula_step_solve', 'Solve:')} <strong>${formatNumber(miles, 5)} ${t('unit_miles', 'miles')}</strong>
         `;
       }
     };
@@ -290,14 +297,14 @@ document.addEventListener('DOMContentLoaded', () => {
       const inputValStr = inputField.value.trim();
       if (inputValStr === '' || isNaN(inputValStr)) {
         outputField.value = '';
-        if (formulaStep) formulaStep.innerHTML = 'Enter a valid number above to see the calculation.';
+        if (formulaStep) formulaStep.innerHTML = t('formula_step_default_generic', 'Enter a valid value above to see the calculation.');
         return;
       }
       
       const inputVal = parseFloat(inputValStr);
       if (inputVal < 0) {
-        outputField.value = 'Invalid input';
-        if (formulaStep) formulaStep.innerHTML = '<span style="color: var(--accent);">Value cannot be negative.</span>';
+        outputField.value = t('formula_step_invalid', 'Invalid input');
+        if (formulaStep) formulaStep.innerHTML = `<span style="color: var(--accent);">${t('formula_step_negative_generic', 'Value cannot be negative.')}</span>`;
         return;
       }
       
@@ -314,9 +321,9 @@ document.addEventListener('DOMContentLoaded', () => {
       if (formulaStep) {
         const symbol = operation === 'multiply' ? '&times;' : '&divide;';
         formulaStep.innerHTML = `
-          <strong>Step 1:</strong> Identify the formula: <code>${outputUnit} = ${inputUnit} ${symbol} ${factor.toLocaleString('en-US', { maximumFractionDigits: 10 })}</code><br>
-          <strong>Step 2:</strong> Substitute value: <code>${inputVal.toLocaleString()} ${symbol} ${factor.toLocaleString('en-US', { maximumFractionDigits: 10 })}</code><br>
-          <strong>Step 3:</strong> Solve: <strong>${formatNumber(result, decimals)} ${outputUnit}</strong>
+          <strong>${t('step_num', 'Step')} 1:</strong> ${t('formula_step_identify', 'Identify the formula:')} <code>${outputUnit} = ${inputUnit} ${symbol} ${factor.toLocaleString('en-US', { maximumFractionDigits: 10 })}</code><br>
+          <strong>${t('step_num', 'Step')} 2:</strong> ${t('formula_step_substitute', 'Substitute value:')} <code>${inputVal.toLocaleString()} ${symbol} ${factor.toLocaleString('en-US', { maximumFractionDigits: 10 })}</code><br>
+          <strong>${t('step_num', 'Step')} 3:</strong> ${t('formula_step_solve', 'Solve:')} <strong>${formatNumber(result, decimals)} ${outputUnit}</strong>
         `;
       }
     };
@@ -471,6 +478,17 @@ document.addEventListener('DOMContentLoaded', () => {
     let tab1Info = 'Statute Mile: Established in 1593 to equal 8 furlongs. Equal to exactly 5,280 feet.';
     let tab2Info = 'Roman Mile (Mille Passus): Defined as one thousand paces. Equal to exactly 5,000 Roman feet.';
 
+    if (inputUnit === 'mi' && outputUnit === 'ft') {
+      tab1Name = t('ruler_tab1_name', tab1Name);
+      tab2Name = t('ruler_tab2_name', tab2Name);
+      tab1Mid = t('ruler_tab1_mid', tab1Mid);
+      tab1End = t('ruler_tab1_end', tab1End);
+      tab2Mid = t('ruler_tab2_mid', tab2Mid);
+      tab2End = t('ruler_tab2_end', tab2End);
+      tab1Info = t('ruler_tab1_info', tab1Info);
+      tab2Info = t('ruler_tab2_info', tab2Info);
+    }
+
     if (inputUnit === 'mi' && outputUnit === 'yd') {
       tab1Name = '1 Mile'; tab2Name = '1,760 Yards';
       tab1Width = '100%'; tab2Width = '100%';
@@ -594,6 +612,17 @@ document.addEventListener('DOMContentLoaded', () => {
     { id: 'mark-altitude', left: '35%', icon: '✈️', title: 'Cruising Altitude', desc: 'Typically 35,000 feet for commercial passenger planes. In miles, this is exactly 6.63 miles above sea level.' },
     { id: 'mark-marathon', left: '98%', icon: '🏁', title: 'The Full Marathon', desc: 'An official marathon spans 26.2 miles. That requires runners to cross a massive distance of 138,435 feet!' }
   ];
+
+  if (inputUnit === 'mi' && outputUnit === 'ft') {
+    markers[0].title = t('scale_mark1_title', markers[0].title);
+    markers[0].desc = t('scale_mark1_desc', markers[0].desc);
+    markers[1].title = t('scale_mark2_title', markers[1].title);
+    markers[1].desc = t('scale_mark2_desc', markers[1].desc);
+    markers[2].title = t('scale_mark3_title', markers[2].title);
+    markers[2].desc = t('scale_mark3_desc', markers[2].desc);
+    markers[3].title = t('scale_mark4_title', markers[3].title);
+    markers[3].desc = t('scale_mark4_desc', markers[3].desc);
+  }
 
   if (inputUnit === 'mph') {
     markers = [
