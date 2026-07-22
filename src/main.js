@@ -85,194 +85,21 @@ document.addEventListener('DOMContentLoaded', () => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   }
 
-  // --- i18n Translation Switcher Engine ---
-  const DEFAULT_LOCALE = 'en';
+  // --- i18n Language Dropdown Switcher (Redirect Engine) ---
   const supportedLocales = ['en', 'hi', 'es', 'ru', 'fr', 'de', 'it', 'pt', 'bn', 'ja', 'ko', 'ms', 'pl', 'id', 'ar', 'bg', 'tr', 'sv'];
   
-  // Try to determine initial locale from URL path e.g. /es/ -> 'es'
-  let currentLocale = DEFAULT_LOCALE;
+  // Set initial selected value of language dropdowns based on URL prefix
   const pathParts = window.location.pathname.split('/').filter(p => p);
+  let currentLocale = 'en';
   if (pathParts.length > 0 && supportedLocales.includes(pathParts[0])) {
     currentLocale = pathParts[0];
   }
+  
+  document.querySelectorAll('.lang-select').forEach(select => {
+    select.value = currentLocale;
+  });
 
-  // Load English as default / fallback
-  let englishTranslations = {};
-
-  const initI18n = async () => {
-    try {
-      const enModule = await import('./locales/en/translations.json');
-      englishTranslations = enModule.default || enModule;
-    } catch (err) {
-      console.error('Failed to load English fallback translations', err);
-    }
-
-    // Set initial dropdown values
-    document.querySelectorAll('.lang-select').forEach(select => {
-      select.value = currentLocale;
-    });
-
-    // If not English, load and translate
-    if (currentLocale !== DEFAULT_LOCALE) {
-      await changeLanguage(currentLocale, false);
-    } else {
-      // Sync lang and dir properties for default English
-      document.documentElement.lang = 'en';
-      document.documentElement.dir = 'ltr';
-    }
-  };
-
-  const changeLanguage = async (locale, updateUrl = true) => {
-    currentLocale = locale;
-    
-    // Set lang dropdown selects
-    document.querySelectorAll('.lang-select').forEach(select => {
-      select.value = locale;
-    });
-
-    let translations = {};
-    if (locale !== 'en') {
-      try {
-        const transModule = await import(`./locales/${locale}/translations.json`);
-        translations = transModule.default || transModule;
-      } catch (e) {
-        console.warn(`Translation file for locale "${locale}" not found. Falling back to English.`, e);
-      }
-    }
-
-    // Update <html lang> and <html dir>
-    document.documentElement.lang = locale;
-    document.documentElement.dir = locale === 'ar' ? 'rtl' : 'ltr';
-
-    // Determine path properties to guide page-specific translation
-    const pathnameParts = window.location.pathname.split('/').filter(p => p);
-    if (pathnameParts.length > 0 && supportedLocales.includes(pathnameParts[0])) {
-      pathnameParts.shift(); // remove locale prefix
-    }
-    const subpath = pathnameParts.join('/'); // e.g. "miles-to-yards" or "" (homepage)
-    const isHomepage = subpath === '';
-
-    const globalUIKeys = [
-      'brand_name', 'nav_miles_to_feet', 'nav_feet_to_miles', 'nav_about', 'nav_contact', 'nav_blog',
-      'footer_calculators', 'footer_legal_contact', 'footer_newsletter', 'footer_newsletter_p',
-      'footer_placeholder_email', 'footer_subscribe', 'footer_sitemap', 'footer_all_calculators',
-      'footer_desc', 'copyright_text', 'byline_author_by', 'byline_author_team', 'byline_reviewed', 'byline_last_updated',
-      'cookie_consent_text', 'cookie_consent_accept', 'cookie_consent_reject', 'cookie_privacy_link',
-      'nav_terms_conditions', 'breadcrumb_home', 'breadcrumb_calculators', 'related_title', 'tables_title', 'faq_title'
-    ];
-
-    const pagePrefix = subpath.replace(/-/g, '_').replace(/\//g, '_');
-    const pageKey = 'h1_' + pagePrefix;
-
-    // Translate DOM elements
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-      const key = el.getAttribute('data-i18n');
-      const val = translations[key] || englishTranslations[key];
-      if (val) {
-        const isGlobal = globalUIKeys.includes(key);
-        let shouldReplace = isHomepage || isGlobal;
-        if (!shouldReplace) {
-          shouldReplace = key.startsWith('h1_' + pagePrefix) || 
-                          key.startsWith(pagePrefix + '_') ||
-                          (subpath === 'about' && key.startsWith('about_')) ||
-                          (subpath === 'contact' && key.startsWith('contact_')) ||
-                          (subpath === 'blog' && key.startsWith('blog_'));
-        }
-        if (shouldReplace) {
-          // If element is input/textarea, update placeholder, else innerHTML / textContent
-          if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-            el.placeholder = val;
-          } else {
-            el.innerHTML = val;
-          }
-        }
-      }
-    });
-
-    // Translate placeholder attributes specifically
-    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-      const key = el.getAttribute('data-i18n-placeholder');
-      const val = translations[key] || englishTranslations[key];
-      if (val) {
-        el.placeholder = val;
-      }
-    });
-
-    // Translate Document Title
-    if (isHomepage) {
-      const titleVal = translations['title'] || englishTranslations['title'];
-      if (titleVal) {
-        document.title = `${titleVal} | Miles to Feet`;
-      }
-    } else {
-      const pageTitleVal = translations[pageKey] || englishTranslations[pageKey];
-      if (pageTitleVal) {
-        document.title = `${pageTitleVal} | Miles to Feet`;
-      }
-    }
-
-    // Translate meta description tag (only on homepage)
-    if (isHomepage) {
-      const metaDescEl = document.querySelector('meta[name="description"]');
-      const metaVal = translations['meta_desc'] || englishTranslations['meta_desc'];
-      if (metaDescEl && metaVal) {
-        metaDescEl.setAttribute('content', metaVal);
-      }
-    }
-
-    // Update canonical and hreflang tags dynamically in the browser
-    const updateSEOHead = (loc) => {
-      let pathname = window.location.pathname;
-      const pathParts = pathname.split('/').filter(p => p);
-      if (pathParts.length > 0 && supportedLocales.includes(pathParts[0])) {
-        pathParts.shift(); // remove locale prefix
-      }
-      const subpath = pathParts.join('/');
-      const baseSubpath = subpath ? `${subpath}/` : '';
-
-      // Update Canonical
-      let canonicalEl = document.querySelector('link[rel="canonical"]');
-      if (!canonicalEl) {
-        canonicalEl = document.createElement('link');
-        canonicalEl.setAttribute('rel', 'canonical');
-        document.head.appendChild(canonicalEl);
-      }
-      const canonicalLocalePrefix = loc === 'en' ? '' : `${loc}/`;
-      canonicalEl.setAttribute('href', `https://milestofeet.com/${canonicalLocalePrefix}${baseSubpath}`);
-
-      // Update Alternates
-      document.querySelectorAll('link[rel="alternate"]').forEach(el => el.remove());
-
-      supportedLocales.forEach(l => {
-        const altLink = document.createElement('link');
-        altLink.setAttribute('rel', 'alternate');
-        altLink.setAttribute('hreflang', l);
-        const prefix = l === 'en' ? '' : `${l}/`;
-        altLink.setAttribute('href', `https://milestofeet.com/${prefix}${baseSubpath}`);
-        document.head.appendChild(altLink);
-      });
-
-      // Add x-default
-      const defaultLink = document.createElement('link');
-      defaultLink.setAttribute('rel', 'alternate');
-      defaultLink.setAttribute('hreflang', 'x-default');
-      defaultLink.setAttribute('href', `https://milestofeet.com/${baseSubpath}`);
-      document.head.appendChild(defaultLink);
-    };
-
-    updateSEOHead(locale);
-
-    // Update URL prefix without reloading the page
-    if (updateUrl) {
-      let newPath = '/';
-      if (locale !== 'en') {
-        newPath = `/${locale}/`;
-      }
-      history.pushState({ locale }, '', newPath);
-    }
-  };
-
-  // Bind change listeners to dropdowns
+  // Bind change listeners to dropdowns for redirecting
   document.querySelectorAll('.lang-select').forEach(select => {
     select.addEventListener('change', (e) => {
       const locale = e.target.value;
@@ -286,19 +113,6 @@ document.addEventListener('DOMContentLoaded', () => {
       window.location.href = newPath;
     });
   });
-
-  // Handle browser back/forward history events
-  window.addEventListener('popstate', (e) => {
-    const pathParts = window.location.pathname.split('/').filter(p => p);
-    let poppedLocale = DEFAULT_LOCALE;
-    if (pathParts.length > 0 && supportedLocales.includes(pathParts[0])) {
-      poppedLocale = pathParts[0];
-    }
-    changeLanguage(poppedLocale, false);
-  });
-
-  // Run initial translations
-  initI18n();
 
   // --- Cookie Consent Banner Engine ---
   const consentBanner = document.getElementById('cookie-consent-banner');
@@ -332,5 +146,3 @@ document.addEventListener('DOMContentLoaded', () => {
     rejectBtn.addEventListener('click', () => setConsent('rejected'));
   }
 });
-
-

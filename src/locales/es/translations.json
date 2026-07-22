@@ -134,5 +134,7 @@
   "def_foot_desc": "Un <strong>pie (ft)</strong> es una unidad de longitud equivalente exactamente a <strong>12 pulgadas</strong>, 0,3333 yardas o 0,3048 metros. El pie es una de las unidades más comunes para medir altura, dimensiones de habitaciones y escalas de construcción.",
   "def_foot_reverse": "<strong>Conversión Inversa:</strong> 1 pie = 0,000189394 millas (1 &divide; 5.280)",
   "def_foot_metric": "<strong>Relación Métrica:</strong> Exactamente 304,8 milímetros (30,48 cm)",
-  "def_foot_use": "<strong>Uso Principal:</strong> Planos de construcción, arquitectura, elevación y altura personal"
+  "def_foot_use": "<strong>Uso Principal:</strong> Planos de construcción, arquitectura, elevación y altura personal",
+  "miles_to_yards_faq1_q": "¿Cuántas yardas hay en una milla?",
+  "miles_to_yards_faq1_a": "Hay exactamente 1.760 yardas en una milla terrestre estándar."
 }

@@ -134,5 +134,7 @@
   "def_foot_desc": "A <strong>foot (ft)</strong> is a unit of length equal to exactly <strong>12 inches</strong>, 0.3333 yards, or 0.3048 meters. The foot is one of the most common units for measuring height, room dimensions, and construction scaling.",
   "def_foot_reverse": "<strong>Reverse Conversion:</strong> 1 foot = 0.000189394 miles (1 &divide; 5,280)",
   "def_foot_metric": "<strong>Metric Ratio:</strong> Exactly 304.8 millimeters (30.48 cm)",
-  "def_foot_use": "<strong>Primary Use:</strong> Building plans, architecture, elevation, and personal height"
+  "def_foot_use": "<strong>Primary Use:</strong> Building plans, architecture, elevation, and personal height",
+  "miles_to_yards_faq1_q": "How many yards are in a mile?",
+  "miles_to_yards_faq1_a": "There are exactly 1,760 yards in one standard statute mile."
 }
