@@ -144,16 +144,47 @@ document.addEventListener('DOMContentLoaded', () => {
     document.documentElement.lang = locale;
     document.documentElement.dir = locale === 'ar' ? 'rtl' : 'ltr';
 
+    // Determine path properties to guide page-specific translation
+    const pathnameParts = window.location.pathname.split('/').filter(p => p);
+    if (pathnameParts.length > 0 && supportedLocales.includes(pathnameParts[0])) {
+      pathnameParts.shift(); // remove locale prefix
+    }
+    const subpath = pathnameParts.join('/'); // e.g. "miles-to-yards" or "" (homepage)
+    const isHomepage = subpath === '';
+
+    const globalUIKeys = [
+      'brand_name', 'nav_miles_to_feet', 'nav_feet_to_miles', 'nav_about', 'nav_contact', 'nav_blog',
+      'footer_calculators', 'footer_legal_contact', 'footer_newsletter', 'footer_newsletter_p',
+      'footer_placeholder_email', 'footer_subscribe', 'footer_sitemap', 'footer_all_calculators',
+      'footer_desc', 'copyright_text', 'byline_author_by', 'byline_author_team', 'byline_reviewed', 'byline_last_updated',
+      'cookie_consent_text', 'cookie_consent_accept', 'cookie_consent_reject', 'cookie_privacy_link',
+      'nav_terms_conditions', 'breadcrumb_home', 'breadcrumb_calculators', 'related_title', 'tables_title', 'faq_title'
+    ];
+
+    const pagePrefix = subpath.replace(/-/g, '_').replace(/\//g, '_');
+    const pageKey = 'h1_' + pagePrefix;
+
     // Translate DOM elements
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
       const val = translations[key] || englishTranslations[key];
       if (val) {
-        // If element is input/textarea, update placeholder, else innerHTML / textContent
-        if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-          el.placeholder = val;
-        } else {
-          el.innerHTML = val;
+        const isGlobal = globalUIKeys.includes(key);
+        let shouldReplace = isHomepage || isGlobal;
+        if (!shouldReplace) {
+          shouldReplace = key.startsWith('h1_' + pagePrefix) || 
+                          key.startsWith(pagePrefix + '_') ||
+                          (subpath === 'about' && key.startsWith('about_')) ||
+                          (subpath === 'contact' && key.startsWith('contact_')) ||
+                          (subpath === 'blog' && key.startsWith('blog_'));
+        }
+        if (shouldReplace) {
+          // If element is input/textarea, update placeholder, else innerHTML / textContent
+          if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+            el.placeholder = val;
+          } else {
+            el.innerHTML = val;
+          }
         }
       }
     });
@@ -168,16 +199,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Translate Document Title
-    const titleVal = translations['title'] || englishTranslations['title'];
-    if (titleVal) {
-      document.title = `${titleVal} | Miles to Feet`;
+    if (isHomepage) {
+      const titleVal = translations['title'] || englishTranslations['title'];
+      if (titleVal) {
+        document.title = `${titleVal} | Miles to Feet`;
+      }
+    } else {
+      const pageTitleVal = translations[pageKey] || englishTranslations[pageKey];
+      if (pageTitleVal) {
+        document.title = `${pageTitleVal} | Miles to Feet`;
+      }
     }
 
-    // Translate meta description tag
-    const metaDescEl = document.querySelector('meta[name="description"]');
-    const metaVal = translations['meta_desc'] || englishTranslations['meta_desc'];
-    if (metaDescEl && metaVal) {
-      metaDescEl.setAttribute('content', metaVal);
+    // Translate meta description tag (only on homepage)
+    if (isHomepage) {
+      const metaDescEl = document.querySelector('meta[name="description"]');
+      const metaVal = translations['meta_desc'] || englishTranslations['meta_desc'];
+      if (metaDescEl && metaVal) {
+        metaDescEl.setAttribute('content', metaVal);
+      }
     }
 
     // Update canonical and hreflang tags dynamically in the browser

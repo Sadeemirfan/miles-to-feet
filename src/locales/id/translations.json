@@ -123,5 +123,16 @@
   "blog_read_more": "Read Article",
   "blog_read_time": "min read",
   "breadcrumb_home": "Home",
-  "breadcrumb_calculators": "Calculators"
+  "breadcrumb_calculators": "Calculators",
+  "def_title": "Definisi Unit: Mil vs Kaki",
+  "def_mile_title": "Apa itu Mil (mi)?",
+  "def_mile_desc": "Satu <strong>mil (mi)</strong> adalah unit panjang dalam sistem pengukuran imperial dan adat AS. Satu mil darat sama dengan tepat <strong>5.280 kaki</strong>, 1.760 yard, atau 1,609344 kilometer (1.609,344 meter).",
+  "def_mile_origin": "<strong>Asal-usul:</strong> Istilah Romawi <em>mille passus</em> (1.000 langkah ganda / 5.000 kaki Romawi)",
+  "def_mile_statute": "<strong>Standar Statuta:</strong> Ditetapkan pada tahun 1593 di bawah Ratu Elizabeth I (8 furlong &times; 660 kaki)",
+  "def_mile_use": "<strong>Penggunaan Utama:</strong> Perjalanan darat, geografi, survei tanah, dan atletik maraton",
+  "def_foot_title": "Apa itu Kaki (ft)?",
+  "def_foot_desc": "Satu <strong>kaki (ft)</strong> adalah unit panjang yang sama dengan tepat <strong>12 inci</strong>, 0,3333 yard, atau 0,3048 meter. Kaki adalah salah satu unit yang paling umum untuk mengukur tinggi badan, dimensi ruangan, dan konstruksi.",
+  "def_foot_reverse": "<strong>Konversi Terbalik:</strong> 1 kaki = 0,000189394 mil (1 &divide; 5.280)",
+  "def_foot_metric": "<strong>Rasio Metrik:</strong> Tepat 304,8 milimeter (30,48 cm)",
+  "def_foot_use": "<strong>Penggunaan Utama:</strong> Rencana bangunan, arsitektur, ketinggian, dan tinggi badan"
 }

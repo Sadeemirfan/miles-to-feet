@@ -123,5 +123,16 @@
   "blog_read_more": "Read Article",
   "blog_read_time": "min read",
   "breadcrumb_home": "Home",
-  "breadcrumb_calculators": "Calculators"
+  "breadcrumb_calculators": "Calculators",
+  "def_title": "Unit Definitions: Mile vs Foot",
+  "def_mile_title": "What is a Mile (mi)?",
+  "def_mile_desc": "A <strong>mile (mi)</strong> is a unit of length in the imperial and US customary measurement systems. One statute mile equals exactly <strong>5,280 feet</strong>, 1,760 yards, or 1.609344 kilometers (1,609.344 meters).",
+  "def_mile_origin": "<strong>Origin:</strong> Roman <em>mille passus</em> (1,000 double paces / 5,000 Roman feet)",
+  "def_mile_statute": "<strong>Statute Standard:</strong> Established in 1593 under Queen Elizabeth I (8 furlongs &times; 660 ft)",
+  "def_mile_use": "<strong>Primary Use:</strong> Road travel, geography, land surveying, and marathon athletics",
+  "def_foot_title": "What is a Foot (ft)?",
+  "def_foot_desc": "A <strong>foot (ft)</strong> is a unit of length equal to exactly <strong>12 inches</strong>, 0.3333 yards, or 0.3048 meters. The foot is one of the most common units for measuring height, room dimensions, and construction scaling.",
+  "def_foot_reverse": "<strong>Reverse Conversion:</strong> 1 foot = 0.000189394 miles (1 &divide; 5,280)",
+  "def_foot_metric": "<strong>Metric Ratio:</strong> Exactly 304.8 millimeters (30.48 cm)",
+  "def_foot_use": "<strong>Primary Use:</strong> Building plans, architecture, elevation, and personal height"
 }

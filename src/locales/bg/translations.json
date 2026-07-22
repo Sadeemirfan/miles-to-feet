@@ -123,5 +123,16 @@
   "blog_read_more": "Read Article",
   "blog_read_time": "min read",
   "breadcrumb_home": "Home",
-  "breadcrumb_calculators": "Calculators"
+  "breadcrumb_calculators": "Calculators",
+  "def_title": "Дефиниции на единиците: Миля срещу Фут",
+  "def_mile_title": "Какво е миля (mi)?",
+  "def_mile_desc": "<strong>Милята (mi)</strong> е единица за дължина в имперската система и в системата на САЩ. Една сухопътна миля е равна на точно <strong>5280 фута</strong>, 1760 ярда или 1,609344 километра (1609,344 метра).",
+  "def_mile_origin": "<strong>Произход:</strong> Римски <em>mille passus</em> (1000 двойни крачки / 5000 римски фута)",
+  "def_mile_statute": "<strong>Законов стандарт:</strong> Установен през 1593 г. при кралица Елизабет I (8 фърлонга &times; 660 фута)",
+  "def_mile_use": "<strong>Основна употреба:</strong> Пътен транспорт, география, геодезия и маратони",
+  "def_foot_title": "Какво е фут (ft)?",
+  "def_foot_desc": "<strong>Футът (ft)</strong> е единица за дължина, равна на точно <strong>12 инча</strong>, 0,3333 ярда или 0,3048 метра. Футът е една от най-често използваните единици за измерване на височина, размери на помещения и строителство.",
+  "def_foot_reverse": "<strong>Обратно преобразуване:</strong> 1 фут = 0,000189394 мили (1 &divide; 5280)",
+  "def_foot_metric": "<strong>Метрично съотношение:</strong> Точно 304,8 милиметра (30,48 см)",
+  "def_foot_use": "<strong>Основна употреба:</strong> Строителни планове, архитектура, надморска височина и ръст"
 }

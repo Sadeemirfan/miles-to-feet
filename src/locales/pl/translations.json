@@ -123,5 +123,16 @@
   "blog_read_more": "Read Article",
   "blog_read_time": "min read",
   "breadcrumb_home": "Home",
-  "breadcrumb_calculators": "Calculators"
+  "breadcrumb_calculators": "Calculators",
+  "def_title": "Definicje jednostek: Mila vs Stopa",
+  "def_mile_title": "Co to jest mila (mi)?",
+  "def_mile_desc": "<strong>Mila (mi)</strong> to jednostka długości w imperialnym i amerykańskim systemie miar. Jedna mila lądowa równa się dokładnie <strong>5280 stopom</strong>, 1760 jardom lub 1,609344 kilometra (1609,344 metra).",
+  "def_mile_origin": "<strong>Pochodzenie:</strong> Rzymskie <em>mille passus</em> (1000 podwójnych kroków / 5000 stóp rzymskich)",
+  "def_mile_statute": "<strong>Standard ustawowy:</strong> Ustanowiony w 1593 r. za panowania królowej Elżbiety I (8 furlongów &times; 660 stóp)",
+  "def_mile_use": "<strong>Główne zastosowanie:</strong> Transport drogowy, geografia, geodezja i maratony",
+  "def_foot_title": "Co to jest stopa (ft)?",
+  "def_foot_desc": "<strong>Stopa (ft)</strong> to jednostka długości równa dokładnie <strong>12 calom</strong>, 0,3333 jarda lub 0,3048 metra. Stopa jest jedną z najpopularniejszych jednostek miary wzrostu, wymiarów pomieszczeń i skali w budownictwie.",
+  "def_foot_reverse": "<strong>Odwrotna konwersja:</strong> 1 stopa = 0,000189394 mili (1 &divide; 5280)",
+  "def_foot_metric": "<strong>Stosunek metryczny:</strong> Dokładnie 304,8 milimetra (30,48 cm)",
+  "def_foot_use": "<strong>Główne zastosowanie:</strong> Plany budowlane, architektura, wysokość (wzniesienie) i wzrost człowieka"
 }

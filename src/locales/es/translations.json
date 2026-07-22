@@ -123,5 +123,16 @@
   "blog_read_more": "Leer Artículo",
   "blog_read_time": "min de lectura",
   "breadcrumb_home": "Inicio",
-  "breadcrumb_calculators": "Calculadoras"
+  "breadcrumb_calculators": "Calculadoras",
+  "def_title": "Definiciones de Unidades: Milla vs Pie",
+  "def_mile_title": "¿Qué es una Milla (mi)?",
+  "def_mile_desc": "Una <strong>milla (mi)</strong> es una unidad de longitud en los sistemas de medición imperial y anglosajón. Una milla terrestre equivale exactamente a <strong>5.280 pies</strong>, 1.760 yardas o 1,609344 kilómetros (1.609,344 metros).",
+  "def_mile_origin": "<strong>Origen:</strong> Del latín romano <em>mille passus</em> (1.000 pasos dobles / 5.000 pies romanos)",
+  "def_mile_statute": "<strong>Estándar Legal:</strong> Establecido en 1593 bajo la reina Isabel I (8 furlongs &times; 660 pies)",
+  "def_mile_use": "<strong>Uso Principal:</strong> Transporte por carretera, geografía, agrimensura y atletismo de maratón",
+  "def_foot_title": "¿Qué es un Pie (ft)?",
+  "def_foot_desc": "Un <strong>pie (ft)</strong> es una unidad de longitud equivalente exactamente a <strong>12 pulgadas</strong>, 0,3333 yardas o 0,3048 metros. El pie es una de las unidades más comunes para medir altura, dimensiones de habitaciones y escalas de construcción.",
+  "def_foot_reverse": "<strong>Conversión Inversa:</strong> 1 pie = 0,000189394 millas (1 &divide; 5.280)",
+  "def_foot_metric": "<strong>Relación Métrica:</strong> Exactamente 304,8 milímetros (30,48 cm)",
+  "def_foot_use": "<strong>Uso Principal:</strong> Planos de construcción, arquitectura, elevación y altura personal"
 }

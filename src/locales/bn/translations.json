@@ -123,5 +123,16 @@
   "blog_read_more": "Read Article",
   "blog_read_time": "min read",
   "breadcrumb_home": "Home",
-  "breadcrumb_calculators": "Calculators"
+  "breadcrumb_calculators": "Calculators",
+  "def_title": "একক সংজ্ঞাসমূহ: মাইল বنام ফুট",
+  "def_mile_title": "মাইল (mi) কি?",
+  "def_mile_desc": "একটি <strong>মাইল (mi)</strong> হল ইম্পেরিয়াল এবং ইউএস প্রথামাফিক পরিমাপ পদ্ধতিতে দৈর্ঘ্যের একটি একক। এক সংবিধিবদ্ধ মাইল সমান ঠিক <strong>৫,২৮০ ফুট</strong>, ১,৭৬০ গজ, বা ১.৬০৯৩৪৪ কিলোমিটার (১,৬০৯.৩৪৪ মিটার)।",
+  "def_mile_origin": "<strong>উত্স:</strong> রোমান <em>mille passus</em> (১,০০০ দ্বিগুণ পদক্ষেপ / ৫,০০০ রোমান ফুট)",
+  "def_mile_statute": "<strong>সংবিধিবদ্ধ মান:</strong> ১৫৯৩ সালে রানী প্রথম এলিজাবেথের অধীনে প্রতিষ্ঠিত (৮ ফার্লং &times; ৬৬০ ফুট)",
+  "def_mile_use": "<strong>প্রধান ব্যবহার:</strong> সড়ক ভ্রমণ, भूगोल, ভূমি জরিপ এবং ম্যারাথন অ্যাথলেটিক্স",
+  "def_foot_title": "ফুট (ft) কি?",
+  "def_foot_desc": "একটি <strong>ফুট (ft)</strong> হল দৈর্ঘ্যের একটি একক যা ঠিক <strong>১২ ইঞ্চি</strong>, ০.৩৩৩৩ গজ, বা ০.৩০৪৮ মিটারের সমান। উচ্চতা, ঘরের পরিমাপ এবং নির্মাণ স্কেলিং পরিমাপের জন্য ফুট অন্যতম সাধারণ একক।",
+  "def_foot_reverse": "<strong>বিপরীত রূপান্তর:</strong> ১ ফুট = ০.০০০১৮৯৩৯৪ মাইল (১ &divide; ৫,২৮০)",
+  "def_foot_metric": "<strong>মেট্রিক অনুপাত:</strong> ঠিক ৩০৪.৮ মিলিমিটার (৩০.৪৮ সেmi)",
+  "def_foot_use": "<strong>প্রধান ব্যবহার:</strong> বিল্ডিং নকশা, স্থাপত্য, উচ্চতা এবং ব্যক্তিগত উচ্চতা"
 }

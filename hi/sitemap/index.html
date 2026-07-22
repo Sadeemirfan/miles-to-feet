@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="hi" dir="ltr">
+<head>
+  <!-- Google Consent Mode v2 setup -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){window.dataLayer.push(arguments);}
+    
+    // Default consent states from previous choice or GDPR default denied
+    const savedConsent = localStorage.getItem('cookie-consent');
+    if (savedConsent === 'accepted') {
+      gtag('consent', 'default', {
+        'ad_storage': 'granted',
+        'ad_user_data': 'granted',
+        'ad_personalization': 'granted',
+        'analytics_storage': 'granted'
+      });
+    } else {
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied'
+      });
+    }
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Full sitemap for Miles to Feet — browse all conversion calculators, blog posts, and informational pages in one place.">
+  <meta name="keywords" content="sitemap, miles to feet sitemap, all pages, site index, conversion tools list">
+  <link rel="canonical" href="https://milestofeet.com/hi/sitemap/" />
+  <link rel="alternate" hreflang="en" href="https://milestofeet.com/sitemap/" />
+  <link rel="alternate" hreflang="x-default" href="https://milestofeet.com/sitemap/" />
+  <title>Sitemap | Miles to Feet</title>
+  <link rel="icon" type="image/svg+xml" href="/logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/src/styles.css">
+  <style>
+    .sitemap-section { margin-bottom: 2.5rem; }
+    .sitemap-section h2 {
+      font-size: 1.2rem;
+      color: var(--primary);
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 0.4rem;
+      margin-bottom: 1rem;
+    }
+    .sitemap-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 0.5rem 1.5rem;
+    }
+    .sitemap-grid a {
+      color: var(--text-main);
+      text-decoration: none;
+      font-size: 0.95rem;
+      padding: 0.3rem 0;
+      display: block;
+      border-bottom: 1px solid var(--border);
+      transition: color 0.2s;
+    }
+    .sitemap-grid a:hover { color: var(--primary); }
+    .sitemap-grid a::before { content: "→ "; color: var(--primary); }
+    .locale-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 0.5rem 1.5rem;
+    }
+    .locale-grid a {
+      color: var(--text-main);
+      text-decoration: none;
+      font-size: 0.95rem;
+      padding: 0.3rem 0;
+      display: block;
+      border-bottom: 1px solid var(--border);
+      transition: color 0.2s;
+    }
+    .locale-grid a:hover { color: var(--primary); }
+    .locale-grid a::before { content: "🌐 "; }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="container nav-wrapper">
+      <a href="/" class="logo-link">
+        <svg viewBox="0 0 100 100">
+          <use href="/logo.svg#root"></use>
+          <!-- Inlined SVG path fallback -->
+          <rect x="15" y="15" width="70" height="70" rx="10" fill="#1B2A4A" stroke="#FAF7F0" stroke-width="2"/>
+          <rect x="18" y="18" width="64" height="64" rx="8" fill="none" stroke="#C08A3E" stroke-width="1.5" opacity="0.3"/>
+          <g stroke="#C08A3E" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+            <path d="M 25 62 L 25 38 L 32 50 L 39 38 L 39 62" />
+            <line x1="45" y1="50" x2="55" y2="50" />
+            <path d="M 51 44 L 55 50 L 51 56" />
+            <path d="M 61 62 L 61 38 L 75 38 M 61 50 L 70 50" />
+          </g>
+        </svg>
+        <div class="logo-text" data-i18n="brand_name">मील से फीट</div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="/" data-i18n="nav_miles_to_feet">मील से फीट</a>
+        <a href="/feet-to-miles/" data-i18n="nav_feet_to_miles">फीट से मील</a>
+        <a href="/about/" data-i18n="nav_about">हमारे बारे में</a>
+        <a href="/contact/" data-i18n="nav_contact">संपर्क करें</a>
+        <a href="/blog/" data-i18n="nav_blog">ब्लॉग</a>
+      </nav>
+
+      <div class="nav-controls">
+        <div class="lang-switcher">
+          <select class="lang-select" aria-label="Change language">
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+            <option value="es">Español</option>
+            <option value="ru">Русский</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+            <option value="it">Italiano</option>
+            <option value="pt">Português</option>
+            <option value="bn">বাংলা</option>
+            <option value="ja">日本語</option>
+            <option value="ko">한국어</option>
+            <option value="ms">Melayu</option>
+            <option value="pl">Polski</option>
+            <option value="id">Bahasa Indonesia</option>
+            <option value="ar">العربية</option>
+            <option value="bg">Български</option>
+            <option value="tr">Türkçe</option>
+            <option value="sv">Svenska</option>
+          </select>
+        </div>
+        <button class="theme-toggle-btn" aria-label="Toggle theme">
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+        <button class="burger-menu" aria-label="Toggle Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav">
+    <a href="/" data-i18n="nav_miles_to_feet">मील से फीट</a>
+    <a href="/feet-to-miles/" data-i18n="nav_feet_to_miles">फीट से मील</a>
+    <a href="/about/" data-i18n="nav_about">हमारे बारे में</a>
+    <a href="/contact/" data-i18n="nav_contact">संपर्क करें</a>
+    <a href="/blog/" data-i18n="nav_blog">ब्लॉग</a>
+  </div>
+
+  <!-- Page Content -->
+  <main class="container main-content">
+    <article class="content-wrapper">
+      <h1>Sitemap</h1>
+      <p style="color: var(--text-muted); margin-bottom: 2rem;">A complete index of all pages on Miles to Feet.</p>
+
+      <!-- Main Pages -->
+      <div class="sitemap-section">
+        <h2>Main Pages</h2>
+        <div class="sitemap-grid">
+          <a href="/">Miles to Feet (Home)</a>
+          <a href="/feet-to-miles/">Feet to Miles</a>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/terms-conditions/">Terms &amp; Conditions</a>
+          <a href="/blog/">Blog</a>
+          <a href="/sitemap/">Sitemap</a>
+        </div>
+      </div>
+
+      <!-- Tool Pages -->
+      <div class="sitemap-section">
+        <h2>Conversion Tools (23 Calculators)</h2>
+        <div class="sitemap-grid">
+          <a href="/">Miles to Feet</a>
+          <a href="/feet-to-miles/">Feet to Miles</a>
+          <a href="/feet-to-inches/">Feet to Inches</a>
+          <a href="/feet-to-yards/">Feet to Yards</a>
+          <a href="/feet-to-meters/">Feet to Meters</a>
+          <a href="/feet-to-centimeters/">Feet to Centimeters</a>
+          <a href="/miles-to-meters/">Miles to Meters</a>
+          <a href="/miles-to-inches/">Miles to Inches</a>
+          <a href="/miles-to-yards/">Miles to Yards</a>
+          <a href="/miles-to-centimeters/">Miles to Centimeters</a>
+          <a href="/miles-to-kilometers/">Miles to Kilometers</a>
+          <a href="/half-mile-to-feet/">Half Mile to Feet</a>
+          <a href="/quarter-mile-to-feet/">Quarter Mile to Feet</a>
+          <a href="/nautical-miles-to-feet/">Nautical Miles to Feet</a>
+          <a href="/elevation-miles-to-feet/">Elevation: Miles to Feet</a>
+          <a href="/running-distance-miles-to-feet/">Running Distance: Miles to Feet</a>
+          <a href="/mph-to-feet-per-second/">MPH to Feet per Second</a>
+          <a href="/square-miles-to-square-feet/">Square Miles to Square Feet</a>
+          <a href="/miles-to-feet-chart/">Miles to Feet Chart</a>
+          <a href="/miles-to-feet-vs-yards/">Miles to Feet vs Yards</a>
+          <a href="/miles-to-feet-without-calculator/">Miles to Feet Without Calculator</a>
+          <a href="/feet-to-miles-reverse-formula/">Feet to Miles — Reverse Formula</a>
+        </div>
+      </div>
+
+      <!-- Blog Posts -->
+      <div class="sitemap-section">
+        <h2>Blog Posts</h2>
+        <div class="sitemap-grid">
+          <a href="/blog/how-many-feet-in-a-mile/">How Many Feet in a Mile?</a>
+          <a href="/blog/miles-vs-feet-when-to-use/">Miles vs Feet — When to Use Each</a>
+          <a href="/blog/miles-to-feet-conversion-chart/">Miles to Feet Conversion Chart</a>
+          <a href="/blog/running-distance-miles-to-feet/">Running Distance: Miles to Feet</a>
+        </div>
+      </div>
+
+      <!-- Locale Home Pages -->
+      <div class="sitemap-section">
+        <h2>Localized Home Pages (18 Languages)</h2>
+        <div class="locale-grid">
+          <a href="/">English (en)</a>
+          <a href="/hi/">Hindi — हिन्दी (hi)</a>
+          <a href="/es/">Español (es)</a>
+          <a href="/ru/">Русский (ru)</a>
+          <a href="/fr/">Français (fr)</a>
+          <a href="/de/">Deutsch (de)</a>
+          <a href="/it/">Italiano (it)</a>
+          <a href="/pt/">Português (pt)</a>
+          <a href="/bn/">বাংলা (bn)</a>
+          <a href="/ja/">日本語 (ja)</a>
+          <a href="/ko/">한국어 (ko)</a>
+          <a href="/ms/">Melayu (ms)</a>
+          <a href="/pl/">Polski (pl)</a>
+          <a href="/id/">Bahasa Indonesia (id)</a>
+          <a href="/ar/">العربية (ar)</a>
+          <a href="/bg/">Български (bg)</a>
+          <a href="/tr/">Türkçe (tr)</a>
+          <a href="/sv/">Svenska (sv)</a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer Navigation -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-logo">
+        <a href="/" class="logo-link">
+          <svg viewBox="0 0 100 100">
+          <use href="/logo.svg#root"></use>
+          <!-- Inlined SVG path fallback -->
+          <rect x="15" y="15" width="70" height="70" rx="10" fill="#1B2A4A" stroke="#FAF7F0" stroke-width="2"/>
+          <rect x="18" y="18" width="64" height="64" rx="8" fill="none" stroke="#C08A3E" stroke-width="1.5" opacity="0.3"/>
+          <g stroke="#C08A3E" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+            <path d="M 25 62 L 25 38 L 32 50 L 39 38 L 39 62" />
+            <line x1="45" y1="50" x2="55" y2="50" />
+            <path d="M 51 44 L 55 50 L 51 56" />
+            <path d="M 61 62 L 61 38 L 75 38 M 61 50 L 70 50" />
+          </g>
+        </svg>
+          <div class="logo-text" data-i18n="brand_name">मील से फीट</div>
+        </a>
+        <p class="footer-desc" data-i18n="footer_desc">त्वरित, सटीक लंबाई और दूरी रूपांतरण। तेज़ और उपयोगी कनवर्टर संसाधन।</p>
+      </div>
+
+      <div class="footer-links">
+        <h4 data-i18n="footer_calculators">कैलकुलेटर</h4>
+        <ul>
+          <li><a href="/" data-i18n="nav_miles_to_feet">मील से फीट</a></li>
+          <li><a href="/feet-to-miles/" data-i18n="nav_feet_to_miles">फीट से मील</a></li>
+          <li><a href="/#all-calculators" data-i18n="footer_all_calculators">सभी 23 कैलकुलेटर</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4 data-i18n="footer_legal_contact">कानूनी और संपर्क</h4>
+        <ul>
+          <li><a href="/about/" data-i18n="nav_about">हमारे बारे में</a></li>
+          <li><a href="/contact/" data-i18n="nav_contact">संपर्क करें</a></li>
+          <li><a href="/privacy-policy/" data-i18n="cookie_privacy_link">गोपनीयता नीति</a></li>
+          <li><a href="/terms-conditions/" data-i18n="nav_terms_conditions">नियम और शर्तें</a></li>
+          <li><a href="/sitemap/" data-i18n="footer_sitemap">साइटमैप</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4 data-i18n="footer_newsletter">न्यूज़लेटर</h4>
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.75rem;" data-i18n="footer_newsletter_p">नए कैलकुलेटर और दूरी चार्ट पर अपडेट प्राप्त करें।</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" class="newsletter-input" data-i18n-placeholder="footer_placeholder_email" placeholder="आपका ईमेल पता" required>
+          <button type="submit" class="newsletter-btn" data-i18n="footer_subscribe">सदस्यता लें</button>
+        </form>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <div style="display: flex; flex-direction: column; gap: 0.25rem;">
+        <p>&copy; 2026 MilesToFeet. <span data-i18n="copyright_text">सर्वाधिकार सुरक्षित।</span> Built with speed and accuracy.</p>
+        <p>Contact: contact@milestofeet.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+
+  <!-- Cookie Consent Banner -->
+  <div id="cookie-consent-banner" class="cookie-banner" style="display: none;">
+    <div class="cookie-content">
+      <p><span data-i18n="cookie_consent_text">हम ट्रैफ़िक का विश्लेषण करने और विज्ञापनों को वैयक्तिकृत करने के लिए कुकीज़ का उपयोग करते हैं। 'सभी स्वीकार करें' पर क्लिक करके, आप हमारी नीति के अनुसार सहमत हैं।</span> <a href="/privacy-policy/" data-i18n="cookie_privacy_link">गोपनीयता नीति</a>.</p>
+      <div class="cookie-buttons">
+        <button id="cookie-accept-all" class="cookie-btn cookie-btn-primary" data-i18n="cookie_consent_accept">सभी स्वीकार करें</button>
+        <button id="cookie-reject-essential" class="cookie-btn cookie-btn-secondary" data-i18n="cookie_consent_reject">गैर-जरूरी अस्वीकार करें</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prerender": "node prerender_locales.js",
-    "build": "node prerender_locales.js && vite build",
+    "prerender": "node sync_homepages.js && node sync_all_pages.js && node prerender_locales.js",
+    "build": "npm run prerender && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {

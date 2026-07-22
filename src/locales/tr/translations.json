@@ -123,5 +123,16 @@
   "blog_read_more": "Read Article",
   "blog_read_time": "min read",
   "breadcrumb_home": "Home",
-  "breadcrumb_calculators": "Calculators"
+  "breadcrumb_calculators": "Calculators",
+  "def_title": "Birim Tanımları: Mil ve Fit Karşılaştırması",
+  "def_mile_title": "Mil (mi) Nedir?",
+  "def_mile_desc": "Bir <strong>mil (mi)</strong>, İngiliz kraliyet ve ABD geleneksel ölçüm sistemlerinde bir uzunluk birimidir. Bir kara mili tam olarak <strong>5.280 fit</strong>, 1.760 yarda veya 1,609344 kilometreye (1.609,344 metre) eşittir.",
+  "def_mile_origin": "<strong>Köken:</strong> Romalı <em>mille passus</em> (1.000 çift adım / 5.000 Roma fiti)",
+  "def_mile_statute": "<strong>Yasal Standart:</strong> 1593 yılında Kraliçe I. Elizabeth döneminde kabul edilmiştir (8 furlong &times; 660 fit)",
+  "def_mile_use": "<strong>Temel Kullanım:</strong> Kara yolu seyahati, coğrafya, arazi ölçümü ve maraton koşuları",
+  "def_foot_title": "Fit (ft) Nedir?",
+  "def_foot_desc": "Bir <strong>fit (ft)</strong>, tam olarak <strong>12 inç</strong>, 0,3333 yarda veya 0,3048 metreye eşit olan bir uzunluk birimidir. Fit; boy, oda boyutları ve inşaat ölçeklendirmesinde en yaygın kullanılan birimlerden biridir.",
+  "def_foot_reverse": "<strong>Tersine Dönüştürme:</strong> 1 fit = 0,000189394 mil (1 &divide; 5.280)",
+  "def_foot_metric": "<strong>Metrik Oran:</strong> Tam olarak 304,8 milimetre (30,48 cm)",
+  "def_foot_use": "<strong>Temel Kullanım:</strong> Bina planları, mimarlık, yükseklik ve kişisel boy ölçümü"
 }

@@ -123,5 +123,16 @@
   "blog_read_more": "Read Article",
   "blog_read_time": "min read",
   "breadcrumb_home": "Home",
-  "breadcrumb_calculators": "Calculators"
+  "breadcrumb_calculators": "Calculators",
+  "def_title": "इकाई परिभाषाएँ: मील बनाम फीट",
+  "def_mile_title": "मील (mi) क्या है?",
+  "def_mile_desc": "एक <strong>मील (mi)</strong> इंपीरियल और अमेरिकी प्रथागत माप प्रणालियों में लंबाई की एक इकाई है। एक मानक मील बिल्कुल <strong>5,280 फीट</strong>, 1,760 गज, या 1.609344 किलोमीटर (1,609.344 मीटर) के बराबर होता है।",
+  "def_mile_origin": "<strong>उत्पत्ति:</strong> रोमन <em>mille passus</em> (1,000 दोहरे कदम / 5,000 रोमन फीट)",
+  "def_mile_statute": "<strong>मानक नियम:</strong> महारानी एलिजाबेथ प्रथम के तहत 1593 में स्थापित (8 फर्लांग &times; 660 फीट)",
+  "def_mile_use": "<strong>मुख्य उपयोग:</strong> सड़क यात्रा, भूगोल, भूमि सर्वेक्षण और मैराथन दौड़",
+  "def_foot_title": "फीट (ft) क्या है?",
+  "def_foot_desc": "एक <strong>फीट (ft)</strong> लंबाई की एक इकाई है जो बिल्कुल <strong>12 इंच</strong>, 0.3333 गज, या 0.3048 मीटर के बराबर होती है। ऊंचाई, कमरे के आयाम और निर्माण को मापने के लिए फीट सबसे आम इकाइयों में से एक है।",
+  "def_foot_reverse": "<strong>विपरीत रूपांतरण:</strong> 1 फीट = 0.000189394 मील (1 &divide; 5,280)",
+  "def_foot_metric": "<strong>मीट्रिक अनुपात:</strong> बिल्कुल 304.8 मिलीमीटर (30.48 सेमी)",
+  "def_foot_use": "<strong>मुख्य उपयोग:</strong> भवन निर्माण योजना, वास्तुकला, ऊंचाई और व्यक्तिगत ऊंचाई"
 }

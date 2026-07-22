@@ -123,5 +123,16 @@
   "blog_read_more": "Read Article",
   "blog_read_time": "min read",
   "breadcrumb_home": "Home",
-  "breadcrumb_calculators": "Calculators"
+  "breadcrumb_calculators": "Calculators",
+  "def_title": "Definisi Unit: Batu vs Kaki",
+  "def_mile_title": "Apakah itu Batu (mi)?",
+  "def_mile_desc": "Satu <strong>batu (mi)</strong> ialah unit panjang dalam sistem ukuran imperial dan adat AS. Satu batu statut bersamaan dengan tepat <strong>5,280 kaki</strong>, 1,760 ela, atau 1.609344 kilometer (1,609.344 meter).",
+  "def_mile_origin": "<strong>Asal-usul:</strong> Istilah Rom <em>mille passus</em> (1,000 langkah berganda / 5,000 kaki Rom)",
+  "def_mile_statute": "<strong>Standard Statut:</strong> Ditubuhkan pada tahun 1593 di bawah Ratu Elizabeth I (8 furlong &times; 660 kaki)",
+  "def_mile_use": "<strong>Kegunaan Utama:</strong> Perjalanan jalan raya, geografi, ukur tanah, dan sukan maraton",
+  "def_foot_title": "Apakah itu Kaki (ft)?",
+  "def_foot_desc": "Satu <strong>kaki (ft)</strong> ialah unit panjang yang bersamaan dengan tepat <strong>12 inci</strong>, 0.3333 ela, atau 0.3048 meter. Kaki adalah salah satu unit yang paling biasa untuk mengukur ketinggian, dimensi bilik, dan skala pembinaan.",
+  "def_foot_reverse": "<strong>Penukaran Songsang:</strong> 1 kaki = 0.000189394 batu (1 &divide; 5,280)",
+  "def_foot_metric": "<strong>Nisbah Metrik:</strong> Tepat 304.8 milimeter (30.48 cm)",
+  "def_foot_use": "<strong>Kegunaan Utama:</strong> Pelan bangunan, seni bina, ketinggian, dan ketinggian peribadi"
 }

@@ -123,5 +123,16 @@
   "blog_read_more": "Read Article",
   "blog_read_time": "min read",
   "breadcrumb_home": "Home",
-  "breadcrumb_calculators": "Calculators"
+  "breadcrumb_calculators": "Calculators",
+  "def_title": "Enhetsdefinitioner: Mil vs Fot",
+  "def_mile_title": "Vad är en engelsk mil (mi)?",
+  "def_mile_desc": "En <strong>engelsk mil (mi)</strong> är en längdenhet i det imperialistiska och amerikanska måttsystemet. En engelsk mil (statute mile) är exakt <strong>5 280 fot</strong>, 1 760 yards eller 1,609344 kilometer (1 609,344 meter).",
+  "def_mile_origin": "<strong>Ursprung:</strong> Romerska <em>mille passus</em> (1 000 dubbelsteg / 5 000 romerska fot)",
+  "def_mile_statute": "<strong>Lagstadgad standard:</strong> Etablerad år 1593 under drottning Elizabeth I (8 furlongs &times; 660 fot)",
+  "def_mile_use": "<strong>Huvudsaklig användning:</strong> Vägtrafik, geografi, landmätning och maratonlöpning",
+  "def_foot_title": "Vad är en fot (ft)?",
+  "def_foot_desc": "En <strong>fot (ft)</strong> är en längdenhet som motsvarar exakt <strong>12 tum</strong>, 0,3333 yards eller 0,3048 meter. Fot är en av de vanligaste enheterna för att mäta höjd, rumsdimensioner och inom byggsektorn.",
+  "def_foot_reverse": "<strong>Omvänd omvandling:</strong> 1 fot = 0,000189394 engelska mil (1 &divide; 5 280)",
+  "def_foot_metric": "<strong>Metriskt förhållande:</strong> Exakt 304,8 millimeter (30,48 cm)",
+  "def_foot_use": "<strong>Huvudsaklig användning:</strong> Byggnadsritningar, arkitektur, höjd och kroppslängd"
 }
