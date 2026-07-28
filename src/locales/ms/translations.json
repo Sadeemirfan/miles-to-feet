@@ -31,9 +31,9 @@
   "benchmark_track_title": "Trek Standard 400m",
   "benchmark_track_desc": "Satu pusingan trek kejohanan standard adalah kira-kira 1,320 kaki. Melengkapkan 4 pusingan tepat bersamaan 1 batu (5,280 kaki).",
   "benchmark_5k_title": "Larian 5K",
-  "benchmark_5k_desc": "Larian 5 kilometer merangkumi kira-kira 3.1 batu, bersamaan dengan jarak keseluruhan 16,404 kaki.",
+  "benchmark_5k_desc": "Larian 5 kilometer merangkumi kira-kira 3.1 batu, bersamaan dengan jarak keseluruhan 16,368 kaki.",
   "benchmark_marathon_title": "Maraton Penuh",
-  "benchmark_marathon_desc": "Satu maraton rasmi sepanjang 26.2 batu. Ia memerlukan pelari menempuh jarak 138,435 kaki.",
+  "benchmark_marathon_desc": "Satu maraton rasmi sepanjang 26.2 batu. Ia memerlukan pelari menempuh jarak 138,336 kaki.",
   "benchmark_altitude_title": "Ketinggian Penerbangan",
   "benchmark_altitude_desc": "Laluan penerbangan diplot dalam batu, tetapi ketinggian diukur dalam kaki. Terbang pada 35,000 kaki adalah kira-kira 6.6 batu tinggi.",
   "diagram_scale_title": "Visualisasi Skala Jarak",
@@ -160,9 +160,9 @@
   "scale_mark1_title": "Satu Pusingan Balapan 400m",
   "scale_mark1_desc": "Kira-kira 1,320 kaki. Dalam batu, ini adalah tepat 0.25 batu. 4 pusingan bersamaan 1 batu!",
   "scale_mark2_title": "Jarak Larian 5K",
-  "scale_mark2_desc": "Bersamaan dengan 16,404 kaki. Ini adalah lebih kurang 3.1 batu, ukuran popular acara larian.",
+  "scale_mark2_desc": "Bersamaan dengan 16,368 kaki. Ini adalah lebih kurang 3.1 batu, ukuran popular acara larian.",
   "scale_mark3_title": "Ketinggian Penerbangan",
   "scale_mark3_desc": "Biasanya 35,000 kaki bagi pesawat komersial. Dalam batu, ini adalah tepat 6.63 batu dari aras laut.",
   "scale_mark4_title": "Larian Maraton Penuh",
-  "scale_mark4_desc": "Acara maraton rasmi merangkumi 26.2 batu. Pelari perlu menamatkan jarak sebanyak 138,435 kaki!"
+  "scale_mark4_desc": "Acara maraton rasmi merangkumi 26.2 batu. Pelari perlu menamatkan jarak sebanyak 138,336 kaki!"
 }

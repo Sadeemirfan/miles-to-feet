@@ -31,9 +31,9 @@
   "benchmark_track_title": "Standardbana på 400 m",
   "benchmark_track_desc": "Ett varv på en standard löparbana är ungefär 1 320 fot. Exakt 4 varv motsvarar 1 mil (5 280 fot).",
   "benchmark_5k_title": "5 km löpning",
-  "benchmark_5k_desc": "Ett lopp på 5 kilometer är ungefär 3,1 mil, vilket motsvarar ett totalt avstånd på 16 404 fot.",
+  "benchmark_5k_desc": "Ett lopp på 5 kilometer är ungefär 3,1 mil, vilket motsvarar ett totalt avstånd på 16 368 fot.",
   "benchmark_marathon_title": "Maraton",
-  "benchmark_marathon_desc": "Ett officiellt maraton är 26,2 mil långt. Det kräver att löpare tillryggalägger 138 435 fot.",
+  "benchmark_marathon_desc": "Ett officiellt maraton är 26,2 mil långt. Det kräver att löpare tillryggalägger 138 336 fot.",
   "benchmark_altitude_title": "Flyghöjd",
   "benchmark_altitude_desc": "Flygrutter ritas i mil, men flyghöjd mäts i fot. Att flyga på 35 000 fot motsvarar ungefär 6,6 mil i höjd.",
   "diagram_scale_title": "Visualiserare av avståndsskala",
@@ -160,9 +160,9 @@
   "scale_mark1_title": "Standard 400m Varv",
   "scale_mark1_desc": "Ungefär 1 320 fot. I miles är detta exakt 0,25 mil. 4 varv motsvarar en hel mile!",
   "scale_mark2_title": "Löpdistans 5K",
-  "scale_mark2_desc": "Motsvarar 16 404 fot. Detta är cirka 3,1 miles, en mycket vanlig tävlingsdistans.",
+  "scale_mark2_desc": "Motsvarar 16 368 fot. Detta är cirka 3,1 miles, en mycket vanlig tävlingsdistans.",
   "scale_mark3_title": "Marschhöjd",
   "scale_mark3_desc": "Vanligtvis 35 000 fot för trafikflyg. I miles är detta exakt 6,63 miles över havet.",
   "scale_mark4_title": "Fullt Maraton",
-  "scale_mark4_desc": "Ett officiellt maraton är 26,2 miles. Det kräver att löpare avverkar hela 138 435 fot!"
+  "scale_mark4_desc": "Ett officiellt maraton är 26,2 miles. Det kräver att löpare avverkar hela 138 336 fot!"
 }

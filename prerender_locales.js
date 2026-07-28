@@ -74,30 +74,12 @@ locales.forEach(loc => {
     });
 
     // 4. Replace data-i18n elements (multi-pass to handle potential nesting)
-    const globalUIKeys = [
-      'brand_name', 'nav_miles_to_feet', 'nav_feet_to_miles', 'nav_about', 'nav_contact', 'nav_blog',
-      'footer_calculators', 'footer_legal_contact', 'footer_newsletter', 'footer_newsletter_p',
-      'footer_placeholder_email', 'footer_subscribe', 'footer_sitemap', 'footer_all_calculators',
-      'footer_desc', 'copyright_text', 'byline_author_by', 'byline_author_team', 'byline_reviewed', 'byline_last_updated',
-      'cookie_consent_text', 'cookie_consent_accept', 'cookie_consent_reject', 'cookie_privacy_link',
-      'nav_terms_conditions', 'breadcrumb_home', 'breadcrumb_calculators', 'related_title', 'tables_title', 'faq_title'
-    ];
-
     let prev;
     let passes = 0;
     do {
       prev = content;
       content = content.replace(/<([a-zA-Z0-9-]+)([^>]*\bdata-i18n="([^"]+)"[^>]*)>([\s\S]*?)<\/\1>/g, (match, tag, attrs, key, oldContent) => {
-        const isGlobal = globalUIKeys.includes(key);
-        let shouldReplace = isHomepage || isGlobal;
-        if (!shouldReplace) {
-          const pagePrefix = dirName.replace(/-/g, '_').replace(/\//g, '_');
-          shouldReplace = key.startsWith('h1_' + pagePrefix) || 
-                          key.startsWith(pagePrefix + '_') ||
-                          (dirName === 'about' && key.startsWith('about_')) ||
-                          (dirName === 'contact' && key.startsWith('contact_')) ||
-                          (dirName === 'blog' && key.startsWith('blog_'));
-        }
+        const shouldReplace = dict[key] !== undefined;
 
         if (shouldReplace) {
           const val = dict[key];

@@ -31,9 +31,9 @@
   "benchmark_track_title": "400m Standard-Laufbahn",
   "benchmark_track_desc": "Eine Standardrunde auf einer Wettkampfbahn beträgt ca. 1.320 Fuß. Genau 4 Runden entsprechen einer Meile (5.280 Fuß).",
   "benchmark_5k_title": "Die 5-Kilometer-Strecke",
-  "benchmark_5k_desc": "Ein 5-Kilometer-Lauf entspricht etwa 3,1 Meilen, was einer Gesamtdistanz von 16.404 Fuß entspricht.",
+  "benchmark_5k_desc": "Ein 5-Kilometer-Lauf entspricht etwa 3,1 Meilen, was einer Gesamtdistanz von 16.368 Fuß entspricht.",
   "benchmark_marathon_title": "Der Marathon",
-  "benchmark_marathon_desc": "Ein offizieller Marathon geht über 26,2 Meilen. Läufer legen dabei eine Distanz von 138.435 Fuß zurück.",
+  "benchmark_marathon_desc": "Ein offizieller Marathon geht über 26,2 Meilen. Läufer legen dabei eine Distanz von 138.336 Fuß zurück.",
   "benchmark_altitude_title": "Flughöhe in der Luftfahrt",
   "benchmark_altitude_desc": "Während Flugrouten in Meilen geplant werden, misst man Flughöhen in Fuß. Eine Reiseflughöhe von 35.000 Fuß entspricht ca. 6,6 Meilen.",
   "diagram_scale_title": "Entfernungsskalen-Visualisierung",
@@ -159,9 +159,9 @@
   "scale_mark1_title": "Standard 400m Runde",
   "scale_mark1_desc": "Etwa 1.320 Fuß. In Meilen sind das genau 0,25 Meilen. 4 Runden ergeben eine ganze Meile!",
   "scale_mark2_title": "Die 5K-Laufdistanz",
-  "scale_mark2_desc": "Entspricht 16.404 Fuß. Das sind etwa 3,1 Meilen, eine sehr beliebte Laufdistanz.",
+  "scale_mark2_desc": "Entspricht 16.368 Fuß. Das sind etwa 3,1 Meilen, eine sehr beliebte Laufdistanz.",
   "scale_mark3_title": "Reiseflughöhe",
   "scale_mark3_desc": "Normalerweise 35.000 Fuß für Passagierflugzeuge. In Meilen sind das genau 6,63 Meilen Höhe.",
   "scale_mark4_title": "Der Marathon",
-  "scale_mark4_desc": "Ein Marathon beträgt 26,2 Meilen. Läufer müssen eine Distanz von 138.435 Fuß bewältigen!"
+  "scale_mark4_desc": "Ein Marathon beträgt 26,2 Meilen. Läufer müssen eine Distanz von 138.336 Fuß bewältigen!"
 }

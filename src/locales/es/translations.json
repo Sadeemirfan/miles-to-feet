@@ -31,9 +31,9 @@
   "benchmark_track_title": "Pista Estándar de 400m",
   "benchmark_track_desc": "Una vuelta a una pista de competición estándar mide unos 1.320 pies. Completar exactamente 4 vueltas equivale a 1 milla (5.280 pies).",
   "benchmark_5k_title": "Carrera de 5K",
-  "benchmark_5k_desc": "Una carrera de 5 kilómetros cubre unas 3,1 millas, lo que equivale a una distancia total de 16.404 pies.",
+  "benchmark_5k_desc": "Una carrera de 5 kilómetros cubre unas 3,1 millas, lo que equivale a una distancia total de 16.368 pies.",
   "benchmark_marathon_title": "Maratón Completo",
-  "benchmark_marathon_desc": "Un maratón oficial consta de 26,2 millas. Requiere que los corredores recorran 138.435 pies.",
+  "benchmark_marathon_desc": "Un maratón oficial consta de 26,2 millas. Requiere que los corredores recorran 138.336 pies.",
   "benchmark_altitude_title": "Altitud en Aviación",
   "benchmark_altitude_desc": "Mientras que las rutas de vuelo se trazan en millas, la altitud se mide en pies. Volar a 35.000 pies equivale a unas 6,6 millas de altura.",
   "diagram_scale_title": "Visualizador de Escala de Distancia",
@@ -162,9 +162,9 @@
   "scale_mark1_title": "Vuelta estándar de 400m",
   "scale_mark1_desc": "Unos 1.320 pies. En millas, esto es exactamente 0,25 mi. ¡4 vueltas completan una milla!",
   "scale_mark2_title": "Distancia de carrera de 5K",
-  "scale_mark2_desc": "Equivalente a 16.404 pies. Esto es aproximadamente 3,1 millas, una distancia estándar popular.",
+  "scale_mark2_desc": "Equivalente a 16.368 pies. Esto es aproximadamente 3,1 millas, una distancia estándar popular.",
   "scale_mark3_title": "Altitud de crucero",
   "scale_mark3_desc": "Normalmente 35.000 pies para aviones de pasajeros comerciales. En millas, son exactamente 6,63 millas sobre el nivel del mar.",
   "scale_mark4_title": "Maratón completo",
-  "scale_mark4_desc": "Un maratón oficial abarca 26,2 millas. ¡Eso requiere que los corredores crucen una distancia masiva de 138.435 pies!"
+  "scale_mark4_desc": "Un maratón oficial abarca 26,2 millas. ¡Eso requiere que los corredores crucen una distancia masiva de 138.336 pies!"
 }

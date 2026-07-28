@@ -31,9 +31,9 @@
   "benchmark_track_title": "Piste d'Athlétisme Standard (400m)",
   "benchmark_track_desc": "Un tour de piste standard mesure environ 1 320 pieds. Faire exactement 4 tours équivaut à 1 mile (5 280 pieds).",
   "benchmark_5k_title": "La Course de 5K",
-  "benchmark_5k_desc": "Une course de 5 kilomètres représente environ 3,1 miles, soit une distance totale de 16 404 pieds.",
+  "benchmark_5k_desc": "Une course de 5 kilomètres représente environ 3,1 miles, soit une distance totale de 16 368 pieds.",
   "benchmark_marathon_title": "Le Marathon",
-  "benchmark_marathon_desc": "Un marathon officiel s'étend sur 26,2 miles, ce qui oblige les coureurs à parcourir 138 435 pieds.",
+  "benchmark_marathon_desc": "Un marathon officiel s'étend sur 26,2 miles, ce qui oblige les coureurs à parcourir 138 336 pieds.",
   "benchmark_altitude_title": "Altitude en Aviation",
   "benchmark_altitude_desc": "Les trajets sont calculés en miles, mais l'altitude des avions est mesurée en pieds. Voler à 35 000 pieds équivaut à environ 6,6 miles de haut.",
   "diagram_scale_title": "Visualisateur d'Échelle de Distance",
@@ -161,9 +161,9 @@
   "scale_mark1_title": "Tour de piste de 400m",
   "scale_mark1_desc": "Environ 1 320 pieds. En miles, c'est exactement 0,25 mi. 4 tours font un mile complet !",
   "scale_mark2_title": "La distance de course 5K",
-  "scale_mark2_desc": "Équivalent à 16 404 pieds. C'est environ 3,1 miles, un standard de course sur route.",
+  "scale_mark2_desc": "Équivalent à 16 368 pieds. C'est environ 3,1 miles, un standard de course sur route.",
   "scale_mark3_title": "Altitude de croisière",
   "scale_mark3_desc": "Généralement 35 000 pieds pour les avions commerciaux. En miles, c'est exactement 6,63 miles de haut.",
   "scale_mark4_title": "Le Marathon complet",
-  "scale_mark4_desc": "Un marathon officiel s'étend sur 26,2 miles. Les coureurs doivent parcourir 138 435 pieds !"
+  "scale_mark4_desc": "Un marathon officiel s'étend sur 26,2 miles. Les coureurs doivent parcourir 138 336 pieds !"
 }

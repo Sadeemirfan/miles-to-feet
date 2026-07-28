@@ -31,9 +31,9 @@
   "benchmark_track_title": "Standard 400m Track",
   "benchmark_track_desc": "A standard competition track lap is approximately 1,320 feet. Completing exactly 4 laps equals 1 mile (5,280 ft).",
   "benchmark_5k_title": "The 5K Running Distance",
-  "benchmark_5k_desc": "A 5-kilometer road race covers approximately 3.1 miles, which translates to a total distance of 16,404 feet.",
+  "benchmark_5k_desc": "A 5-kilometer road race covers approximately 3.1 miles, which translates to a total distance of 16,368 feet.",
   "benchmark_marathon_title": "The Full Marathon",
-  "benchmark_marathon_desc": "An official marathon spans 26.2 miles. That requires runners to cross a massive distance of 138,435 feet.",
+  "benchmark_marathon_desc": "An official marathon spans 26.2 miles. That requires runners to cross a massive distance of 138,336 feet.",
   "benchmark_altitude_title": "Aviation Altitude",
   "benchmark_altitude_desc": "While flight routes are mapped in miles, aircraft cruising altitudes are measured in feet. Cruising at 35,000 feet is about 6.6 miles high.",
   "diagram_scale_title": "Distance Scale Visualizer",
@@ -162,9 +162,9 @@
   "scale_mark1_title": "Standard 400m Lap",
   "scale_mark1_desc": "About 1,320 feet. In miles, this is exactly 0.25 mi. 4 laps make a full mile!",
   "scale_mark2_title": "The 5K Running Distance",
-  "scale_mark2_desc": "Equal to 16,404 feet. This is approximately 3.1 miles, a popular track & road running standard.",
+  "scale_mark2_desc": "Equal to 16,368 feet. This is approximately 3.1 miles, a popular track & road running standard.",
   "scale_mark3_title": "Cruising Altitude",
   "scale_mark3_desc": "Typically 35,000 feet for commercial passenger planes. In miles, this is exactly 6.63 miles above sea level.",
   "scale_mark4_title": "The Full Marathon",
-  "scale_mark4_desc": "An official marathon spans 26.2 miles. That requires runners to cross a massive distance of 138,435 feet!"
+  "scale_mark4_desc": "An official marathon spans 26.2 miles. That requires runners to cross a massive distance of 138,336 feet!"
 }

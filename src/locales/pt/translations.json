@@ -31,9 +31,9 @@
   "benchmark_track_title": "Pista de Atletismo Padrão (400m)",
   "benchmark_track_desc": "Uma volta em uma pista de competição oficial mede cerca de 1.320 pés. Completar exatamente 4 voltas equivale a 1 milha (5.280 pés).",
   "benchmark_5k_title": "Corrida de 5K",
-  "benchmark_5k_desc": "Uma corrida de 5 quilômetros cobre cerca de 3,1 milhas, o que equivale a uma distância total de 16.404 pés.",
+  "benchmark_5k_desc": "Uma corrida de 5 quilômetros cobre cerca de 3,1 milhas, o que equivale a uma distância total de 16.368 pés.",
   "benchmark_marathon_title": "A Maratona",
-  "benchmark_marathon_desc": "Uma maratona oficial se estende por 26,2 milhas, exigindo que os corredores percorram 138.435 pés.",
+  "benchmark_marathon_desc": "Uma maratona oficial se estende por 26,2 milhas, exigindo que os corredores percorram 138.336 pés.",
   "benchmark_altitude_title": "Altitude na Aviação",
   "benchmark_altitude_desc": "As rotas são calculadas em milhas, mas a altitude é medida em pés. Voar a 35.000 pés equivale a cerca de 6,6 milhas de altura.",
   "diagram_scale_title": "Visualizador de Escala de Distância",
@@ -159,9 +159,9 @@
   "scale_mark1_title": "Volta padrão de 400m",
   "scale_mark1_desc": "Cerca de 1.320 pés. Em milhas, são exatamente 0,25 mi. 4 voltas completam uma milha!",
   "scale_mark2_title": "Corrida de 5K",
-  "scale_mark2_desc": "Equivalente a 16.404 pés. São aproximadamente 3,1 milhas, uma distância de corrida popular.",
+  "scale_mark2_desc": "Equivalente a 16.368 pés. São aproximadamente 3,1 milhas, uma distância de corrida popular.",
   "scale_mark3_title": "Altitude de cruzeiro",
   "scale_mark3_desc": "Normalmente 35.000 pés para aviões comerciais. Em milhas, são exatamente 6,63 milhas de altura.",
   "scale_mark4_title": "A Maratona completa",
-  "scale_mark4_desc": "Uma maratona oficial se estende por 26,2 milhas. Isso exige que os corredores percorram 138.435 pés!"
+  "scale_mark4_desc": "Uma maratona oficial se estende por 26,2 milhas. Isso exige que os corredores percorram 138.336 pés!"
 }

@@ -31,9 +31,9 @@
   "benchmark_track_title": "Pista di Atletica Standard (400m)",
   "benchmark_track_desc": "Un giro di una pista da corsa regolamentare misura circa 1.320 piedi. Completare esattamente 4 giri equivale a 1 miglio (5.280 piedi).",
   "benchmark_5k_title": "La Corsa dei 5K",
-  "benchmark_5k_desc": "Una corsa di 5 chilometri copre circa 3,1 miglia, il che equivale a una distanza totale di 16.404 piedi.",
+  "benchmark_5k_desc": "Una corsa di 5 chilometri copre circa 3,1 miglia, il che equivale a una distanza totale di 16.368 piedi.",
   "benchmark_marathon_title": "La Maratona",
-  "benchmark_marathon_desc": "Una maratona ufficiale si estende per 26,2 miglia. Gli atleti devono percorrere 138.435 piedi.",
+  "benchmark_marathon_desc": "Una maratona ufficiale si estende per 26,2 miglia. Gli atleti devono percorrere 138.336 piedi.",
   "benchmark_altitude_title": "Altitudine in Aviazione",
   "benchmark_altitude_desc": "Le rotte aeree sono calcolate in miglia, ma l'altitudine dei velivoli è misurata in piedi. Volare a 35.000 piedi equivale a circa 6,6 miglia di altezza.",
   "diagram_scale_title": "Visualizzatore di Scala di Distanza",
@@ -159,9 +159,9 @@
   "scale_mark1_title": "Giro di pista di 400m",
   "scale_mark1_desc": "Circa 1.320 piedi. In miglia, questo è esattamente 0,25 mi. 4 giri fanno un miglio intero!",
   "scale_mark2_title": "La corsa dei 5K",
-  "scale_mark2_desc": "Pari a 16.404 piedi. Sono circa 3,1 miglia, una distanza di corsa su strada molto comune.",
+  "scale_mark2_desc": "Pari a 16.368 piedi. Sono circa 3,1 miglia, una distanza di corsa su strada molto comune.",
   "scale_mark3_title": "Quota di crociera",
   "scale_mark3_desc": "Tipicamente 35.000 piedi per aerei commerciali. In miglia, questo equivale a 6,63 miglia di altezza.",
   "scale_mark4_title": "La Maratona completa",
-  "scale_mark4_desc": "Una maratona ufficiale misura 26,2 miglia. Richiede ai corridori di coprire ben 138.435 piedi!"
+  "scale_mark4_desc": "Una maratona ufficiale misura 26,2 miglia. Richiede ai corridori di coprire ben 138.336 piedi!"
 }

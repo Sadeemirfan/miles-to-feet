@@ -31,9 +31,9 @@
   "benchmark_track_title": "Standardowa bieżnia 400m",
   "benchmark_track_desc": "Jedno okrążenie bieżni to około 1 320 stóp. Dokładnie 4 okrążenia są równe 1 mili (5 280 stóp).",
   "benchmark_5k_title": "Bieg na 5 km",
-  "benchmark_5k_desc": "Bieg na 5 kilometrów to około 3,1 mili, co odpowiada łącznej odległości 16 404 stóp.",
+  "benchmark_5k_desc": "Bieg na 5 kilometrów to około 3,1 mili, co odpowiada łącznej odległości 16 368 stóp.",
   "benchmark_marathon_title": "Maraton",
-  "benchmark_marathon_desc": "Oficjalny maraton wynosi 26,2 mili. Wymaga to od biegaczy pokonania 138 435 stóp.",
+  "benchmark_marathon_desc": "Oficjalny maraton wynosi 26,2 mili. Wymaga to od biegaczy pokonania 138 336 stóp.",
   "benchmark_altitude_title": "Wysokość w lotnictwie",
   "benchmark_altitude_desc": "Trasy lotów planuje się w milach, ale wysokość mierzy się в stopach. Lot na wysokości 35 000 stóp to około 6,6 mili.",
   "diagram_scale_title": "Wizualizator skali odległości",
@@ -160,9 +160,9 @@
   "scale_mark1_title": "Okrążenie bieżni 400m",
   "scale_mark1_desc": "Około 1320 stóp. W milach to dokładnie 0,25 mili. 4 okrążenia dają pełną milę!",
   "scale_mark2_title": "Dystans biegowy 5K",
-  "scale_mark2_desc": "Równy 16 404 stopom. Jest to w przybliżeniu 3,1 mili, popularna odległość biegowa.",
+  "scale_mark2_desc": "Równy 16 368 stopom. Jest to w przybliżeniu 3,1 mili, popularna odległość biegowa.",
   "scale_mark3_title": "Wysokość przelotowa",
   "scale_mark3_desc": "Zazwyczaj 35 000 stóp dla pasażerskich samolotów. W milach to dokładnie 6,63 mili.",
   "scale_mark4_title": "Bieg maratoński",
-  "scale_mark4_desc": "Oficjalny maraton wynosi 26,2 mili. Biegacze muszą pokonać ogromny dystans 138 435 stóp!"
+  "scale_mark4_desc": "Oficjalny maraton wynosi 26,2 mili. Biegacze muszą pokonać ogromny dystans 138 336 stóp!"
 }

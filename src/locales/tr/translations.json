@@ -31,9 +31,9 @@
   "benchmark_track_title": "Standart 400m Koşu Pisti",
   "benchmark_track_desc": "Standart bir pist turu yaklaşık 1.320 fittir. Tam olarak 4 tur tamamlamak 1 mile (5.280 fit) eşittir.",
   "benchmark_5k_title": "5K Koşusu",
-  "benchmark_5k_desc": "5 kilometrelik bir koşu yaklaşık 3.1 mile denk gelir, bu da toplam 16.404 fit mesafeye eşittir.",
+  "benchmark_5k_desc": "5 kilometrelik bir koşu yaklaşık 3.1 mile denk gelir, bu da toplam 16.368 fit mesafeye eşittir.",
   "benchmark_marathon_title": "Tam Maraton",
-  "benchmark_marathon_desc": "Resmi bir maraton 26.2 mildir. Bu, koşucuların 138.435 fit mesafe kat etmesini gerektirir.",
+  "benchmark_marathon_desc": "Resmi bir maraton 26.2 mildir. Bu, koşucuların 138.336 fit mesafe kat etmesini gerektirir.",
   "benchmark_altitude_title": "Havacılık İrtifası",
   "benchmark_altitude_desc": "Uçuş rotaları mil cinsinden belirlenirken, irtifa fit cinsinden ölçülür. 35.000 fitte uçmak yaklaşık 6.6 mile eşittir.",
   "diagram_scale_title": "Mesafe Ölçeği Görselleştirici",
@@ -160,9 +160,9 @@
   "scale_mark1_title": "Standart 400m Turu",
   "scale_mark1_desc": "Yaklaşık 1.320 fit. Mil cinsinden tam olarak 0,25 mildir. 4 tur tamamlandığında 1 tam mil eder!",
   "scale_mark2_title": "5K Koşu Mesafesi",
-  "scale_mark2_desc": "16.404 fite eşittir. Bu yaklaşık 3,1 mildir; popüler bir koşu mesafe standardıdır.",
+  "scale_mark2_desc": "16.368 fite eşittir. Bu yaklaşık 3,1 mildir; popüler bir koşu mesafe standardıdır.",
   "scale_mark3_title": "Seyir İrtifası",
   "scale_mark3_desc": "Yolcu uçakları için genellikle 35.000 fit. Mil bazında deniz seviyesinden tam olarak 6,63 mil yüksekliktedir.",
   "scale_mark4_title": "Tam Maraton",
-  "scale_mark4_desc": "Resmi bir maraton 26,2 mildir. Bu, koşucuların 138.435 fitlik muazzam bir mesafeyi aşmasını gerektirir!"
+  "scale_mark4_desc": "Resmi bir maraton 26,2 mildir. Bu, koşucuların 138.336 fitlik muazzam bir mesafeyi aşmasını gerektirir!"
 }

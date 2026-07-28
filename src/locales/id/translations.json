@@ -31,9 +31,9 @@
   "benchmark_track_title": "Lintasan Standar 400m",
   "benchmark_track_desc": "Satu putaran lintasan kompetisi standar adalah sekitar 1.320 kaki. Menyelesaikan tepat 4 putaran sama dengan 1 mil (5.280 kaki).",
   "benchmark_5k_title": "Lari 5K",
-  "benchmark_5k_desc": "Lomba lari 5 kilometer menempuh jarak sekitar 3,1 mil, yang setara dengan jarak total 16.404 kaki.",
+  "benchmark_5k_desc": "Lomba lari 5 kilometer menempuh jarak sekitar 3,1 mil, yang setara dengan jarak total 16.368 kaki.",
   "benchmark_marathon_title": "Maraton Penuh",
-  "benchmark_marathon_desc": "Satu maraton resmi menempuh jarak 26,2 mil. Ini mengharuskan pelari menempuh jarak 138.435 kaki.",
+  "benchmark_marathon_desc": "Satu maraton resmi menempuh jarak 26,2 mil. Ini mengharuskan pelari menempuh jarak 138.336 kaki.",
   "benchmark_altitude_title": "Ketinggian Penerbangan",
   "benchmark_altitude_desc": "Rute penerbangan diplot dalam mil, tetapi ketinggian pesawat diukur dalam kaki. Terbang pada 35.000 kaki setara dengan sekitar 6,6 mil tinggi.",
   "diagram_scale_title": "Visualisasi Skala Jarak",
@@ -160,9 +160,9 @@
   "scale_mark1_title": "Satu Putaran Lintasan 400m",
   "scale_mark1_desc": "Sekitar 1.320 kaki. Dalam mil, ini persis 0,25 mil. 4 putaran sama dengan 1 mil penuh!",
   "scale_mark2_title": "Jarak Lari 5K",
-  "scale_mark2_desc": "Sama dengan 16.404 kaki. Ini sekitar 3,1 mil, standar jarak lomba lari jalan raya yang populer.",
+  "scale_mark2_desc": "Sama dengan 16.368 kaki. Ini sekitar 3,1 mil, standar jarak lomba lari jalan raya yang populer.",
   "scale_mark3_title": "Ketinggian Jelajah Pesawat",
   "scale_mark3_desc": "Biasanya 35.000 kaki untuk penerbangan sipil. Dalam mil, ini persis 6,63 mil di atas permukaan laut.",
   "scale_mark4_title": "Lari Maraton Penuh",
-  "scale_mark4_desc": "Maraton resmi berjarak 26,2 mil. Pelari harus menempuh jarak sangat jauh sebesar 138.435 kaki!"
+  "scale_mark4_desc": "Maraton resmi berjarak 26,2 mil. Pelari harus menempuh jarak sangat jauh sebesar 138.336 kaki!"
 }
