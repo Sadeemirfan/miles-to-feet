@@ -122,7 +122,7 @@
   "byline_author_team": "Equipe Editorial do Miles to Feet",
   "byline_reviewed": "Revisado para precisão",
   "byline_last_updated": "Última atualização",
-  "footer_all_calculators": "Todas as 23 calculadoras",
+  "footer_all_calculators": "Todas as 25 calculadoras",
   "def_title": "Definições de Unidades: Milha vs Pé",
   "def_mile_title": "O que é uma Milha (mi)?",
   "def_mile_desc": "Uma <strong>milha (mi)</strong> é uma unidade de comprimento nos sistemas de medição imperial e consuetudinário dos EUA. Uma milha terrestre equivale exatamente a <strong>5.280 pés</strong>, 1.760 jardas ou 1,609344 quilômetros (1.609,344 metros).",
@@ -197,5 +197,15 @@
   "meta_desc_running_distance_miles_to_feet": "Converta distâncias de corrida e caminhada de milhas para pés. Confira os parâmetros de 5K, 10K, meia maratona e maratona.",
   "meta_desc_sitemap": "Mapa completo do site do Miles to Feet — navegue por todas as calculadoras de conversão, posts do blog e páginas informativas em um só lugar.",
   "meta_desc_square_miles_to_square_feet": "Converta milhas quadradas em pés quadrados instantaneamente. Digite um valor em milhas quadradas para obter a área exata em pés quadrados, com fórmula e tabelas.",
-  "meta_desc_terms_conditions": "Termos e Condições de uso do Miles to Feet. Leia nossos termos de serviço, avisos legais das calculadoras e diretrizes de uso aceitável."
+  "meta_desc_terms_conditions": "Termos e Condições de uso do Miles to Feet. Leia nossos termos de serviço, avisos legais das calculadoras e diretrizes de uso aceitável.",
+  "faq6_q": "Como converto a distância de corrida ou caminhada de milhas para pés?",
+  "faq6_a": "A mesma fórmula de multiplicação se aplica: multiplique sua distância de corrida ou caminhada em milhas por 5.280 para obter a distância total em pés. Por exemplo, uma distância de 5K é de aproximadamente 3,1 milhas, o que equivale a 16.368 pés (3,1 x 5.280).",
+  "faq7_q": "Como posso lembrar quantos pés há em uma milha?",
+  "faq7_a": "Um truque simples: lembre-se de que uma milha equivale a cerca de 4 voltas em uma pista padrão de 1.320 pés.",
+  "faq8_q": "Como converter pés em milhas?",
+  "faq8_a": "Divida o número de pés por 5.280. Por exemplo: 10.560 pés ÷ 5.280 = 2 milhas.",
+  "h1_feet_per_second_to_mph": "Conversor de Pés por Segundo para Milhas por Hora",
+  "h1_feet_to_nautical_miles": "Conversor de Pés para Milhas Náuticas",
+  "meta_desc_feet_per_second_to_mph": "Converta a velocidade de pés por segundo (ft/s) para milhas por hora (mph) instantaneamente. Confira fórmulas de velocidade e referências rápidas.",
+  "meta_desc_feet_to_nautical_miles": "Converta pés em milhas náuticas instantaneamente. Digite um valor em pés para obter o resultado exato em milhas náuticas, com fórmula e tabelas."
 }

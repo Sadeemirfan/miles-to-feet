@@ -122,7 +122,7 @@
   "byline_author_team": "Équipe éditoriale de Miles to Feet",
   "byline_reviewed": "Vérifié pour la précision",
   "byline_last_updated": "Dernière mise à jour",
-  "footer_all_calculators": "Les 23 calculateurs",
+  "footer_all_calculators": "Les 25 calculateurs",
   "def_title": "Définitions des Unités : Mile vs Pied",
   "def_mile_title": "Qu'est-ce qu'un Mile (mi) ?",
   "def_mile_desc": "Un <strong>mile (mi)</strong> est une unité de longueur dans les systèmes de mesure impérial et américain. Un mile statutaire équivaut exactement à <strong>5 280 pieds</strong>, 1 760 yards ou 1,609344 kilomètre (1 609,344 mètres).",
@@ -197,5 +197,15 @@
   "meta_desc_running_distance_miles_to_feet": "Convertissez les distances de course et de marche des miles en pieds. Vérifiez les repères pour le 5 km, 10 km, semi-marathon et marathon.",
   "meta_desc_sitemap": "Plan du site complet de Miles to Feet — parcourez tous les calculateurs de conversion, articles de blog et pages d'information en un seul endroit.",
   "meta_desc_square_miles_to_square_feet": "Convertissez les miles carrés en pieds carrés instantanément. Entrez une valeur en miles carrés pour obtenir la surface exacte en pieds carrés, avec formule et tableaux.",
-  "meta_desc_terms_conditions": "Conditions générales d'utilisation de Miles to Feet. Lisez nos conditions de service, les avertissements sur les calculateurs et les directives d'utilisation acceptable."
+  "meta_desc_terms_conditions": "Conditions générales d'utilisation de Miles to Feet. Lisez nos conditions de service, les avertissements sur les calculateurs et les directives d'utilisation acceptable.",
+  "faq6_q": "Comment convertir une distance de course ou de marche des miles en pieds ?",
+  "faq6_a": "La même formule de multiplication s'applique : multipliez votre distance de course ou de marche en miles par 5 280 pour obtenir la distance totale en pieds. Par exemple, une distance de 5 km équivaut à environ 3,1 miles, soit 16 368 pieds (3,1 x 5 280).",
+  "faq7_q": "Comment me souvenir du nombre de pieds dans un mile ?",
+  "faq7_a": "Une astuce simple : rappelez-vous qu'un mile équivaut à environ 4 tours d'une piste de course standard de 1 320 pieds.",
+  "faq8_q": "Comment convertit-on les pieds en miles ?",
+  "faq8_a": "Divisez le nombre de pieds par 5 280. Par exemple : 10 560 pieds ÷ 5 280 = 2 miles.",
+  "h1_feet_per_second_to_mph": "Convertisseur de Pieds par Seconde en Miles par Heure",
+  "h1_feet_to_nautical_miles": "Convertisseur de Pieds en Miles Nautiques",
+  "meta_desc_feet_per_second_to_mph": "Convertissez la vitesse de pieds par seconde (ft/s) en miles par heure (mph) instantanément. Vérifiez les formules de vitesse et les références rapides.",
+  "meta_desc_feet_to_nautical_miles": "Convertissez les pieds en miles nautiques instantanément. Entrez une valeur en pieds pour obtenir le résultat exact en miles nautiques, avec formule et tableaux."
 }

@@ -69,7 +69,7 @@
   "footer_placeholder_email": "Din e-postadress",
   "footer_subscribe": "Prenumerera",
   "footer_sitemap": "Webbplatskarta",
-  "footer_all_calculators": "Alla 23 omvandlare",
+  "footer_all_calculators": "Alla 25 omvandlare",
   "cookie_consent_text": "Vi använder cookies för att analysera trafik och anpassa annonser. Genom att klicka på \"Acceptera alla\" godkänner du detta.",
   "cookie_consent_accept": "Acceptera alla",
   "cookie_consent_reject": "Neka icke-nödvändiga",
@@ -197,5 +197,15 @@
   "meta_desc_running_distance_miles_to_feet": "Omvandla löp- och gångdistanser från engelska mil till fot. Kontrollera riktmärken för 5K, 10K, halvmaraton och maraton.",
   "meta_desc_sitemap": "Fullständig webbplatskarta för Miles to Feet — bläddra bland alla omvandlare, blogginlägg och informationssidor på ett ställe.",
   "meta_desc_square_miles_to_square_feet": "Omvandla kvadratmil till kvadratfot direkt. Ange ett värde i kvadratmil för att få den exakta arean i kvadratfot, med formel och tabeller.",
-  "meta_desc_terms_conditions": "Villkor för användning av Miles to Feet. Läs våra användarvillkor, friskrivningar för kalkylatorer och riktlinjer för acceptabel användning."
+  "meta_desc_terms_conditions": "Villkor för användning av Miles to Feet. Läs våra användarvillkor, friskrivningar för kalkylatorer och riktlinjer för acceptabel användning.",
+  "faq6_q": "Hur omvandlar jag löp- eller gångdistans från engelska mil till fot?",
+  "faq6_a": "Samma multiplikationsformel gäller: multiplicera din löp- eller gångdistans i mil med 5 280 för att få den totala distansen i fot. Till exempel är en 5K-distans ungefär 3,1 mil, vilket motsvarar 16 368 fot (3,1 x 5 280).",
+  "faq7_q": "Hur kan jag komma ihåg hur många fot det går på en engelsk mil?",
+  "faq7_a": "Ett enkelt knep: kom ihåg att en engelsk mil motsvarar ungefär 4 varv på en standardbana på 1 320 fot.",
+  "faq8_q": "Hur omvandlar man fot till engelska mil?",
+  "faq8_a": "Dividera antalet fot med 5 280. Till exempel: 10 560 fot ÷ 5 280 = 2 mil.",
+  "h1_feet_per_second_to_mph": "Konvertera Fot per Sekund till Miles per Timme",
+  "h1_feet_to_nautical_miles": "Konvertera Fot till Nautiska Mil",
+  "meta_desc_feet_per_second_to_mph": "Omvandla hastighet från fot per sekund (ft/s) till miles per timme (mph) direkt. Kontrollera hastighetsformler och snabba referenser.",
+  "meta_desc_feet_to_nautical_miles": "Omvandla fot till nautiska mil direkt. Ange ett värde i fot för att få det exakta resultatet i nautiska mil, med formel och tabeller."
 }

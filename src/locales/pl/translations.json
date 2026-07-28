@@ -69,7 +69,7 @@
   "footer_placeholder_email": "Twój adres e-mail",
   "footer_subscribe": "Zapisz się",
   "footer_sitemap": "Mapa Strony",
-  "footer_all_calculators": "Wszystkie 23 kalkulatory",
+  "footer_all_calculators": "Wszystkie 25 kalkulatory",
   "cookie_consent_text": "Używamy plików cookie do analizy ruchu i personalizacji reklam. Klikając \"Akceptuj wszystko\", zgadzasz się na ich użycie.",
   "cookie_consent_accept": "Akceptuj wszystko",
   "cookie_consent_reject": "Odrzuć opcjonalne",
@@ -197,5 +197,15 @@
   "meta_desc_running_distance_miles_to_feet": "Przelicz dystanse biegowe i marszowe z mil na stopy. Sprawdź wartości referencyjne dla 5K, 10K, półmaratonu i maratonu.",
   "meta_desc_sitemap": "Pełna mapa strony Miles to Feet — przeglądaj wszystkie kalkulatory przeliczeniowe, wpisy na blogu i strony informacyjne w jednym miejscu.",
   "meta_desc_square_miles_to_square_feet": "Przelicz mile kwadratowe na stopy kwadratowe natychmiast. Wprowadź wartość w milach kwadratowych, aby uzyskać dokładną powierzchnię w stopach kwadratowych, wraz ze wzorem i tabelami.",
-  "meta_desc_terms_conditions": "Regulamin korzystania z Miles to Feet. Przeczytaj nasze warunki świadczenia usług, zastrzeżenia dotyczące kalkulatorów i wytyczne dotyczące dopuszczalnego użytkowania."
+  "meta_desc_terms_conditions": "Regulamin korzystania z Miles to Feet. Przeczytaj nasze warunki świadczenia usług, zastrzeżenia dotyczące kalkulatorów i wytyczne dotyczące dopuszczalnego użytkowania.",
+  "faq6_q": "Jak przeliczyć dystans biegowy lub marszowy z mil na stopy?",
+  "faq6_a": "Obowiązuje ten sam wzór mnożenia: pomnóż swój dystans biegowy lub marszowy w milach przez 5 280, aby uzyskać łączny dystans w stopach. Na przykład dystans 5K to około 3,1 mili, co odpowiada 16 368 stopom (3,1 x 5 280).",
+  "faq7_q": "Jak zapamiętać, ile stóp jest w mili?",
+  "faq7_a": "Prosty sposób: zapamiętaj, że mila to około 4 okrążenia standardowej bieżni o długości 1320 stóp.",
+  "faq8_q": "Jak przelicza się stopy na mile?",
+  "faq8_a": "Podziel liczbę stóp przez 5 280. Na przykład: 10 560 stóp ÷ 5 280 = 2 mile.",
+  "h1_feet_per_second_to_mph": "Konwerter Stóp na Sekundę na Mile na Godzinę",
+  "h1_feet_to_nautical_miles": "Konwerter Stóp na Mile Morskie",
+  "meta_desc_feet_per_second_to_mph": "Przelicz prędkość ze stóp na sekundę (ft/s) na mile na godzinę (mph) natychmiast. Sprawdź wzory prędkości i szybkie odniesienia.",
+  "meta_desc_feet_to_nautical_miles": "Przelicz stopy na mile morskie natychmiast. Wprowadź wartość w stopach, aby uzyskać dokładny wynik w milach morskich, wraz ze wzorem i tabelami."
 }

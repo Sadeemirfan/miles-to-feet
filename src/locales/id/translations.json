@@ -69,7 +69,7 @@
   "footer_placeholder_email": "Alamat email Anda",
   "footer_subscribe": "Berlangganan",
   "footer_sitemap": "Peta Situs",
-  "footer_all_calculators": "Semua 23 Konverter",
+  "footer_all_calculators": "Semua 25 Konverter",
   "cookie_consent_text": "Kami menggunakan cookie untuk menganalisis lalu lintas dan mempersonalisasi iklan. Dengan mengklik \"Terima Semua\", Anda menyetujui penggunaan cookie kami.",
   "cookie_consent_accept": "Terima Semua",
   "cookie_consent_reject": "Tolak Non-Esensial",
@@ -197,5 +197,15 @@
   "meta_desc_running_distance_miles_to_feet": "Konversi jarak lari dan jalan kaki dari mil ke kaki. Periksa tolok ukur 5K, 10K, setengah maraton, dan maraton.",
   "meta_desc_sitemap": "Peta situs lengkap untuk Miles to Feet — jelajahi semua kalkulator konversi, postingan blog, dan halaman informasi di satu tempat.",
   "meta_desc_square_miles_to_square_feet": "Konversi mil persegi ke kaki persegi secara instan. Masukkan nilai mil persegi untuk mendapatkan luas akurat dalam kaki persegi, dengan rumus dan tabel.",
-  "meta_desc_terms_conditions": "Syarat dan Ketentuan penggunaan Miles to Feet. Baca ketentuan layanan kami, penafian kalkulator, dan panduan penggunaan yang dapat diterima."
+  "meta_desc_terms_conditions": "Syarat dan Ketentuan penggunaan Miles to Feet. Baca ketentuan layanan kami, penafian kalkulator, dan panduan penggunaan yang dapat diterima.",
+  "faq6_q": "Bagaimana cara mengonversi jarak lari atau jalan kaki dari mil ke kaki?",
+  "faq6_a": "Rumus perkalian yang sama berlaku: kalikan jarak lari atau jalan kaki Anda dalam mil dengan 5.280 untuk mendapatkan total jarak dalam kaki. Misalnya, jarak lari 5K sekitar 3,1 mil, setara dengan 16.368 kaki (3,1 x 5.280).",
+  "faq7_q": "Bagaimana cara mengingat berapa kaki dalam satu mil?",
+  "faq7_a": "Trik sederhana: ingat bahwa satu mil kira-kira sama dengan 4 putaran lintasan lari standar sepanjang 1.320 kaki.",
+  "faq8_q": "Bagaimana cara mengonversi kaki ke mil?",
+  "faq8_a": "Bagi jumlah kaki dengan 5.280. Contoh: 10.560 kaki ÷ 5.280 = 2 mil.",
+  "h1_feet_per_second_to_mph": "Konverter Kaki per Detik ke Mil per Jam",
+  "h1_feet_to_nautical_miles": "Konverter Kaki ke Mil Laut",
+  "meta_desc_feet_per_second_to_mph": "Konversi kecepatan dari kaki per detik (ft/s) ke mil per jam (mph) secara instan. Periksa rumus kecepatan dan referensi cepat.",
+  "meta_desc_feet_to_nautical_miles": "Konversi kaki ke mil laut secara instan. Masukkan nilai kaki untuk mendapatkan hasil akurat dalam mil laut, dengan rumus dan tabel."
 }

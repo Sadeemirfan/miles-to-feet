@@ -122,7 +122,7 @@
   "byline_author_team": "Miles to Feet Redaktionsteam",
   "byline_reviewed": "Auf Genauigkeit überprüft",
   "byline_last_updated": "Zuletzt aktualisiert",
-  "footer_all_calculators": "Alle 23 Rechner",
+  "footer_all_calculators": "Alle 25 Rechner",
   "def_title": "Einheiten-Definitionen: Meile vs. Fuß",
   "def_mile_title": "Was ist eine Meile (mi)?",
   "def_mile_desc": "Eine <strong>Meile (mi)</strong> ist eine Längeneinheit im imperialen und US-amerikanischen Maßsystem. Eine Landmeile entspricht genau <strong>5.280 Fuß</strong>, 1.760 Yards oder 1,609344 Kilometern (1.609,344 Meter).",
@@ -197,5 +197,15 @@
   "meta_desc_running_distance_miles_to_feet": "Rechne Lauf- und Gehstrecken von Meilen in Fuß um. Überprüfe die Richtwerte für 5K, 10K, Halbmarathon und Marathon.",
   "meta_desc_sitemap": "Vollständige Sitemap für Miles to Feet — durchsuche alle Umrechner, Blogbeiträge und Informationsseiten an einem Ort.",
   "meta_desc_square_miles_to_square_feet": "Rechne Quadratmeilen sofort in Quadratfuß um. Gib einen Wert in Quadratmeilen ein, um die genaue Fläche in Quadratfuß zu erhalten, mit Formel und Tabellen.",
-  "meta_desc_terms_conditions": "Allgemeine Geschäftsbedingungen für Miles to Feet. Lies unsere Nutzungsbedingungen, Haftungsausschlüsse für Rechner und Richtlinien zur zulässigen Nutzung."
+  "meta_desc_terms_conditions": "Allgemeine Geschäftsbedingungen für Miles to Feet. Lies unsere Nutzungsbedingungen, Haftungsausschlüsse für Rechner und Richtlinien zur zulässigen Nutzung.",
+  "faq6_q": "Wie rechne ich Lauf- oder Gehstrecken von Meilen in Fuß um?",
+  "faq6_a": "Es gilt dieselbe Multiplikationsformel: Multiplizieren Sie Ihre Lauf- oder Gehstrecke in Meilen mit 5.280, um die Gesamtstrecke in Fuß zu erhalten. Zum Beispiel entspricht eine 5K-Laufstrecke etwa 3,1 Meilen, was 16.368 Fuß entspricht (3,1 x 5.280).",
+  "faq7_q": "Wie kann ich mir merken, wie viel Fuß eine Meile hat?",
+  "faq7_a": "Ein einfacher Trick: Merken Sie sich, dass eine Meile etwa 4 Runden auf einer Standard-Laufbahn von 1.320 Fuß entspricht.",
+  "faq8_q": "Wie rechnet man Fuß in Meilen um?",
+  "faq8_a": "Teilen Sie die Anzahl der Fuß durch 5.280. Zum Beispiel: 10.560 Fuß ÷ 5.280 = 2 Meilen.",
+  "h1_feet_per_second_to_mph": "Fuß pro Sekunde in Meilen pro Stunde Umrechner",
+  "h1_feet_to_nautical_miles": "Fuß in Seemeilen Umrechner",
+  "meta_desc_feet_per_second_to_mph": "Rechne die Geschwindigkeit von Fuß pro Sekunde (ft/s) sofort in Meilen pro Stunde (mph) um. Überprüfe Geschwindigkeitsformeln und schnelle Referenzen.",
+  "meta_desc_feet_to_nautical_miles": "Rechne Fuß sofort in Seemeilen um. Gib einen Wert in Fuß ein, um das genaue Ergebnis in Seemeilen zu erhalten, mit Formel und Tabellen."
 }

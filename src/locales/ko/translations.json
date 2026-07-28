@@ -122,7 +122,7 @@
   "byline_author_team": "Miles to Feet 편집팀",
   "byline_reviewed": "정확성 검토 완료",
   "byline_last_updated": "최종 수정일",
-  "footer_all_calculators": "모든 23개 계산기",
+  "footer_all_calculators": "모든 25개 계산기",
   "def_title": "단위 정의: 마일 vs 피트",
   "def_mile_title": "마일(mi)이란?",
   "def_mile_desc": "<strong>마일(mi)</strong>은 야드파운드법과 미국 관습 단위계에서의 길이 단위입니다. 1 법정 마일은 정확히 <strong>5,280피트</strong>, 1,760야드, 또는 1.609344킬로미터(1,609.344미터)에 해당합니다.",
@@ -197,5 +197,15 @@
   "meta_desc_running_distance_miles_to_feet": "달리기 및 걷기 거리를 마일에서 피트로 변환하세요. 5K, 10K, 하프 마라톤, 마라톤 기준값을 확인하세요.",
   "meta_desc_sitemap": "Miles to Feet의 전체 사이트맵 — 모든 변환 계산기, 블로그 게시물 및 정보 페이지를 한 곳에서 둘러보세요.",
   "meta_desc_square_miles_to_square_feet": "제곱마일을 제곱피트로 즉시 변환합니다. 제곱마일 값을 입력하면 공식과 환산표와 함께 정확한 제곱피트 면적을 얻을 수 있습니다.",
-  "meta_desc_terms_conditions": "Miles to Feet 이용 약관. 서비스 약관, 계산기 면책 조항 및 허용 가능한 사용 지침을 확인하세요."
+  "meta_desc_terms_conditions": "Miles to Feet 이용 약관. 서비스 약관, 계산기 면책 조항 및 허용 가능한 사용 지침을 확인하세요.",
+  "faq6_q": "달리기나 걷기 거리를 마일에서 피트로 어떻게 변환하나요?",
+  "faq6_a": "동일한 곱셈 공식이 적용됩니다: 마일 단위의 달리기 또는 걷기 거리에 5,280을 곱하면 총 피트 거리가 나옵니다. 예를 들어 5K 달리기 거리는 약 3.1마일이며, 이는 16,368피트(3.1 x 5,280)에 해당합니다.",
+  "faq7_q": "1마일이 몇 피트인지 어떻게 기억하나요?",
+  "faq7_a": "간단한 방법: 1마일은 표준 1,320피트 트랙을 약 4바퀴 도는 거리와 비슷하다고 기억하세요.",
+  "faq8_q": "피트를 마일로 어떻게 변환하나요?",
+  "faq8_a": "피트 수를 5,280으로 나눕니다. 예: 10,560피트 ÷ 5,280 = 2마일.",
+  "h1_feet_per_second_to_mph": "초당 피트를 시간당 마일로 변환",
+  "h1_feet_to_nautical_miles": "피트를 해리로 변환",
+  "meta_desc_feet_per_second_to_mph": "초당 피트(ft/s)에서 시간당 마일(mph)로 속도를 즉시 변환합니다. 속도 공식과 빠른 참고 자료를 확인하세요.",
+  "meta_desc_feet_to_nautical_miles": "피트를 해리로 즉시 변환합니다. 피트 값을 입력하면 공식과 환산표와 함께 정확한 해리 결과를 얻을 수 있습니다."
 }

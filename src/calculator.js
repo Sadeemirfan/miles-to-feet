@@ -559,13 +559,20 @@ document.addEventListener('DOMContentLoaded', () => {
       tab2Mid = '2,640 Feet'; tab2End = '1 Statute Mile (5,280 ft)';
       tab1Info = '1 Nautical Mile = 6,076.115 Feet. Based on Earth circumference minute of arc.';
       tab2Info = '1 Statute Mile = 5,280 Feet. Standard land measurement unit.';
-    } else if (inputUnit === 'mph') {
+    } else if (inputUnit === 'mph' || inputUnit === 'ft/s') {
       tab1Name = '60 MPH'; tab2Name = '88 ft/s';
       tab1Width = '100%'; tab2Width = '100%';
       tab1Mid = '30 MPH'; tab1End = '60 MPH (88 ft/s)';
       tab2Mid = '44 ft/s'; tab2End = '88 ft/s (60 MPH)';
       tab1Info = '60 MPH converts to exactly 88 feet per second speed.';
       tab2Info = '88 feet per second is the highway speed equivalent to 60 MPH.';
+    } else if (inputUnit === 'ft' && outputUnit === 'nmi') {
+      tab1Name = '1 Nautical Mile'; tab2Name = '1 Statute Mile';
+      tab1Width = '100%'; tab2Width = '86.9%';
+      tab1Mid = '3,038 Feet'; tab1End = '1 Nautical Mile (6,076 ft)';
+      tab2Mid = '2,640 Feet'; tab2End = '1 Statute Mile (5,280 ft)';
+      tab1Info = '1 Nautical Mile = 6,076.115 Feet. Based on Earth circumference minute of arc.';
+      tab2Info = '1 Statute Mile = 5,280 Feet. Standard land measurement unit.';
     } else if (inputUnit === 'sq mi') {
       tab1Name = '1 Sq Mile'; tab2Name = '27,878,400 Sq Ft';
       tab1Width = '100%'; tab2Width = '100%';
@@ -624,7 +631,7 @@ document.addEventListener('DOMContentLoaded', () => {
     markers[3].desc = t('scale_mark4_desc', markers[3].desc);
   }
 
-  if (inputUnit === 'mph') {
+  if (inputUnit === 'mph' || inputUnit === 'ft/s') {
     markers = [
       { id: 'mark-track', left: '7.5%', icon: '🚶‍♂️', title: 'Walking Speed', desc: 'Typically 3 to 4 mph (4.4 to 5.9 ft/s). Easy walking pace.' },
       { id: 'mark-5k', left: '25%', icon: '🚴‍♀️', title: 'City Speed Limit', desc: 'Often 25 to 30 mph (36.7 to 44 ft/s) in residential areas.' },

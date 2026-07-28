@@ -668,6 +668,8 @@ header {
 
 .table-container.active {
   display: block;
+  max-height: 520px;
+  overflow-y: auto;
 }
 
 .conv-table {
@@ -688,6 +690,9 @@ header {
   color: var(--text-main);
   font-family: var(--font-heading);
   font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .conv-table tr:hover td {

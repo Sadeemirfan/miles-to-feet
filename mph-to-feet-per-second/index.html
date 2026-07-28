@@ -61,7 +61,7 @@
   {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "Miles Per Hour to Feet Per Second Converter Converter",
+  "name": "Miles Per Hour to Feet Per Second Converter",
   "url": "https://milestofeet.com/mph-to-feet-per-second/",
   "description": "Convert speed from miles per hour (mph) to feet per second (ft/s) instantly. Check speed formulas and quick references.",
   "applicationCategory": "BusinessApplication",
@@ -151,11 +151,15 @@
           <!-- Inlined SVG path fallback if use tag isn't fully loaded -->
           <rect x="15" y="15" width="70" height="70" rx="10" fill="#1B2A4A" stroke="#FAF7F0" stroke-width="2"/>
           <rect x="18" y="18" width="64" height="64" rx="8" fill="none" stroke="#C08A3E" stroke-width="1.5" opacity="0.3"/>
-          <g stroke="#C08A3E" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
-            <path d="M 25 62 L 25 38 L 32 50 L 39 38 L 39 62" />
-            <line x1="45" y1="50" x2="55" y2="50" />
-            <path d="M 51 44 L 55 50 L 51 56" />
-            <path d="M 61 62 L 61 38 L 75 38 M 61 50 L 70 50" />
+          <g stroke="#C08A3E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+            <rect x="24" y="44" width="52" height="12" rx="2" fill="#C08A3E" fill-opacity="0.12" stroke-width="2"/>
+            <line x1="24" y1="44" x2="24" y2="56" />
+            <line x1="76" y1="44" x2="76" y2="56" />
+            <line x1="34" y1="44" x2="34" y2="50" />
+            <line x1="44" y1="44" x2="44" y2="50" />
+            <line x1="54" y1="44" x2="54" y2="50" />
+            <line x1="64" y1="44" x2="64" y2="50" />
+            <path d="M50 44 L50 30 M44 36 L50 30 L56 36" stroke-width="4.5" />
           </g>
         </svg>
         <div class="logo-text" data-i18n="brand_name">Miles to Feet</div>
@@ -273,13 +277,13 @@
         <div class="presets-container">
           <div class="presets-label">Quick Presets:</div>
           <div class="presets-grid">
-            <button class="preset-btn" data-value="1">1 mi</button>
-            <button class="preset-btn" data-value="2.5">2.5 mi</button>
-            <button class="preset-btn" data-value="5">5 mi</button>
-            <button class="preset-btn" data-value="10">10 mi</button>
-            <button class="preset-btn" data-value="26.2">26.2 mi</button>
-            <button class="preset-btn" data-value="50">50 mi</button>
-            <button class="preset-btn" data-value="100">100 mi</button>
+            <button class="preset-btn" data-value="10">10 mph</button>
+            <button class="preset-btn" data-value="20">20 mph</button>
+            <button class="preset-btn" data-value="30">30 mph</button>
+            <button class="preset-btn" data-value="45">45 mph</button>
+            <button class="preset-btn" data-value="60">60 mph</button>
+            <button class="preset-btn" data-value="70">70 mph</button>
+            <button class="preset-btn" data-value="100">100 mph</button>
           </div>
         </div>
 
@@ -470,60 +474,79 @@
     <section class="tables-section">
       <h2>Miles Per Hour and Feet Per Second Conversion Tables</h2>
       <div class="table-tabs">
-        <button class="tab-btn active" data-target="tbl1">Miles Per Hour to Feet Per Second</button>
-        <button class="tab-btn" data-target="tbl2">Feet Per Second to Miles Per Hour</button>
+        <button class="tab-btn active" data-target="mi-to-ft-table">Miles Per Hour to Feet Per Second</button>
+        <button class="tab-btn" data-target="ft-to-mi-table">Feet Per Second to Miles Per Hour</button>
       </div>
 
-      <!-- Miles to Feet Table -->
+      <!-- MPH to FT/S Table -->
       <div class="table-container active" id="mi-to-ft-table">
         <table class="conv-table">
           <thead>
             <tr>
-              <th>Miles (mi)</th>
-              <th>Feet (ft)</th>
+              <th>Miles Per Hour (mph)</th>
+              <th>Feet Per Second (ft/s)</th>
               <th>Formula</th>
             </tr>
           </thead>
           <tbody>
-            <tr><td>0.1 mi</td><td>528 ft</td><td>0.1 &times; 5,280</td></tr>
-            <tr><td>0.25 mi</td><td>1,320 ft</td><td>0.25 &times; 5,280</td></tr>
-            <tr><td>0.5 mi</td><td>2,640 ft</td><td>0.5 &times; 5,280</td></tr>
-            <tr><td>1 mi</td><td>5,280 ft</td><td>1 &times; 5,280</td></tr>
-            <tr><td>2 mi</td><td>10,560 ft</td><td>2 &times; 5,280</td></tr>
-            <tr><td>3 mi</td><td>15,840 ft</td><td>3 &times; 5,280</td></tr>
-            <tr><td>5 mi</td><td>26,400 ft</td><td>5 &times; 5,280</td></tr>
-            <tr><td>10 mi</td><td>52,800 ft</td><td>10 &times; 5,280</td></tr>
-            <tr><td>26.2 mi (Marathon)</td><td>138,336 ft</td><td>26.2 &times; 5,280</td></tr>
-            <tr><td>50 mi</td><td>264,000 ft</td><td>50 &times; 5,280</td></tr>
-            <tr><td>100 mi</td><td>528,000 ft</td><td>100 &times; 5,280</td></tr>
+<tr><td>1 mph</td><td>1.47 ft/s</td><td>1 &times; 1.46667</td></tr>
+            <tr><td>5 mph</td><td>7.33 ft/s</td><td>5 &times; 1.46667</td></tr>
+            <tr><td>10 mph</td><td>14.67 ft/s</td><td>10 &times; 1.46667</td></tr>
+            <tr><td>15 mph</td><td>22.00 ft/s</td><td>15 &times; 1.46667</td></tr>
+            <tr><td>20 mph</td><td>29.33 ft/s</td><td>20 &times; 1.46667</td></tr>
+            <tr><td>25 mph</td><td>36.67 ft/s</td><td>25 &times; 1.46667</td></tr>
+            <tr><td>30 mph</td><td>44.00 ft/s</td><td>30 &times; 1.46667</td></tr>
+            <tr><td>35 mph</td><td>51.33 ft/s</td><td>35 &times; 1.46667</td></tr>
+            <tr><td>40 mph</td><td>58.67 ft/s</td><td>40 &times; 1.46667</td></tr>
+            <tr><td>45 mph</td><td>66.00 ft/s</td><td>45 &times; 1.46667</td></tr>
+            <tr><td>50 mph</td><td>73.33 ft/s</td><td>50 &times; 1.46667</td></tr>
+            <tr><td>55 mph</td><td>80.67 ft/s</td><td>55 &times; 1.46667</td></tr>
+            <tr><td>60 mph</td><td>88.00 ft/s</td><td>60 &times; 1.46667</td></tr>
+            <tr><td>65 mph</td><td>95.33 ft/s</td><td>65 &times; 1.46667</td></tr>
+            <tr><td>70 mph</td><td>102.67 ft/s</td><td>70 &times; 1.46667</td></tr>
+            <tr><td>75 mph</td><td>110.00 ft/s</td><td>75 &times; 1.46667</td></tr>
+            <tr><td>80 mph</td><td>117.33 ft/s</td><td>80 &times; 1.46667</td></tr>
+            <tr><td>90 mph</td><td>132.00 ft/s</td><td>90 &times; 1.46667</td></tr>
+            <tr><td>100 mph</td><td>146.67 ft/s</td><td>100 &times; 1.46667</td></tr>
+            <tr><td>120 mph</td><td>176.00 ft/s</td><td>120 &times; 1.46667</td></tr>
           </tbody>
         </table>
       </div>
 
-      <!-- Feet to Miles Table -->
+      <!-- FT/S to MPH Table -->
       <div class="table-container" id="ft-to-mi-table">
         <table class="conv-table">
           <thead>
             <tr>
-              <th>Feet (ft)</th>
-              <th>Miles (mi)</th>
+              <th>Feet Per Second (ft/s)</th>
+              <th>Miles Per Hour (mph)</th>
               <th>Formula</th>
             </tr>
           </thead>
           <tbody>
-            <tr><td>100 ft</td><td>0.0189 mi</td><td>100 &divide; 5,280</td></tr>
-            <tr><td>500 ft</td><td>0.0947 mi</td><td>500 &divide; 5,280</td></tr>
-            <tr><td>1,000 ft</td><td>0.1894 mi</td><td>1,000 &divide; 5,280</td></tr>
-            <tr><td>1,609 ft (approx. 1 mile)</td><td>0.3047 mi</td><td>1,609 &divide; 5,280</td></tr>
-            <tr><td>2,000 ft</td><td>0.3788 mi</td><td>2,000 &divide; 5,280</td></tr>
-            <tr><td>5,280 ft (1 mile)</td><td>1.0000 mi</td><td>5,280 &divide; 5,280</td></tr>
-            <tr><td>10,000 ft</td><td>1.8939 mi</td><td>10,000 &divide; 5,280</td></tr>
-            <tr><td>20,000 ft</td><td>3.7879 mi</td><td>20,000 &divide; 5,280</td></tr>
-            <tr><td>50,000 ft</td><td>9.4697 mi</td><td>50,000 &divide; 5,280</td></tr>
+<tr><td>1 ft/s</td><td>0.68 mph</td><td>1 &divide; 1.46667</td></tr>
+            <tr><td>5 ft/s</td><td>3.41 mph</td><td>5 &divide; 1.46667</td></tr>
+            <tr><td>10 ft/s</td><td>6.82 mph</td><td>10 &divide; 1.46667</td></tr>
+            <tr><td>15 ft/s</td><td>10.23 mph</td><td>15 &divide; 1.46667</td></tr>
+            <tr><td>20 ft/s</td><td>13.64 mph</td><td>20 &divide; 1.46667</td></tr>
+            <tr><td>25 ft/s</td><td>17.05 mph</td><td>25 &divide; 1.46667</td></tr>
+            <tr><td>30 ft/s</td><td>20.45 mph</td><td>30 &divide; 1.46667</td></tr>
+            <tr><td>44 ft/s</td><td>30.00 mph</td><td>44 &divide; 1.46667</td></tr>
+            <tr><td>50 ft/s</td><td>34.09 mph</td><td>50 &divide; 1.46667</td></tr>
+            <tr><td>66 ft/s</td><td>45.00 mph</td><td>66 &divide; 1.46667</td></tr>
+            <tr><td>88 ft/s</td><td>60.00 mph</td><td>88 &divide; 1.46667</td></tr>
+            <tr><td>100 ft/s</td><td>68.18 mph</td><td>100 &divide; 1.46667</td></tr>
+            <tr><td>110 ft/s</td><td>75.00 mph</td><td>110 &divide; 1.46667</td></tr>
+            <tr><td>132 ft/s</td><td>90.00 mph</td><td>132 &divide; 1.46667</td></tr>
+            <tr><td>150 ft/s</td><td>102.27 mph</td><td>150 &divide; 1.46667</td></tr>
+            <tr><td>175 ft/s</td><td>119.32 mph</td><td>175 &divide; 1.46667</td></tr>
+            <tr><td>200 ft/s</td><td>136.36 mph</td><td>200 &divide; 1.46667</td></tr>
+            <tr><td>220 ft/s</td><td>150.00 mph</td><td>220 &divide; 1.46667</td></tr>
           </tbody>
         </table>
       </div>
     </section>
+
 
     <!-- All Length & Speed Calculators Directory Section -->
     <div class="ruler-divider"></div>
@@ -542,6 +565,7 @@
             <li><a href="/miles-to-inches/">Miles to Inches Converter</a></li>
             <li><a href="/miles-to-centimeters/">Miles to Centimeters Converter</a></li>
             <li><a href="/nautical-miles-to-feet/">Nautical Miles to Feet</a></li>
+            <li><a href="/feet-to-nautical-miles/">Feet to Nautical Miles</a></li>
             <li><a href="/square-miles-to-square-feet/">Square Miles to Square Feet</a></li>
           </ul>
         </div>
@@ -567,6 +591,7 @@
           <h3>Speed & Math Guides</h3>
           <ul>
             <li><a href="/mph-to-feet-per-second/">MPH to Feet Per Second</a></li>
+            <li><a href="/feet-per-second-to-mph/">Feet Per Second to MPH</a></li>
             <li><a href="/miles-to-feet-chart/">Printable Conversion Chart</a></li>
             <li><a href="/running-distance-miles-to-feet/">Running Distance: Miles to Feet</a></li>
             <li><a href="/miles-to-feet-vs-yards/">Miles to Feet vs Yards</a></li>
@@ -725,11 +750,15 @@
           <!-- Inlined SVG path fallback if use tag isn't fully loaded -->
           <rect x="15" y="15" width="70" height="70" rx="10" fill="#1B2A4A" stroke="#FAF7F0" stroke-width="2"/>
           <rect x="18" y="18" width="64" height="64" rx="8" fill="none" stroke="#C08A3E" stroke-width="1.5" opacity="0.3"/>
-          <g stroke="#C08A3E" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
-            <path d="M 25 62 L 25 38 L 32 50 L 39 38 L 39 62" />
-            <line x1="45" y1="50" x2="55" y2="50" />
-            <path d="M 51 44 L 55 50 L 51 56" />
-            <path d="M 61 62 L 61 38 L 75 38 M 61 50 L 70 50" />
+          <g stroke="#C08A3E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+            <rect x="24" y="44" width="52" height="12" rx="2" fill="#C08A3E" fill-opacity="0.12" stroke-width="2"/>
+            <line x1="24" y1="44" x2="24" y2="56" />
+            <line x1="76" y1="44" x2="76" y2="56" />
+            <line x1="34" y1="44" x2="34" y2="50" />
+            <line x1="44" y1="44" x2="44" y2="50" />
+            <line x1="54" y1="44" x2="54" y2="50" />
+            <line x1="64" y1="44" x2="64" y2="50" />
+            <path d="M50 44 L50 30 M44 36 L50 30 L56 36" stroke-width="4.5" />
           </g>
         </svg>
           <div class="logo-text" data-i18n="brand_name">Miles to Feet</div>
@@ -742,7 +771,7 @@
         <ul>
           <li><a href="/" data-i18n="nav_miles_to_feet">Miles to Feet</a></li>
           <li><a href="/feet-to-miles/" data-i18n="nav_feet_to_miles">Feet to Miles</a></li>
-          <li><a href="/#all-calculators" data-i18n="footer_all_calculators">All 23 Calculators</a></li>
+          <li><a href="/#all-calculators" data-i18n="footer_all_calculators">All 25 Calculators</a></li>
         </ul>
       </div>
 

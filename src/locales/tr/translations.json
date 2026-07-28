@@ -69,7 +69,7 @@
   "footer_placeholder_email": "E-posta adresiniz",
   "footer_subscribe": "Abone Ol",
   "footer_sitemap": "Site Haritası",
-  "footer_all_calculators": "Tüm 23 Çevirici",
+  "footer_all_calculators": "Tüm 25 Çevirici",
   "cookie_consent_text": "Trafiği analiz etmek ve reklamları kişiselleştirmek için çerezler kullanıyoruz. \"Hepsini Kabul Et\" seçeneğine tıklayarak bunu onaylamış olursunuz.",
   "cookie_consent_accept": "Hepsini Kabul Et",
   "cookie_consent_reject": "Zorunlu Olmayanları Reddet",
@@ -197,5 +197,15 @@
   "meta_desc_running_distance_miles_to_feet": "Koşu ve yürüyüş mesafelerini milden fite çevirin. 5K, 10K, yarı maraton ve maraton referans değerlerini kontrol edin.",
   "meta_desc_sitemap": "Miles to Feet için tam site haritası — tüm dönüşüm hesaplayıcılarına, blog yazılarına ve bilgi sayfalarına tek bir yerden göz atın.",
   "meta_desc_square_miles_to_square_feet": "Mil karesini anında fit karesine çevirin. Fit kare cinsinden kesin alanı, formül ve tablolarla birlikte almak için mil kare cinsinden bir değer girin.",
-  "meta_desc_terms_conditions": "Miles to Feet kullanım Şartları ve Koşulları. Hizmet şartlarımızı, hesaplayıcı feragatnamelerini ve kabul edilebilir kullanım kurallarını okuyun."
+  "meta_desc_terms_conditions": "Miles to Feet kullanım Şartları ve Koşulları. Hizmet şartlarımızı, hesaplayıcı feragatnamelerini ve kabul edilebilir kullanım kurallarını okuyun.",
+  "faq6_q": "Koşu veya yürüyüş mesafesini milden fite nasıl çeviririm?",
+  "faq6_a": "Aynı çarpma formülü geçerlidir: mil cinsinden koşu veya yürüyüş mesafenizi 5.280 ile çarparak toplam fit mesafeyi bulun. Örneğin, 5K koşu mesafesi yaklaşık 3,1 mildir ve bu 16.368 fite (3,1 x 5.280) eşittir.",
+  "faq7_q": "Bir milde kaç fit olduğunu nasıl hatırlayabilirim?",
+  "faq7_a": "Basit bir yöntem: bir milin, standart 1.320 fitlik bir pistte yaklaşık 4 tura eşit olduğunu hatırlayın.",
+  "faq8_q": "Fit nasıl mile çevrilir?",
+  "faq8_a": "Fit sayısını 5.280'e bölün. Örnek: 10.560 fit ÷ 5.280 = 2 mil.",
+  "h1_feet_per_second_to_mph": "Saniyede Fit - Mil/Saat Çevirici",
+  "h1_feet_to_nautical_miles": "Fit - Deniz Mili Çevirici",
+  "meta_desc_feet_per_second_to_mph": "Hızı saniyede fitten (ft/s) mil/saate (mph) anında çevirin. Hız formüllerini ve hızlı referansları kontrol edin.",
+  "meta_desc_feet_to_nautical_miles": "Fiti anında deniz miline çevirin. Deniz mili cinsinden kesin sonucu, formül ve tablolarla birlikte almak için fit cinsinden bir değer girin."
 }

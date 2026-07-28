@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prerender": "node sync_homepages.js && node sync_all_pages.js && node prerender_locales.js",
+    "prerender": "node sync_homepages.js && node sync_all_pages.js && node prerender_locales.js && node generate_sitemap.js",
     "build": "npm run prerender && vite build",
     "preview": "vite preview"
   },

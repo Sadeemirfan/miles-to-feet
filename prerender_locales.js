@@ -75,12 +75,20 @@ locales.forEach(loc => {
     });
 
     // 4. Replace data-i18n elements (multi-pass to handle potential nesting)
+    // These keys hold different English text on every page (e.g. hero_desc, math_section_title)
+    // but translations.json only stores one (homepage) value per key -- so they must only be
+    // auto-replaced on the homepage, or they'd overwrite every subpage with homepage content.
+    const pageSpecificKeys = new Set([
+      'hero_desc', 'quick_answer_val', 'math_section_title', 'math_section_desc',
+      'formula_desc', 'example_desc', 'label_enter_miles', 'label_result_feet',
+    ]);
+
     let prev;
     let passes = 0;
     do {
       prev = content;
       content = content.replace(/<([a-zA-Z0-9-]+)([^>]*\bdata-i18n="([^"]+)"[^>]*)>([\s\S]*?)<\/\1>/g, (match, tag, attrs, key, oldContent) => {
-        const shouldReplace = dict[key] !== undefined;
+        const shouldReplace = dict[key] !== undefined && (isHomepage || !pageSpecificKeys.has(key));
 
         if (shouldReplace) {
           const val = dict[key];

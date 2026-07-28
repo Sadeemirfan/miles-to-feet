@@ -69,7 +69,7 @@
   "footer_placeholder_email": "Su dirección de correo electrónico",
   "footer_subscribe": "Suscribirse",
   "footer_sitemap": "Mapa del sitio",
-  "footer_all_calculators": "Los 23 Calculadores",
+  "footer_all_calculators": "Los 25 Calculadores",
   "cookie_consent_text": "Utilizamos cookies para analizar el tráfico del sitio, personalizar los anuncios y mejorar su experiencia. Al hacer clic en \"Aceptar todo\", acepta nuestro uso de cookies de acuerdo con nuestra",
   "cookie_consent_accept": "Aceptar todo",
   "cookie_consent_reject": "Rechazar no esenciales",
@@ -197,5 +197,15 @@
   "meta_desc_running_distance_miles_to_feet": "Convierte distancias de carrera y caminata de millas a pies. Comprueba los puntos de referencia de 5K, 10K, media maratón y maratón.",
   "meta_desc_sitemap": "Mapa del sitio completo de Miles to Feet — explora todas las calculadoras de conversión, entradas del blog y páginas informativas en un solo lugar.",
   "meta_desc_square_miles_to_square_feet": "Convierte millas cuadradas a pies cuadrados al instante. Introduce un valor en millas cuadradas para obtener el área exacta en pies cuadrados, con fórmula y tablas.",
-  "meta_desc_terms_conditions": "Términos y Condiciones de uso de Miles to Feet. Lee nuestros términos de servicio, avisos legales de las calculadoras y pautas de uso aceptable."
+  "meta_desc_terms_conditions": "Términos y Condiciones de uso de Miles to Feet. Lee nuestros términos de servicio, avisos legales de las calculadoras y pautas de uso aceptable.",
+  "faq6_q": "¿Cómo convierto la distancia de carrera o caminata de millas a pies?",
+  "faq6_a": "Se aplica la misma fórmula de multiplicación: multiplica tu distancia de carrera o caminata en millas por 5.280 para obtener la distancia total en pies. Por ejemplo, una distancia de 5K equivale aproximadamente a 3.1 millas, lo que equivale a 16.368 pies (3.1 x 5.280).",
+  "faq7_q": "¿Cómo puedo recordar cuántos pies hay en una milla?",
+  "faq7_a": "Un truco simple: recuerda que una milla equivale aproximadamente a 4 vueltas en una pista estándar de 1.320 pies.",
+  "faq8_q": "¿Cómo se convierten los pies a millas?",
+  "faq8_a": "Divide el número de pies entre 5.280. Por ejemplo: 10.560 pies ÷ 5.280 = 2 millas.",
+  "h1_feet_per_second_to_mph": "Conversor de Pies por Segundo a Millas por Hora",
+  "h1_feet_to_nautical_miles": "Conversor de Pies a Millas Náuticas",
+  "meta_desc_feet_per_second_to_mph": "Convierte la velocidad de pies por segundo (ft/s) a millas por hora (mph) al instante. Comprueba fórmulas de velocidad y referencias rápidas.",
+  "meta_desc_feet_to_nautical_miles": "Convierte pies a millas náuticas al instante. Introduce un valor en pies para obtener el resultado exacto en millas náuticas, con fórmula y tablas."
 }

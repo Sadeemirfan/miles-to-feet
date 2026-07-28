@@ -122,7 +122,7 @@
   "byline_author_team": "Team editoriale di Miles to Feet",
   "byline_reviewed": "Verificato per accuratezza",
   "byline_last_updated": "Ultimo aggiornamento",
-  "footer_all_calculators": "Tutti i 23 calcolatori",
+  "footer_all_calculators": "Tutti i 25 calcolatori",
   "def_title": "Definizioni delle unità: Miglio vs Piede",
   "def_mile_title": "Cos'è un Miglio (mi)?",
   "def_mile_desc": "Un <strong>miglio (mi)</strong> è un'unità di lunghezza nei sistemi di misurazione imperiale e consuetudinario statunitense. Un miglio terrestre equivale esattamente a <strong>5.280 piedi</strong>, 1.760 iarde o 1,609344 chilometri (1.609,344 metri).",
@@ -197,5 +197,15 @@
   "meta_desc_running_distance_miles_to_feet": "Converti le distanze di corsa e camminata da miglia a piedi. Verifica i parametri di riferimento per 5K, 10K, mezza maratona e maratona.",
   "meta_desc_sitemap": "Mappa completa del sito di Miles to Feet — sfoglia tutti i calcolatori di conversione, gli articoli del blog e le pagine informative in un unico posto.",
   "meta_desc_square_miles_to_square_feet": "Converti le miglia quadrate in piedi quadrati istantaneamente. Inserisci un valore in miglia quadrate per ottenere l'area esatta in piedi quadrati, con formula e tabelle.",
-  "meta_desc_terms_conditions": "Termini e Condizioni d'uso di Miles to Feet. Leggi i nostri termini di servizio, le esclusioni di responsabilità dei calcolatori e le linee guida per un uso accettabile."
+  "meta_desc_terms_conditions": "Termini e Condizioni d'uso di Miles to Feet. Leggi i nostri termini di servizio, le esclusioni di responsabilità dei calcolatori e le linee guida per un uso accettabile.",
+  "faq6_q": "Come converto la distanza di corsa o camminata da miglia a piedi?",
+  "faq6_a": "Si applica la stessa formula di moltiplicazione: moltiplica la tua distanza di corsa o camminata in miglia per 5.280 per ottenere la distanza totale in piedi. Ad esempio, una distanza di 5K è di circa 3,1 miglia, pari a 16.368 piedi (3,1 x 5.280).",
+  "faq7_q": "Come posso ricordare quanti piedi ci sono in un miglio?",
+  "faq7_a": "Un trucco semplice: ricorda che un miglio equivale a circa 4 giri di una pista di atletica standard da 1.320 piedi.",
+  "faq8_q": "Come si convertono i piedi in miglia?",
+  "faq8_a": "Dividi il numero di piedi per 5.280. Ad esempio: 10.560 piedi ÷ 5.280 = 2 miglia.",
+  "h1_feet_per_second_to_mph": "Convertitore da Piedi al Secondo a Miglia Orarie",
+  "h1_feet_to_nautical_miles": "Convertitore da Piedi a Miglia Nautiche",
+  "meta_desc_feet_per_second_to_mph": "Converti la velocità da piedi al secondo (ft/s) a miglia orarie (mph) istantaneamente. Verifica le formule di velocità e i riferimenti rapidi.",
+  "meta_desc_feet_to_nautical_miles": "Converti i piedi in miglia nautiche istantaneamente. Inserisci un valore in piedi per ottenere il risultato esatto in miglia nautiche, con formula e tabelle."
 }

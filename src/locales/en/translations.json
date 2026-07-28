@@ -69,7 +69,7 @@
   "footer_placeholder_email": "Your email address",
   "footer_subscribe": "Subscribe",
   "footer_sitemap": "Sitemap",
-  "footer_all_calculators": "All 23 Calculators",
+  "footer_all_calculators": "All 25 Calculators",
   "cookie_consent_text": "We use cookies to analyze site traffic, personalize ads, and improve your experience. By clicking \"Accept All\", you agree to our use of cookies per our",
   "cookie_consent_accept": "Accept All",
   "cookie_consent_reject": "Reject Non-Essential",
@@ -197,5 +197,15 @@
   "meta_desc_running_distance_miles_to_feet": "Convert running and walking distances from miles to feet. Check 5K, 10K, half marathon, and marathon benchmarks.",
   "meta_desc_sitemap": "Full sitemap for Miles to Feet — browse all conversion calculators, blog posts, and informational pages in one place.",
   "meta_desc_square_miles_to_square_feet": "Convert square miles to square feet instantly. Enter a value in sq mi to get the exact area in sq ft, with formula and tables.",
-  "meta_desc_terms_conditions": "Terms and Conditions of use for Miles to Feet. Read our terms of service, calculator disclaimers, and acceptable use guidelines."
+  "meta_desc_terms_conditions": "Terms and Conditions of use for Miles to Feet. Read our terms of service, calculator disclaimers, and acceptable use guidelines.",
+  "faq6_q": "How do I convert running or walking distance from miles to feet?",
+  "faq6_a": "The same multiplication formula applies: multiply your running or walking distance in miles by 5,280 to get your total distance in feet. For example, a 5K running distance is approximately 3.1 miles, which converts to 16,368 feet (3.1 × 5,280).",
+  "faq7_q": "How can I remember how many feet are in a mile?",
+  "faq7_a": "A simple trick: 5,280 sounds like \"five, two, eighty.\" Some people also remember that a mile is about 4 laps around a standard 1,320-foot running track.",
+  "faq8_q": "How do you convert feet to miles?",
+  "faq8_a": "Divide the number of feet by 5,280. For example, to convert 10,560 feet to miles, divide 10,560 by 5,280, which equals 2 miles.",
+  "h1_feet_per_second_to_mph": "Feet Per Second to Miles Per Hour Converter",
+  "h1_feet_to_nautical_miles": "Feet to Nautical Miles Converter",
+  "meta_desc_feet_per_second_to_mph": "Convert speed from feet per second (ft/s) to miles per hour (mph) instantly. Check speed formulas and quick references.",
+  "meta_desc_feet_to_nautical_miles": "Convert feet to nautical miles instantly. Enter a value in feet to get the exact result in nmi, with formula and tables."
 }
