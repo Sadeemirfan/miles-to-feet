@@ -58,6 +58,18 @@ locales.forEach(loc => {
       return `<link rel="canonical" href="https://milestofeet.com/${loc}/${subpath}" />`;
     });
 
+    // Localize URLs inside JSON-LD schema blocks (url/item/@id fields) so
+    // structured data on locale pages points to the locale-prefixed URL
+    // instead of the bare English one. Skip image/asset URLs.
+    const assetExt = /\.(png|svg|ico|jpg|jpeg)$/;
+    html = html.replace(
+      /("(?:url|item|@id)":\s*")https:\/\/milestofeet\.com\/([^"]*)"/g,
+      (match, prefix, subpath) => {
+        if (assetExt.test(subpath)) return match;
+        return `${prefix}https://milestofeet.com/${loc}/${subpath}"`;
+      }
+    );
+
     // Inject data-i18n tags for presets and history labels dynamically
     html = html.replace('<div class="presets-label">Quick Presets:</div>', '<div class="presets-label" data-i18n="presets_label">Quick Presets:</div>');
     html = html.replace('<span class="history-label">Recent Calculations:</span>', '<span class="history-label" data-i18n="history_label">Recent Calculations:</span>');
