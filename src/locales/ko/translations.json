@@ -163,5 +163,8 @@
   "scale_mark3_title": "비행기 순항 고도",
   "scale_mark3_desc": "상업용 여객기의 일반적인 순항 고도는 35,000피트입니다. 마일로는 해발 약 6.63마일 높이입니다.",
   "scale_mark4_title": "풀코스 마라톤",
-  "scale_mark4_desc": "공식 마라톤 거리는 26.2마일입니다. 주자는 무려 138,336피트의 거리를 달리게 됩니다!"
+  "scale_mark4_desc": "공식 마라톤 거리는 26.2마일입니다. 주자는 무려 138,336피트의 거리를 달리게 됩니다!",
+  "footer_placeholder_email": "이메일 주소",
+  "miles_to_yards_faq1_q": "1마일은 몇 야드인가요?",
+  "miles_to_yards_faq1_a": "표준 법정 마일 기준 정확히 1,760야드입니다."
 }

@@ -163,5 +163,8 @@
   "scale_mark3_title": "Altitude de cruzeiro",
   "scale_mark3_desc": "Normalmente 35.000 pés para aviões comerciais. Em milhas, são exatamente 6,63 milhas de altura.",
   "scale_mark4_title": "A Maratona completa",
-  "scale_mark4_desc": "Uma maratona oficial se estende por 26,2 milhas. Isso exige que os corredores percorram 138.336 pés!"
+  "scale_mark4_desc": "Uma maratona oficial se estende por 26,2 milhas. Isso exige que os corredores percorram 138.336 pés!",
+  "footer_placeholder_email": "Seu endereço de e-mail",
+  "miles_to_yards_faq1_q": "Quantas jardas existem em uma milha?",
+  "miles_to_yards_faq1_a": "Existem exatamente 1.760 jardas em uma milha de estatuto padrão."
 }

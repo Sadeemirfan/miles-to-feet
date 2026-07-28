@@ -164,5 +164,7 @@
   "scale_mark3_title": "Marschhöjd",
   "scale_mark3_desc": "Vanligtvis 35 000 fot för trafikflyg. I miles är detta exakt 6,63 miles över havet.",
   "scale_mark4_title": "Fullt Maraton",
-  "scale_mark4_desc": "Ett officiellt maraton är 26,2 miles. Det kräver att löpare avverkar hela 138 336 fot!"
+  "scale_mark4_desc": "Ett officiellt maraton är 26,2 miles. Det kräver att löpare avverkar hela 138 336 fot!",
+  "miles_to_yards_faq1_q": "Hur många yards går det på en engelsk mil?",
+  "miles_to_yards_faq1_a": "Det går exakt 1 760 yards på en standard engelsk mil."
 }

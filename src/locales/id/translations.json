@@ -164,5 +164,7 @@
   "scale_mark3_title": "Ketinggian Jelajah Pesawat",
   "scale_mark3_desc": "Biasanya 35.000 kaki untuk penerbangan sipil. Dalam mil, ini persis 6,63 mil di atas permukaan laut.",
   "scale_mark4_title": "Lari Maraton Penuh",
-  "scale_mark4_desc": "Maraton resmi berjarak 26,2 mil. Pelari harus menempuh jarak sangat jauh sebesar 138.336 kaki!"
+  "scale_mark4_desc": "Maraton resmi berjarak 26,2 mil. Pelari harus menempuh jarak sangat jauh sebesar 138.336 kaki!",
+  "miles_to_yards_faq1_q": "Berapa yard dalam satu mil?",
+  "miles_to_yards_faq1_a": "Ada tepat 1.760 yard dalam satu mil statuta standar."
 }

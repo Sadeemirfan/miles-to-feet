@@ -164,5 +164,7 @@
   "scale_mark3_title": "Wysokość przelotowa",
   "scale_mark3_desc": "Zazwyczaj 35 000 stóp dla pasażerskich samolotów. W milach to dokładnie 6,63 mili.",
   "scale_mark4_title": "Bieg maratoński",
-  "scale_mark4_desc": "Oficjalny maraton wynosi 26,2 mili. Biegacze muszą pokonać ogromny dystans 138 336 stóp!"
+  "scale_mark4_desc": "Oficjalny maraton wynosi 26,2 mili. Biegacze muszą pokonać ogromny dystans 138 336 stóp!",
+  "miles_to_yards_faq1_q": "Ile jardów jest w mili?",
+  "miles_to_yards_faq1_a": "W jednej standardowej mili statutowej jest dokładnie 1 760 jardów."
 }

@@ -164,5 +164,7 @@
   "scale_mark3_title": "Ketinggian Penerbangan",
   "scale_mark3_desc": "Biasanya 35,000 kaki bagi pesawat komersial. Dalam batu, ini adalah tepat 6.63 batu dari aras laut.",
   "scale_mark4_title": "Larian Maraton Penuh",
-  "scale_mark4_desc": "Acara maraton rasmi merangkumi 26.2 batu. Pelari perlu menamatkan jarak sebanyak 138,336 kaki!"
+  "scale_mark4_desc": "Acara maraton rasmi merangkumi 26.2 batu. Pelari perlu menamatkan jarak sebanyak 138,336 kaki!",
+  "miles_to_yards_faq1_q": "Berapakah bilangan ela dalam satu batu?",
+  "miles_to_yards_faq1_a": "Terdapat tepat 1,760 ela dalam satu batu statut standard."
 }

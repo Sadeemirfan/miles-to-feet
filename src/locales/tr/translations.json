@@ -164,5 +164,7 @@
   "scale_mark3_title": "Seyir İrtifası",
   "scale_mark3_desc": "Yolcu uçakları için genellikle 35.000 fit. Mil bazında deniz seviyesinden tam olarak 6,63 mil yüksekliktedir.",
   "scale_mark4_title": "Tam Maraton",
-  "scale_mark4_desc": "Resmi bir maraton 26,2 mildir. Bu, koşucuların 138.336 fitlik muazzam bir mesafeyi aşmasını gerektirir!"
+  "scale_mark4_desc": "Resmi bir maraton 26,2 mildir. Bu, koşucuların 138.336 fitlik muazzam bir mesafeyi aşmasını gerektirir!",
+  "miles_to_yards_faq1_q": "Bir milde kaç yarda vardır?",
+  "miles_to_yards_faq1_a": "Standart bir milde tam olarak 1.760 yarda bulunur."
 }

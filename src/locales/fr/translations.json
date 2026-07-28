@@ -165,5 +165,6 @@
   "scale_mark3_title": "Altitude de croisière",
   "scale_mark3_desc": "Généralement 35 000 pieds pour les avions commerciaux. En miles, c'est exactement 6,63 miles de haut.",
   "scale_mark4_title": "Le Marathon complet",
-  "scale_mark4_desc": "Un marathon officiel s'étend sur 26,2 miles. Les coureurs doivent parcourir 138 336 pieds !"
+  "scale_mark4_desc": "Un marathon officiel s'étend sur 26,2 miles. Les coureurs doivent parcourir 138 336 pieds !",
+  "footer_placeholder_email": "Votre adresse e-mail"
 }

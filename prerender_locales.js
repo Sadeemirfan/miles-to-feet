@@ -67,10 +67,12 @@ locales.forEach(loc => {
       }
     }
 
-    // 3. Replace data-i18n-placeholder
-    content = content.replace(/data-i18n-placeholder="([^"]+)"(\s+placeholder="[^"]*")?/g, (match, key) => {
+    // 3. Replace data-i18n-placeholder (strip any existing placeholder attr, before or after, to avoid duplicates)
+    content = content.replace(/<([a-zA-Z0-9-]+)([^>]*\bdata-i18n-placeholder="([^"]+)"[^>]*)>/g, (match, tag, attrs, key) => {
       const val = dict[key] || enJson[key] || '';
-      return `data-i18n-placeholder="${key}" placeholder="${val}"`;
+      const cleanedAttrs = attrs.replace(/\s+placeholder="[^"]*"/g, '');
+      const finalAttrs = cleanedAttrs.replace(`data-i18n-placeholder="${key}"`, `data-i18n-placeholder="${key}" placeholder="${val}"`);
+      return `<${tag}${finalAttrs}>`;
     });
 
     // 4. Replace data-i18n elements (multi-pass to handle potential nesting)

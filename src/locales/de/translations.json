@@ -163,5 +163,8 @@
   "scale_mark3_title": "Reiseflughöhe",
   "scale_mark3_desc": "Normalerweise 35.000 Fuß für Passagierflugzeuge. In Meilen sind das genau 6,63 Meilen Höhe.",
   "scale_mark4_title": "Der Marathon",
-  "scale_mark4_desc": "Ein Marathon beträgt 26,2 Meilen. Läufer müssen eine Distanz von 138.336 Fuß bewältigen!"
+  "scale_mark4_desc": "Ein Marathon beträgt 26,2 Meilen. Läufer müssen eine Distanz von 138.336 Fuß bewältigen!",
+  "footer_placeholder_email": "Ihre E-Mail-Adresse",
+  "miles_to_yards_faq1_q": "Wie viele Yards hat eine Meile?",
+  "miles_to_yards_faq1_a": "Eine Standard-Statutmeile hat genau 1.760 Yards."
 }

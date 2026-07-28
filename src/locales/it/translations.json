@@ -163,5 +163,8 @@
   "scale_mark3_title": "Quota di crociera",
   "scale_mark3_desc": "Tipicamente 35.000 piedi per aerei commerciali. In miglia, questo equivale a 6,63 miglia di altezza.",
   "scale_mark4_title": "La Maratona completa",
-  "scale_mark4_desc": "Una maratona ufficiale misura 26,2 miglia. Richiede ai corridori di coprire ben 138.336 piedi!"
+  "scale_mark4_desc": "Una maratona ufficiale misura 26,2 miglia. Richiede ai corridori di coprire ben 138.336 piedi!",
+  "footer_placeholder_email": "La tua email",
+  "miles_to_yards_faq1_q": "Quante iarde ci sono in un miglio?",
+  "miles_to_yards_faq1_a": "Ci sono esattamente 1.760 iarde in un miglio statutario standard."
 }
