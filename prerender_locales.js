@@ -60,11 +60,10 @@ locales.forEach(loc => {
       }
     }
 
-    // 2. Update <meta name="description"> (only on homepage to avoid overwriting page-specific descriptions)
-    if (isHomepage) {
-      if (dict.meta_desc) {
-        content = content.replace(/<meta name="description" content="[^"]*">/g, `<meta name="description" content="${dict.meta_desc}">`);
-      }
+    // 2. Update <meta name="description">
+    const metaDescKey = isHomepage ? 'meta_desc' : 'meta_desc_' + dirName.replace(/-/g, '_').replace(/\//g, '_');
+    if (dict[metaDescKey]) {
+      content = content.replace(/<meta name="description" content="[^"]*">/g, `<meta name="description" content="${dict[metaDescKey]}">`);
     }
 
     // 3. Replace data-i18n-placeholder (strip any existing placeholder attr, before or after, to avoid duplicates)
