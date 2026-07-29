@@ -141,6 +141,30 @@
           "@type": "Answer",
           "text": "Since feet are a smaller unit of measure than miles, you will have fewer miles for a given number of feet. Therefore, you divide by the conversion factor (5,280) to get the equivalent distance in miles."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "How many miles is 1,000 feet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "1,000 feet equals 0.1894 miles (1,000 divided by 5,280)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you convert feet to miles in Excel?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Enter the formula =A1/5280 in a cell, where A1 holds the value in feet. Excel returns the result in miles as a decimal."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is a nautical mile the same as 5,280 feet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, a nautical mile equals 6,076.12 feet, which is longer than the 5,280-foot statute mile used on land."
+        }
       }
     ]
   }
@@ -249,7 +273,7 @@
       </div>
       
       <!-- Calculator Widget -->
-      <div class="calculator-card" id="calculator-widget">
+      <div class="calculator-card" id="calculator-widget" data-converter="feet-to-miles" data-factor="5280" data-operation="divide" data-input-unit="ft" data-output-unit="mi">
         <div class="calculator-row">
           <div class="input-group">
             <label for="feet-input">Enter Feet (ft)</label>
@@ -332,6 +356,208 @@
             <div class="formula-text">10,560 &divide; 5,280 = 2 mi</div>
           </div>
         </div>
+      </div>
+
+      <!-- Interactive Diagram: Math Flow -->
+      <div class="interactive-diagram" style="max-width: 600px; margin: 2rem auto 0 auto;">
+        <h4 style="margin-bottom: 0.5rem; text-align: center; color: var(--primary);" data-i18n="diagram_flow_title">ইন্টারেক্টিভ রূপান্তর প্রবাহ</h4>
+        <p style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-bottom: 1rem;" data-i18n="diagram_flow_desc">স্লাইডারটি টেনে দেখুন কীভাবে মাইল ফুটে পরিবর্তিত হয়।</p>
+        <div class="diagram-flow">
+          <div class="flow-node" id="math-flow-miles">5,280 ft</div>
+          <div class="flow-connector">
+            <div class="flow-pulse"></div>
+          </div>
+          <div class="flow-node" id="math-flow-factor" style="border-color: var(--border-strong); color: var(--text-muted); font-size: 0.85rem; min-width: 80px;">&divide; 5,280</div>
+          <div class="flow-connector">
+            <div class="flow-pulse"></div>
+          </div>
+          <div class="flow-node accent-node" id="math-flow-feet">1 mi</div>
+        </div>
+        <input type="range" min="100" max="20000" step="100" value="5280" class="diagram-slider" id="math-flow-slider" aria-label="Math flow feet slider">
+      </div>
+    </section>
+
+    <!-- Historical Origin (Statute Mile, Roman Pace, Furlongs) -->
+    <div class="ruler-divider"></div>
+
+    <section style="margin-bottom: 4rem;">
+      <h2 class="section-title" data-i18n="history_section_title">৫,২৮০ ফুটের মাইল নির্ধারণের ইতিহাস</h2>
+      <div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 800px; margin: 0 auto; color: var(--text-muted); line-height: 1.75;">
+        <p data-i18n="history_section_p1">আপনি কি কখনও ভেবেছেন কেন একটি মাইলে ঠিক ৫,২৮০ ফুটই হয়, ৫,০০০ বা ১০,০০০ এর মতো কোনো গোল সংখ্যা কেন নয়? এর উত্তর রয়েছে প্রাচীন রোমান পরিমাপ এবং ইংরেজি কৃষিকার্যের ঐতিহ্যবাহী পদ্ধতির সমন্বয়ে।</p>
+        <p data-i18n="history_section_p2">"মাইল" শব্দটি ল্যাটিন "মিলি পাসুস" থেকে এসেছে, যার অর্থ "এক হাজার দ্বিগুণ পদক্ষেপ"। রোমান পরিমাপে এক মাইল ছিল ঠিক ৫,০০০ রোমান ফুট।</p>
+        <p data-i18n="history_section_p3">মধ্যযুগীয় ইংল্যান্ডে কৃষকরা "ফারলং" ব্যবহার করতেন (প্রায় ৬৬০ ফুট)। ১৫৯৩ সালে রানী প্রথম এলিজাবেথ একটি আইন পাস করেন সীমানা স্পষ্ট করার জন্য।</p>
+        <p data-i18n="history_section_p4">এই আইনটি ইংরেজি মাইলকে ঠিক ৮ ফারলং নির্ধারণ করে। ৮ কে ৬৬০ ফুট দিয়ে গুণ করলে হয় ৫,২৮০ ফুট, যা আজও ব্যবহৃত হচ্ছে।</p>
+      </div>
+
+      <!-- Interactive Diagram: Statute vs Roman Ruler -->
+      <div class="interactive-diagram" style="max-width: 650px; margin: 2rem auto 0 auto;">
+        <h4 style="margin-bottom: 0.75rem; color: var(--primary); text-align: center;" data-i18n="diagram_ruler_title">ঐতিহাসিক দৈর্ঘ্য তুলনা</h4>
+        <p style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-bottom: 1.25rem;" data-i18n="diagram_ruler_desc">রোমান মাইলের সাথে আধুনিক ইংরেজি মাইলের তুলনা করতে টগল করুন।</p>
+        <div class="ruler-container">
+          <div class="ruler-tabs" style="justify-content: center;">
+            <button class="ruler-tab-btn active" id="ruler-btn-statute" data-i18n="ruler_btn_statute">স্ট্যাটিউট মাইল (১৫৯৩)</button>
+            <button class="ruler-tab-btn" id="ruler-btn-roman" data-i18n="ruler_btn_roman">রোমান মাইল (Mille Passus)</button>
+          </div>
+          <div class="ruler-visual">
+            <div class="ruler-bar" id="ruler-bar-fill" style="width: 100%;"></div>
+            <div class="ruler-ticks">
+              <span class="ruler-tick"></span>
+              <span class="ruler-tick"></span>
+              <span class="ruler-tick"></span>
+              <span class="ruler-tick"></span>
+              <span class="ruler-tick"></span>
+              <span class="ruler-tick"></span>
+              <span class="ruler-tick"></span>
+              <span class="ruler-tick"></span>
+              <span class="ruler-tick"></span>
+            </div>
+          </div>
+          <div class="ruler-labels">
+            <span>0 ft</span>
+            <span id="ruler-mid-label" data-i18n="ruler_tab1_mid">৪ ফারলং (২,৬৪০ ফুট)</span>
+            <span id="ruler-end-label" data-i18n="ruler_tab1_end">৫,২৮০ ফুট (৮ ফারলং)</span>
+          </div>
+          <div class="benchmark-card-display" id="ruler-info-text" style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;" data-i18n="ruler_tab1_info_initial"><strong>১ মাইল:</strong> স্ট্যাটিউট মাইল: ১৫৯৩ সালে ৮ ফারলং-এর সমান আইনগতভাবে নির্ধারণ করা হয়। এটি সমান ৫,২৮০ ফুটের।</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Real-World Athletic & Navigation Benchmarks -->
+    <div class="ruler-divider"></div>
+
+    <section style="margin-bottom: 4rem;">
+      <h2 class="section-title" data-i18n="benchmarks_title">অ্যাথলেটিক এবং নেভিগেশন রেফারেন্স পয়েন্ট</h2>
+      <p style="text-align: center; max-width: 750px; margin: 0 auto 2.5rem auto; color: var(--text-muted);" data-i18n="benchmarks_desc">এই রূপান্তরগুলি বোঝা খেলাধুলা, দৌড় এবং বিমান চালনার জন্য দরকারী।</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem;">
+        <div class="calculator-card" style="padding: 1.5rem; text-align: center; animation: none;">
+          <svg class="benchmark-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="10" />
+            <path d="M12 2a10 10 0 0 1 10 10" />
+            <path d="M12 6a6 6 0 0 1 6 6" />
+          </svg>
+          <h4 style="margin-bottom: 0.5rem;" data-i18n="benchmark_track_title">স্ট্যান্ডার্ড ৪০০ মিটার ট্র্যাক</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted);" data-i18n="benchmark_track_desc">একটি স্ট্যান্ডার্ড প্রতিযোগিতার ট্র্যাকের এক ল্যাপ প্রায় ১,৩২০ ফুট। ঠিক ৪ ল্যাপ সম্পূর্ণ করলে ১ মাইল (৫,২৮০ ফুট) হয়।</p>
+        </div>
+        <div class="calculator-card" style="padding: 1.5rem; text-align: center; animation: none;">
+          <svg class="benchmark-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="6" />
+            <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+          </svg>
+          <h4 style="margin-bottom: 0.5rem;" data-i18n="benchmark_5k_title">৫কিমি রান</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted);" data-i18n="benchmark_5k_desc">৫ কিলোমিটারের একটি দৌড় প্রায় ৩.১ মাইল কভার করে, যা মোট ১৬,৩৬৮ ফুটের সমান।</p>
+        </div>
+        <div class="calculator-card" style="padding: 1.5rem; text-align: center; animation: none;">
+          <svg class="benchmark-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+            <line x1="4" y1="22" x2="4" y2="15"></line>
+          </svg>
+          <h4 style="margin-bottom: 0.5rem;" data-i18n="benchmark_marathon_title">সম্পূর্ণ ম্যারাথন</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted);" data-i18n="benchmark_marathon_desc">একটি অফিসিয়াল ম্যারাথন ২৬.২ মাইল দীর্ঘ হয়। এর অর্থ রানারদের ১,৩৮,৩৩৬ ফুট দূরত্ব অতিক্রম করতে হয়।</p>
+        </div>
+        <div class="calculator-card" style="padding: 1.5rem; text-align: center; animation: none;">
+          <svg class="benchmark-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L14 19v-5.5l8 2.5z"></path>
+          </svg>
+          <h4 style="margin-bottom: 0.5rem;" data-i18n="benchmark_altitude_title">বিমান চালনার উচ্চতা</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted);" data-i18n="benchmark_altitude_desc">বিমানের পথ মাইলে মাপা হলেও উচ্চতা ফুটে পরিমাপ করা হয়। ৩৫,০০০ ফুট উচ্চতায় ওড়া প্রায় ৬.৬ মাইলের সমান।</p>
+        </div>
+      </div>
+
+      <!-- Interactive Diagram: Benchmark Scale -->
+      <div class="interactive-diagram" style="max-width: 700px; margin: 2.5rem auto 0 auto;">
+        <h4 style="margin-bottom: 0.5rem; color: var(--accent); text-align: center;" data-i18n="diagram_scale_title">দূরত্ব স্কেল ভিজ্যুয়ালাইজার</h4>
+        <p style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-bottom: 1.5rem;" data-i18n="diagram_scale_desc">মাইল এবং ফুটের তুলনা দেখতে স্কেলের পয়েন্টগুলিতে ক্লিক করুন।</p>
+        <div class="scale-container">
+          <div class="scale-track">
+            <div class="scale-pointer" id="scale-indicator" style="left: 3.8%;">
+              <svg viewBox="0 0 24 24" fill="currentColor" style="width: 16px; height: 16px; color: var(--primary); display: block; margin: 0 auto; transform: translateY(-4px);">
+                <polygon points="12,2 22,22 12,17 2,22"></polygon>
+              </svg>
+            </div>
+            <span class="scale-dot active" style="left: 3.8%;" data-target="mark-track"></span>
+            <span class="scale-dot" style="left: 11.8%;" data-target="mark-5k"></span>
+            <span class="scale-dot" style="left: 35%;" data-target="mark-altitude"></span>
+            <span class="scale-dot" style="left: 98%;" data-target="mark-marathon"></span>
+          </div>
+          <div class="scale-labels">
+            <button class="scale-label-btn active" id="mark-track" data-i18n="scale_mark1_title">মানক ৪০০ মিটার ট্র্যাক</button>
+            <button class="scale-label-btn" id="mark-5k" data-i18n="scale_mark2_title">৫কে দৌড়ের দূরত্ব</button>
+            <button class="scale-label-btn" id="mark-altitude" data-i18n="scale_mark3_title">উড়োজাহাজ ওড়ার উচ্চতা</button>
+            <button class="scale-label-btn" id="mark-marathon" data-i18n="scale_mark4_title">ফুল ম্যারাথন</button>
+          </div>
+        </div>
+        <div class="benchmark-card-display" id="scale-info-text" style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;" data-i18n="scale_mark1_desc_initial"><strong>মানক ৪০০ মিটার ট্র্যাক:</strong> প্রায় ১,৩২০ ফুট। মাইলে এটি ঠিক ০.২৫ মাইল। ৪ চক্কর দিলে ঠিক ১ মাইল (৫,২৮০ ফুট) পূর্ণ হয়!</div>
+      </div>
+    </section>
+
+    <!-- Unit Definitions -->
+    <div class="ruler-divider"></div>
+
+    <section style="margin-bottom: 4rem;">
+      <h2 class="section-title" data-i18n="def_title">একক সংজ্ঞাসমূহ: মাইল বنام ফুট</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 900px; margin: 0 auto;">
+
+        <div class="calculator-card" style="padding: 1.75rem; animation: none;">
+          <h3 style="color: var(--primary); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;" data-i18n="def_mile_title">মাইল (mi) কি?</h3>
+          <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;" data-i18n="def_mile_desc">একটি <strong>মাইল (mi)</strong> হল ইম্পেরিয়াল এবং ইউএস প্রথামাফিক পরিমাপ পদ্ধতিতে দৈর্ঘ্যের একটি একক। এক সংবিধিবদ্ধ মাইল সমান ঠিক <strong>৫,২৮০ ফুট</strong>, ১,৭৬০ গজ, বা ১.৬০৯৩৪৪ কিলোমিটার (১,৬০৯.৩৪৪ মিটার)।</p>
+          <ul style="font-size: 0.9rem; color: var(--text-main); display: flex; flex-direction: column; gap: 0.5rem; padding-left: 1.25rem;">
+            <li data-i18n="def_mile_origin"><strong>উত্স:</strong> রোমান <em>mille passus</em> (১,০০০ দ্বিগুণ পদক্ষেপ / ৫,০০০ রোমান ফুট)</li>
+            <li data-i18n="def_mile_statute"><strong>সংবিধিবদ্ধ মান:</strong> ১৫৯৩ সালে রানী প্রথম এলিজাবেথের অধীনে প্রতিষ্ঠিত (৮ ফার্লং &times; ৬৬০ ফুট)</li>
+            <li data-i18n="def_mile_use"><strong>প্রধান ব্যবহার:</strong> সড়ক ভ্রমণ, भूगोल, ভূমি জরিপ এবং ম্যারাথন অ্যাথলেটিক্স</li>
+          </ul>
+        </div>
+
+        <div class="calculator-card" style="padding: 1.75rem; animation: none;">
+          <h3 style="color: var(--accent); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;" data-i18n="def_foot_title">ফুট (ft) কি?</h3>
+          <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;" data-i18n="def_foot_desc">একটি <strong>ফুট (ft)</strong> হল দৈর্ঘ্যের একটি একক যা ঠিক <strong>১২ ইঞ্চি</strong>, ০.৩৩৩৩ গজ, বা ০.৩০৪৮ মিটারের সমান। উচ্চতা, ঘরের পরিমাপ এবং নির্মাণ স্কেলিং পরিমাপের জন্য ফুট অন্যতম সাধারণ একক।</p>
+          <ul style="font-size: 0.9rem; color: var(--text-main); display: flex; flex-direction: column; gap: 0.5rem; padding-left: 1.25rem;">
+            <li data-i18n="def_foot_reverse"><strong>বিপরীত রূপান্তর:</strong> ১ ফুট = ০.০০০১৮৯৩৯৪ মাইল (১ &divide; ৫,২৮০)</li>
+            <li data-i18n="def_foot_metric"><strong>মেট্রিক অনুপাত:</strong> ঠিক ৩০৪.৮ মিলিমিটার (৩০.৪৮ সেmi)</li>
+            <li data-i18n="def_foot_use"><strong>প্রধান ব্যবহার:</strong> বিল্ডিং নকশা, স্থাপত্য, উচ্চতা এবং ব্যক্তিগত উচ্চতা</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Other Length Conversions -->
+    <div class="ruler-divider"></div>
+
+    <section style="margin-bottom: 4rem;">
+      <h2 class="section-title">Other Length Conversions</h2>
+      <p style="text-align: center; max-width: 750px; margin: 0 auto 2rem auto; color: var(--text-muted);">
+        Feet and miles both belong to the imperial and US customary systems. The tools below convert feet or miles directly into yards, meters, inches, centimeters, and nautical miles.
+      </p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+        <div class="calculator-card" style="padding: 1.5rem; animation: none;">
+          <h3 style="margin-bottom: 0.75rem; color: var(--primary);">Convert Feet to Other Units</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">One foot equals 0.3333 yards, 0.3048 meters, 12 inches, 30.48 centimeters, and 0.001515 furlongs.</p>
+          <ul style="font-size: 0.95rem; display: flex; flex-direction: column; gap: 0.6rem; padding-left: 1.1rem;">
+            <li><a href="/bn/feet-to-yards/">Feet to Yards</a></li>
+            <li><a href="/bn/feet-to-meters/">Feet to Meters</a></li>
+            <li><a href="/bn/feet-to-inches/">Feet to Inches</a></li>
+            <li><a href="/bn/feet-to-centimeters/">Feet to Centimeters</a></li>
+            <li><a href="/bn/feet-to-nautical-miles/">Feet to Nautical Miles</a></li>
+          </ul>
+        </div>
+        <div class="calculator-card" style="padding: 1.5rem; animation: none;">
+          <h3 style="margin-bottom: 0.75rem; color: var(--accent);">Convert Miles to Other Units</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">One mile equals 1,760 yards, 1,609.344 meters, 63,360 inches, 160,934.4 centimeters, and 8 furlongs.</p>
+          <ul style="font-size: 0.95rem; display: flex; flex-direction: column; gap: 0.6rem; padding-left: 1.1rem;">
+            <li><a href="/bn/miles-to-yards/">Miles to Yards</a></li>
+            <li><a href="/bn/miles-to-meters/">Miles to Meters</a></li>
+            <li><a href="/bn/miles-to-kilometers/">Miles to Kilometers</a></li>
+            <li><a href="/bn/miles-to-inches/">Miles to Inches</a></li>
+            <li><a href="/bn/miles-to-centimeters/">Miles to Centimeters</a></li>
+            <li><a href="/bn/nautical-miles-to-feet/">Nautical Miles to Feet</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="calculator-card" style="padding: 1.5rem; margin-top: 2rem; animation: none;">
+        <h3 style="margin-bottom: 0.75rem; color: var(--primary);">Other Mile & Foot Conversions</h3>
+        <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.7;">
+          The statute mile is not the only mile in use. A <strong>nautical mile</strong> equals 6,076.12 feet, based on one minute of latitude at the equator. A <strong>US survey mile</strong> equals 5,280 survey feet, a unit fractionally longer than the international foot before the 1959 standardization. Aviation and marine navigation use the nautical mile; land surveying in parts of the US still references the survey mile.
+        </p>
       </div>
     </section>
 
@@ -445,13 +671,67 @@
       </div>
     </section>
 
+    <!-- All Length & Speed Calculators Directory Section -->
+    <div class="ruler-divider"></div>
+
+    <section class="all-calculators-section container">
+      <h2 class="section-title">All Length & Speed Calculators</h2>
+      <p style="text-align: center; color: var(--text-muted); margin-bottom: 2rem;">Explore our full suite of precision length, speed, and area conversion tools.</p>
+
+      <div class="calculators-grid">
+        <div class="calc-category">
+          <h3>Miles Conversions</h3>
+          <ul>
+            <li><a href="/bn/miles-to-yards/">Miles to Yards Converter</a></li>
+            <li><a href="/bn/miles-to-kilometers/">Miles to Kilometers Converter</a></li>
+            <li><a href="/bn/miles-to-meters/">Miles to Meters Converter</a></li>
+            <li><a href="/bn/miles-to-inches/">Miles to Inches Converter</a></li>
+            <li><a href="/bn/miles-to-centimeters/">Miles to Centimeters Converter</a></li>
+            <li><a href="/bn/nautical-miles-to-feet/">Nautical Miles to Feet</a></li>
+            <li><a href="/bn/feet-to-nautical-miles/">Feet to Nautical Miles</a></li>
+            <li><a href="/bn/square-miles-to-square-feet/">Square Miles to Square Feet</a></li>
+          </ul>
+        </div>
+        <div class="calc-category">
+          <h3>Feet & Inches Conversions</h3>
+          <ul>
+            <li><a href="/bn/feet-to-yards/">Feet to Yards Converter</a></li>
+            <li><a href="/bn/feet-to-inches/">Feet to Inches Converter</a></li>
+            <li><a href="/bn/feet-to-meters/">Feet to Meters Converter</a></li>
+            <li><a href="/bn/feet-to-centimeters/">Feet to Centimeters Converter</a></li>
+            <li><a href="/bn/">Miles to Feet Converter</a></li>
+          </ul>
+        </div>
+        <div class="calc-category">
+          <h3>Fractional & Elevation Tools</h3>
+          <ul>
+            <li><a href="/bn/half-mile-to-feet/">How Many Feet in Half a Mile?</a></li>
+            <li><a href="/bn/quarter-mile-to-feet/">How Many Feet in a Quarter Mile?</a></li>
+            <li><a href="/bn/elevation-miles-to-feet/">Elevation: Miles to Feet</a></li>
+          </ul>
+        </div>
+        <div class="calc-category">
+          <h3>Speed & Math Guides</h3>
+          <ul>
+            <li><a href="/bn/mph-to-feet-per-second/">MPH to Feet Per Second</a></li>
+            <li><a href="/bn/feet-per-second-to-mph/">Feet Per Second to MPH</a></li>
+            <li><a href="/bn/miles-to-feet-chart/">Printable Conversion Chart</a></li>
+            <li><a href="/bn/running-distance-miles-to-feet/">Running Distance: Miles to Feet</a></li>
+            <li><a href="/bn/miles-to-feet-vs-yards/">Miles to Feet vs Yards</a></li>
+            <li><a href="/bn/miles-to-feet-without-calculator/">Convert Miles to Feet by Hand</a></li>
+            <li><a href="/bn/feet-to-miles-reverse-formula/">Reverse Formula Guide</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <!-- Accordion FAQ section -->
     <div class="ruler-divider"></div>
 
     <section class="faq-section">
       <h2 class="section-title">Frequently Asked Questions</h2>
       <div class="faq-list">
-        
+
         <div class="faq-item">
           <button class="faq-question-btn">
             <span>How do you convert feet to miles?</span>
@@ -479,6 +759,63 @@
           </button>
           <div class="faq-answer">
             <p>Since feet are a smaller unit of measure than miles, you will have fewer miles for a given number of feet. Therefore, you divide by the conversion factor (5,280) to get the equivalent distance in miles.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>How many miles is 1,000 feet?</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            <p>1,000 feet equals 0.1894 miles (1,000 &divide; 5,280). Walking 1,000 feet takes most people 3 to 4 minutes.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>How do you convert feet to miles in Excel?</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Enter the formula <code>=A1/5280</code> in a cell, where A1 holds the value in feet. Excel returns the result in miles as a decimal.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>Is a nautical mile the same as 5,280 feet?</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            <p>No. A nautical mile equals 6,076.12 feet, which is longer than the 5,280-foot statute mile used on land.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Standards & References Section -->
+    <div class="ruler-divider"></div>
+
+    <section style="margin-bottom: 4rem;">
+      <h2 class="section-title">Standards, Authorities & Citation</h2>
+      <div style="max-width: 850px; margin: 0 auto; display: flex; flex-direction: column; gap: 2rem;">
+
+        <div class="calculator-card" style="padding: 1.75rem; animation: none;">
+          <h3 style="margin-bottom: 1rem; color: var(--primary);">Official Measurement Authorities & References</h3>
+          <ul style="display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.95rem; color: var(--text-muted); padding-left: 1.25rem;">
+            <li><strong>National Institute of Standards and Technology (NIST):</strong> "Guide for the Use of the International System of Units (SI)." NIST Special Publication 811, 2008.</li>
+            <li><strong>International Bureau of Weights and Measures (BIPM):</strong> "The International System of Units (SI)," 9th Edition, 2019.</li>
+            <li><strong>British Weights and Measures Act of 1824:</strong> Statutory definition of the Imperial Statute Mile (8 furlongs &times; 660 ft).</li>
+          </ul>
+        </div>
+
+        <div class="calculator-card" style="padding: 1.75rem; animation: none; background: var(--bg-card-hover);">
+          <h3 style="margin-bottom: 0.75rem; color: var(--text-header-footer);">Cite This Tool</h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">For academic research, engineering documentations, or educational resources, use the citation format below:</p>
+          <div style="background: var(--bg-body); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border); font-family: monospace; font-size: 0.85rem; color: var(--accent); overflow-x: auto;">
+            "Feet to Miles Converter & Distance Guide." MilesToFeet.com. Accessed 2026. https://milestofeet.com/feet-to-miles/
           </div>
         </div>
 

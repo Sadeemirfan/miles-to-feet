@@ -141,6 +141,30 @@
           "@type": "Answer",
           "text": "Since feet are a smaller unit of measure than miles, you will have fewer miles for a given number of feet. Therefore, you divide by the conversion factor (5,280) to get the equivalent distance in miles."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "How many miles is 1,000 feet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "1,000 feet equals 0.1894 miles (1,000 divided by 5,280)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you convert feet to miles in Excel?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Enter the formula =A1/5280 in a cell, where A1 holds the value in feet. Excel returns the result in miles as a decimal."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is a nautical mile the same as 5,280 feet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, a nautical mile equals 6,076.12 feet, which is longer than the 5,280-foot statute mile used on land."
+        }
       }
     ]
   }
@@ -249,7 +273,7 @@
       </div>
       
       <!-- Calculator Widget -->
-      <div class="calculator-card" id="calculator-widget">
+      <div class="calculator-card" id="calculator-widget" data-converter="feet-to-miles" data-factor="5280" data-operation="divide" data-input-unit="ft" data-output-unit="mi">
         <div class="calculator-row">
           <div class="input-group">
             <label for="feet-input">Enter Feet (ft)</label>
@@ -332,6 +356,208 @@
             <div class="formula-text">10,560 &divide; 5,280 = 2 mi</div>
           </div>
         </div>
+      </div>
+
+      <!-- Interactive Diagram: Math Flow -->
+      <div class="interactive-diagram" style="max-width: 600px; margin: 2rem auto 0 auto;">
+        <h4 style="margin-bottom: 0.5rem; text-align: center; color: var(--primary);" data-i18n="diagram_flow_title">Etkileşimli Dönüşüm Akışı</h4>
+        <p style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-bottom: 1rem;" data-i18n="diagram_flow_desc">Mil değerinin fit değerine nasıl dönüştüğünü görmek için kaydırıcıyı sürükleyin.</p>
+        <div class="diagram-flow">
+          <div class="flow-node" id="math-flow-miles">5,280 ft</div>
+          <div class="flow-connector">
+            <div class="flow-pulse"></div>
+          </div>
+          <div class="flow-node" id="math-flow-factor" style="border-color: var(--border-strong); color: var(--text-muted); font-size: 0.85rem; min-width: 80px;">&divide; 5,280</div>
+          <div class="flow-connector">
+            <div class="flow-pulse"></div>
+          </div>
+          <div class="flow-node accent-node" id="math-flow-feet">1 mi</div>
+        </div>
+        <input type="range" min="100" max="20000" step="100" value="5280" class="diagram-slider" id="math-flow-slider" aria-label="Math flow feet slider">
+      </div>
+    </section>
+
+    <!-- Historical Origin (Statute Mile, Roman Pace, Furlongs) -->
+    <div class="ruler-divider"></div>
+
+    <section style="margin-bottom: 4rem;">
+      <h2 class="section-title" data-i18n="history_section_title">5.280 Fitlik Standart Milin Tarihçesi</h2>
+      <div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 800px; margin: 0 auto; color: var(--text-muted); line-height: 1.75;">
+        <p data-i18n="history_section_p1">Bir milde neden 5.000 veya 10.000 gibi yuvarlak bir sayı yerine tam olarak 5.280 fit olduğunu hiç merak ettiniz mi? Bunun nedeni, antik Roma sistemleri ile geleneksel İngiliz tarım ölçülerinin tarihsel birleşimidir.</p>
+        <p data-i18n="history_section_p2">"Mil" kelimesi Latince "mille passus" yani "bin çift adım" kelimesinden gelir. Roma sisteminde bir mil tam olarak 5.000 Roma fitine eşitti.</p>
+        <p data-i18n="history_section_p3">Orta Çağ İngiltere'sinde çiftçiler "furlong" (yaklaşık 660 fit) birimini kullanırlardı. Toprak sınırlarını sabitlemek için Kraliçe I. Elizabeth 1593'te bir yasa çıkardı.</p>
+        <p data-i18n="history_section_p4">Bu yasa, İngiliz milini tam olarak 8 furlong'a eşit olarak belirledi. 8 ile 660 fiti çarptığımızda 5.280 fit elde ederiz; bu da bugün kullandığımız ölçüm sistemini sabitlemiştir.</p>
+      </div>
+
+      <!-- Interactive Diagram: Statute vs Roman Ruler -->
+      <div class="interactive-diagram" style="max-width: 650px; margin: 2rem auto 0 auto;">
+        <h4 style="margin-bottom: 0.75rem; color: var(--primary); text-align: center;" data-i18n="diagram_ruler_title">Tarihsel Uzunluk Karşılaştırması</h4>
+        <p style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-bottom: 1.25rem;" data-i18n="diagram_ruler_desc">Antik Roma mili ile standart İngiliz milini karşılaştırmak için geçiş yapın.</p>
+        <div class="ruler-container">
+          <div class="ruler-tabs" style="justify-content: center;">
+            <button class="ruler-tab-btn active" id="ruler-btn-statute" data-i18n="ruler_btn_statute">Standart Mil (1593)</button>
+            <button class="ruler-tab-btn" id="ruler-btn-roman" data-i18n="ruler_btn_roman">Roma Mili (Mille Passus)</button>
+          </div>
+          <div class="ruler-visual">
+            <div class="ruler-bar" id="ruler-bar-fill" style="width: 100%;"></div>
+            <div class="ruler-ticks">
+              <span class="ruler-tick"></span>
+              <span class="ruler-tick"></span>
+              <span class="ruler-tick"></span>
+              <span class="ruler-tick"></span>
+              <span class="ruler-tick"></span>
+              <span class="ruler-tick"></span>
+              <span class="ruler-tick"></span>
+              <span class="ruler-tick"></span>
+              <span class="ruler-tick"></span>
+            </div>
+          </div>
+          <div class="ruler-labels">
+            <span>0 ft</span>
+            <span id="ruler-mid-label" data-i18n="ruler_tab1_mid">4 Furlong (2.640 fit)</span>
+            <span id="ruler-end-label" data-i18n="ruler_tab1_end">5.280 fit (8 Furlong)</span>
+          </div>
+          <div class="benchmark-card-display" id="ruler-info-text" style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;" data-i18n="ruler_tab1_info_initial"><strong>1 Mil:</strong> Yasal Mil (Statute): 1593 yılında 8 furlong'a eşit olarak yasallaştı. Tam olarak 5.280 fit değerindedir.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Real-World Athletic & Navigation Benchmarks -->
+    <div class="ruler-divider"></div>
+
+    <section style="margin-bottom: 4rem;">
+      <h2 class="section-title" data-i18n="benchmarks_title">Spor ve Navigasyon Referans Noktaları</h2>
+      <p style="text-align: center; max-width: 750px; margin: 0 auto 2.5rem auto; color: var(--text-muted);" data-i18n="benchmarks_desc">Bu dönüşümleri anlamak fitness takibi, atletizm ve havacılık için yararlıdır.</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem;">
+        <div class="calculator-card" style="padding: 1.5rem; text-align: center; animation: none;">
+          <svg class="benchmark-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="10" />
+            <path d="M12 2a10 10 0 0 1 10 10" />
+            <path d="M12 6a6 6 0 0 1 6 6" />
+          </svg>
+          <h4 style="margin-bottom: 0.5rem;" data-i18n="benchmark_track_title">Standart 400m Koşu Pisti</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted);" data-i18n="benchmark_track_desc">Standart bir pist turu yaklaşık 1.320 fittir. Tam olarak 4 tur tamamlamak 1 mile (5.280 fit) eşittir.</p>
+        </div>
+        <div class="calculator-card" style="padding: 1.5rem; text-align: center; animation: none;">
+          <svg class="benchmark-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="6" />
+            <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+          </svg>
+          <h4 style="margin-bottom: 0.5rem;" data-i18n="benchmark_5k_title">5K Koşusu</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted);" data-i18n="benchmark_5k_desc">5 kilometrelik bir koşu yaklaşık 3.1 mile denk gelir, bu da toplam 16.368 fit mesafeye eşittir.</p>
+        </div>
+        <div class="calculator-card" style="padding: 1.5rem; text-align: center; animation: none;">
+          <svg class="benchmark-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+            <line x1="4" y1="22" x2="4" y2="15"></line>
+          </svg>
+          <h4 style="margin-bottom: 0.5rem;" data-i18n="benchmark_marathon_title">Tam Maraton</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted);" data-i18n="benchmark_marathon_desc">Resmi bir maraton 26.2 mildir. Bu, koşucuların 138.336 fit mesafe kat etmesini gerektirir.</p>
+        </div>
+        <div class="calculator-card" style="padding: 1.5rem; text-align: center; animation: none;">
+          <svg class="benchmark-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L14 19v-5.5l8 2.5z"></path>
+          </svg>
+          <h4 style="margin-bottom: 0.5rem;" data-i18n="benchmark_altitude_title">Havacılık İrtifası</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted);" data-i18n="benchmark_altitude_desc">Uçuş rotaları mil cinsinden belirlenirken, irtifa fit cinsinden ölçülür. 35.000 fitte uçmak yaklaşık 6.6 mile eşittir.</p>
+        </div>
+      </div>
+
+      <!-- Interactive Diagram: Benchmark Scale -->
+      <div class="interactive-diagram" style="max-width: 700px; margin: 2.5rem auto 0 auto;">
+        <h4 style="margin-bottom: 0.5rem; color: var(--accent); text-align: center;" data-i18n="diagram_scale_title">Mesafe Ölçeği Görselleştirici</h4>
+        <p style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-bottom: 1.5rem;" data-i18n="diagram_scale_desc">Fit ve mil cinsinden referans mesafelerini karşılaştırmak için ölçekteki noktalara tıklayın.</p>
+        <div class="scale-container">
+          <div class="scale-track">
+            <div class="scale-pointer" id="scale-indicator" style="left: 3.8%;">
+              <svg viewBox="0 0 24 24" fill="currentColor" style="width: 16px; height: 16px; color: var(--primary); display: block; margin: 0 auto; transform: translateY(-4px);">
+                <polygon points="12,2 22,22 12,17 2,22"></polygon>
+              </svg>
+            </div>
+            <span class="scale-dot active" style="left: 3.8%;" data-target="mark-track"></span>
+            <span class="scale-dot" style="left: 11.8%;" data-target="mark-5k"></span>
+            <span class="scale-dot" style="left: 35%;" data-target="mark-altitude"></span>
+            <span class="scale-dot" style="left: 98%;" data-target="mark-marathon"></span>
+          </div>
+          <div class="scale-labels">
+            <button class="scale-label-btn active" id="mark-track" data-i18n="scale_mark1_title">Standart 400m Turu</button>
+            <button class="scale-label-btn" id="mark-5k" data-i18n="scale_mark2_title">5K Koşu Mesafesi</button>
+            <button class="scale-label-btn" id="mark-altitude" data-i18n="scale_mark3_title">Seyir İrtifası</button>
+            <button class="scale-label-btn" id="mark-marathon" data-i18n="scale_mark4_title">Tam Maraton</button>
+          </div>
+        </div>
+        <div class="benchmark-card-display" id="scale-info-text" style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;" data-i18n="scale_mark1_desc_initial"><strong>Standart 400m Turu:</strong> Yaklaşık 1.320 fit. Mil cinsinden tam olarak 0,25 mildir. 4 tur tamamlandığında 1 tam mil eder!</div>
+      </div>
+    </section>
+
+    <!-- Unit Definitions -->
+    <div class="ruler-divider"></div>
+
+    <section style="margin-bottom: 4rem;">
+      <h2 class="section-title" data-i18n="def_title">Birim Tanımları: Mil ve Fit Karşılaştırması</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 900px; margin: 0 auto;">
+
+        <div class="calculator-card" style="padding: 1.75rem; animation: none;">
+          <h3 style="color: var(--primary); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;" data-i18n="def_mile_title">Mil (mi) Nedir?</h3>
+          <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;" data-i18n="def_mile_desc">Bir <strong>mil (mi)</strong>, İngiliz kraliyet ve ABD geleneksel ölçüm sistemlerinde bir uzunluk birimidir. Bir kara mili tam olarak <strong>5.280 fit</strong>, 1.760 yarda veya 1,609344 kilometreye (1.609,344 metre) eşittir.</p>
+          <ul style="font-size: 0.9rem; color: var(--text-main); display: flex; flex-direction: column; gap: 0.5rem; padding-left: 1.25rem;">
+            <li data-i18n="def_mile_origin"><strong>Köken:</strong> Romalı <em>mille passus</em> (1.000 çift adım / 5.000 Roma fiti)</li>
+            <li data-i18n="def_mile_statute"><strong>Yasal Standart:</strong> 1593 yılında Kraliçe I. Elizabeth döneminde kabul edilmiştir (8 furlong &times; 660 fit)</li>
+            <li data-i18n="def_mile_use"><strong>Temel Kullanım:</strong> Kara yolu seyahati, coğrafya, arazi ölçümü ve maraton koşuları</li>
+          </ul>
+        </div>
+
+        <div class="calculator-card" style="padding: 1.75rem; animation: none;">
+          <h3 style="color: var(--accent); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;" data-i18n="def_foot_title">Fit (ft) Nedir?</h3>
+          <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;" data-i18n="def_foot_desc">Bir <strong>fit (ft)</strong>, tam olarak <strong>12 inç</strong>, 0,3333 yarda veya 0,3048 metreye eşit olan bir uzunluk birimidir. Fit; boy, oda boyutları ve inşaat ölçeklendirmesinde en yaygın kullanılan birimlerden biridir.</p>
+          <ul style="font-size: 0.9rem; color: var(--text-main); display: flex; flex-direction: column; gap: 0.5rem; padding-left: 1.25rem;">
+            <li data-i18n="def_foot_reverse"><strong>Tersine Dönüştürme:</strong> 1 fit = 0,000189394 mil (1 &divide; 5.280)</li>
+            <li data-i18n="def_foot_metric"><strong>Metrik Oran:</strong> Tam olarak 304,8 milimetre (30,48 cm)</li>
+            <li data-i18n="def_foot_use"><strong>Temel Kullanım:</strong> Bina planları, mimarlık, yükseklik ve kişisel boy ölçümü</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Other Length Conversions -->
+    <div class="ruler-divider"></div>
+
+    <section style="margin-bottom: 4rem;">
+      <h2 class="section-title">Other Length Conversions</h2>
+      <p style="text-align: center; max-width: 750px; margin: 0 auto 2rem auto; color: var(--text-muted);">
+        Feet and miles both belong to the imperial and US customary systems. The tools below convert feet or miles directly into yards, meters, inches, centimeters, and nautical miles.
+      </p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+        <div class="calculator-card" style="padding: 1.5rem; animation: none;">
+          <h3 style="margin-bottom: 0.75rem; color: var(--primary);">Convert Feet to Other Units</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">One foot equals 0.3333 yards, 0.3048 meters, 12 inches, 30.48 centimeters, and 0.001515 furlongs.</p>
+          <ul style="font-size: 0.95rem; display: flex; flex-direction: column; gap: 0.6rem; padding-left: 1.1rem;">
+            <li><a href="/tr/feet-to-yards/">Feet to Yards</a></li>
+            <li><a href="/tr/feet-to-meters/">Feet to Meters</a></li>
+            <li><a href="/tr/feet-to-inches/">Feet to Inches</a></li>
+            <li><a href="/tr/feet-to-centimeters/">Feet to Centimeters</a></li>
+            <li><a href="/tr/feet-to-nautical-miles/">Feet to Nautical Miles</a></li>
+          </ul>
+        </div>
+        <div class="calculator-card" style="padding: 1.5rem; animation: none;">
+          <h3 style="margin-bottom: 0.75rem; color: var(--accent);">Convert Miles to Other Units</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">One mile equals 1,760 yards, 1,609.344 meters, 63,360 inches, 160,934.4 centimeters, and 8 furlongs.</p>
+          <ul style="font-size: 0.95rem; display: flex; flex-direction: column; gap: 0.6rem; padding-left: 1.1rem;">
+            <li><a href="/tr/miles-to-yards/">Miles to Yards</a></li>
+            <li><a href="/tr/miles-to-meters/">Miles to Meters</a></li>
+            <li><a href="/tr/miles-to-kilometers/">Miles to Kilometers</a></li>
+            <li><a href="/tr/miles-to-inches/">Miles to Inches</a></li>
+            <li><a href="/tr/miles-to-centimeters/">Miles to Centimeters</a></li>
+            <li><a href="/tr/nautical-miles-to-feet/">Nautical Miles to Feet</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="calculator-card" style="padding: 1.5rem; margin-top: 2rem; animation: none;">
+        <h3 style="margin-bottom: 0.75rem; color: var(--primary);">Other Mile & Foot Conversions</h3>
+        <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.7;">
+          The statute mile is not the only mile in use. A <strong>nautical mile</strong> equals 6,076.12 feet, based on one minute of latitude at the equator. A <strong>US survey mile</strong> equals 5,280 survey feet, a unit fractionally longer than the international foot before the 1959 standardization. Aviation and marine navigation use the nautical mile; land surveying in parts of the US still references the survey mile.
+        </p>
       </div>
     </section>
 
@@ -445,13 +671,67 @@
       </div>
     </section>
 
+    <!-- All Length & Speed Calculators Directory Section -->
+    <div class="ruler-divider"></div>
+
+    <section class="all-calculators-section container">
+      <h2 class="section-title">All Length & Speed Calculators</h2>
+      <p style="text-align: center; color: var(--text-muted); margin-bottom: 2rem;">Explore our full suite of precision length, speed, and area conversion tools.</p>
+
+      <div class="calculators-grid">
+        <div class="calc-category">
+          <h3>Miles Conversions</h3>
+          <ul>
+            <li><a href="/tr/miles-to-yards/">Miles to Yards Converter</a></li>
+            <li><a href="/tr/miles-to-kilometers/">Miles to Kilometers Converter</a></li>
+            <li><a href="/tr/miles-to-meters/">Miles to Meters Converter</a></li>
+            <li><a href="/tr/miles-to-inches/">Miles to Inches Converter</a></li>
+            <li><a href="/tr/miles-to-centimeters/">Miles to Centimeters Converter</a></li>
+            <li><a href="/tr/nautical-miles-to-feet/">Nautical Miles to Feet</a></li>
+            <li><a href="/tr/feet-to-nautical-miles/">Feet to Nautical Miles</a></li>
+            <li><a href="/tr/square-miles-to-square-feet/">Square Miles to Square Feet</a></li>
+          </ul>
+        </div>
+        <div class="calc-category">
+          <h3>Feet & Inches Conversions</h3>
+          <ul>
+            <li><a href="/tr/feet-to-yards/">Feet to Yards Converter</a></li>
+            <li><a href="/tr/feet-to-inches/">Feet to Inches Converter</a></li>
+            <li><a href="/tr/feet-to-meters/">Feet to Meters Converter</a></li>
+            <li><a href="/tr/feet-to-centimeters/">Feet to Centimeters Converter</a></li>
+            <li><a href="/tr/">Miles to Feet Converter</a></li>
+          </ul>
+        </div>
+        <div class="calc-category">
+          <h3>Fractional & Elevation Tools</h3>
+          <ul>
+            <li><a href="/tr/half-mile-to-feet/">How Many Feet in Half a Mile?</a></li>
+            <li><a href="/tr/quarter-mile-to-feet/">How Many Feet in a Quarter Mile?</a></li>
+            <li><a href="/tr/elevation-miles-to-feet/">Elevation: Miles to Feet</a></li>
+          </ul>
+        </div>
+        <div class="calc-category">
+          <h3>Speed & Math Guides</h3>
+          <ul>
+            <li><a href="/tr/mph-to-feet-per-second/">MPH to Feet Per Second</a></li>
+            <li><a href="/tr/feet-per-second-to-mph/">Feet Per Second to MPH</a></li>
+            <li><a href="/tr/miles-to-feet-chart/">Printable Conversion Chart</a></li>
+            <li><a href="/tr/running-distance-miles-to-feet/">Running Distance: Miles to Feet</a></li>
+            <li><a href="/tr/miles-to-feet-vs-yards/">Miles to Feet vs Yards</a></li>
+            <li><a href="/tr/miles-to-feet-without-calculator/">Convert Miles to Feet by Hand</a></li>
+            <li><a href="/tr/feet-to-miles-reverse-formula/">Reverse Formula Guide</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <!-- Accordion FAQ section -->
     <div class="ruler-divider"></div>
 
     <section class="faq-section">
       <h2 class="section-title">Frequently Asked Questions</h2>
       <div class="faq-list">
-        
+
         <div class="faq-item">
           <button class="faq-question-btn">
             <span>How do you convert feet to miles?</span>
@@ -479,6 +759,63 @@
           </button>
           <div class="faq-answer">
             <p>Since feet are a smaller unit of measure than miles, you will have fewer miles for a given number of feet. Therefore, you divide by the conversion factor (5,280) to get the equivalent distance in miles.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>How many miles is 1,000 feet?</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            <p>1,000 feet equals 0.1894 miles (1,000 &divide; 5,280). Walking 1,000 feet takes most people 3 to 4 minutes.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>How do you convert feet to miles in Excel?</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Enter the formula <code>=A1/5280</code> in a cell, where A1 holds the value in feet. Excel returns the result in miles as a decimal.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>Is a nautical mile the same as 5,280 feet?</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            <p>No. A nautical mile equals 6,076.12 feet, which is longer than the 5,280-foot statute mile used on land.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Standards & References Section -->
+    <div class="ruler-divider"></div>
+
+    <section style="margin-bottom: 4rem;">
+      <h2 class="section-title">Standards, Authorities & Citation</h2>
+      <div style="max-width: 850px; margin: 0 auto; display: flex; flex-direction: column; gap: 2rem;">
+
+        <div class="calculator-card" style="padding: 1.75rem; animation: none;">
+          <h3 style="margin-bottom: 1rem; color: var(--primary);">Official Measurement Authorities & References</h3>
+          <ul style="display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.95rem; color: var(--text-muted); padding-left: 1.25rem;">
+            <li><strong>National Institute of Standards and Technology (NIST):</strong> "Guide for the Use of the International System of Units (SI)." NIST Special Publication 811, 2008.</li>
+            <li><strong>International Bureau of Weights and Measures (BIPM):</strong> "The International System of Units (SI)," 9th Edition, 2019.</li>
+            <li><strong>British Weights and Measures Act of 1824:</strong> Statutory definition of the Imperial Statute Mile (8 furlongs &times; 660 ft).</li>
+          </ul>
+        </div>
+
+        <div class="calculator-card" style="padding: 1.75rem; animation: none; background: var(--bg-card-hover);">
+          <h3 style="margin-bottom: 0.75rem; color: var(--text-header-footer);">Cite This Tool</h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">For academic research, engineering documentations, or educational resources, use the citation format below:</p>
+          <div style="background: var(--bg-body); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border); font-family: monospace; font-size: 0.85rem; color: var(--accent); overflow-x: auto;">
+            "Feet to Miles Converter & Distance Guide." MilesToFeet.com. Accessed 2026. https://milestofeet.com/feet-to-miles/
           </div>
         </div>
 
