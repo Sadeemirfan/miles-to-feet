@@ -70,6 +70,22 @@ locales.forEach(loc => {
       }
     );
 
+    // Localize internal navigation links (nav, footer, breadcrumbs, related
+    // calculators, cite-this-tool, etc.) so they stay on this locale instead
+    // of bouncing back to the English page. Skips asset files (images/css/js),
+    // links already pointing at a locale root (e.g. the language grid on the
+    // sitemap page, which intentionally links to /ar/, /fr/, etc.), and
+    // anything that isn't a root-relative link.
+    const internalAssetExt = /\.(png|svg|ico|jpg|jpeg|gif|css|js|xml|txt|json)$/i;
+    html = html.replace(/href="(\/[^"]*)"/g, (match, hrefPath) => {
+      const [purePath, hash] = hrefPath.split('#');
+      if (internalAssetExt.test(purePath)) return match;
+      const firstSeg = purePath.split('/').filter(Boolean)[0];
+      if (firstSeg && (locales.includes(firstSeg) || firstSeg === 'en')) return match;
+      const newPath = purePath === '/' ? `/${loc}/` : `/${loc}${purePath}`;
+      return `href="${newPath}${hash !== undefined ? '#' + hash : ''}"`;
+    });
+
     // Inject data-i18n tags for presets and history labels dynamically
     html = html.replace('<div class="presets-label">Quick Presets:</div>', '<div class="presets-label" data-i18n="presets_label">Quick Presets:</div>');
     html = html.replace('<span class="history-label">Recent Calculations:</span>', '<span class="history-label" data-i18n="history_label">Recent Calculations:</span>');
